@@ -137,7 +137,7 @@
                              \caption{Výstupní oblast.}
                              \label{fig:outlet}
                          \end{subfigure}
-                    \caption{Části hranice pro aplikování okrajových podmínek.}
+                    \caption{Části hranice pro aplikování okrajových podmínek (v jednotlivých obrázcích označeny žlutou barvou).}
                     \label{fig:okrajove-podminky}
          \end{figure}
 
@@ -159,7 +159,7 @@
 			
         
         \subsubsection{Stěny}
-            Při numerických simulacích bylo pro vyhodnocení restitučních faktorů počítat s přestupem tepla do pevných látek a s jeho šířením objemem. V místech kontaktu proudícího média s stěnami geometrie byla proto použita podmínka sdílené teploty – teplota na hranici tekutiny byla přenesena na hranici tělesa.
+            Při numerických simulacích bylo pro vyhodnocení restitučních faktorů třeba počítat s přestupem tepla do pevných látek a s jeho šířením objemem. V místech kontaktu proudícího média se stěnami geometrie byla proto použita podmínka sdílené teploty – teplota na hranici tekutiny byla přenesena na hranici tělesa.
 
     \newpage
     \subsection{Výpočetní síť}
@@ -173,15 +173,57 @@
                     $\frac{\textrm{Minimální}}{\textrm{Maximální}}$ velikost elementů $\unit{mm}$                                            & Poměrný růst velikosti elementů $\unit{1}$ \\ \hline
                     \multicolumn{1}{c|}{$\frac{0.1}{15}$}                                                              & \multicolumn{1}{c}{$1.2$}                  \\ \hline
                     Maximální úhel překlenutí $\unit{deg}$                                                         & Minimální dělení hran $\unit{1}$           \\ \hline
-                    \multicolumn{1}{c|}{$10$}                                                                      & \multicolumn{1}{c}{3}                     
+                    \multicolumn{1}{c|}{$10$}                                                                      & \multicolumn{1}{c}{$3$}                     
                 \end{tabular}
                 \caption{Předepisované hodnoty při vytváření povrchové sítě.}
                 \label{tab:povrchova-sit-nastaveni}
             \end{table}
 
-            Kvalita povrchové sítě byla následně kontrolována, aby šikmost žádného elementu nepřesáhla $0.5$. Šikmost představuje odchylku geometrie buňky od optimálního tvaru (v případě triangulace se jedná o rovnostranný trojúhelník). Její hodnota se pohybuje mezi $0 \div 1$, kde $0$ odpovídá nejlepší kvalitě. Pro správný průběh a konvergenci výpočtů je dopočeno, aby maximální šikmost nepřesahovala $0.95$ a aby se průměrná šikmost pohybovala nejvýše okolo hodnoty $0.33$ \cite{Ansys2020User}.
+            Kvalita povrchové sítě byla následně kontrolována, aby šikmost žádného elementu nepřesáhla $0.5$. Šikmost představuje odchylku geometrie buňky od optimálního tvaru (v případě triangulace se jedná o rovnostranný trojúhelník). Její hodnota se pohybuje mezi $0 \div 1$, kde $0$ odpovídá nejlepší kvalitě. Pro správný průběh a konvergenci výpočtů je doporučeno, aby maximální šikmost nepřesahovala $0.95$ a aby se průměrná šikmost pohybovala nejvýše okolo hodnoty $0.33$ \cite{Ansys2020User}. Tato doporučení platí pro konečnou objemovou síť, která se používá během výpočtů, nicméně počáteční kvalita povrchové sítě má zásadní vliv na jakost následujícího síťování.
         \subsubsection{Zjemnění v mezní vrstvě}
+            Pro dosažení přijatelné přesnosti výpočtu přestupu tepla ze vzduchu do těles bylo třeba vytvořit dostatečně jemnou síť v oblasti mezní vrstvy. K tomu byly využity prismatické buňky v místech kontaktu tekutiny s měřenou geometrií. Cílem bylo dosažení průměrné bezrozměrné vzdálenosti od stěny co nejblíže $1$. Toho bylo docíleno pomocí natavení uvedeného v tabulce \ref{tab:mezni-vrstva-nastaveni}. Příklad rozložení $y_+$ u teplotního čidla je uveden na obrázku \ref{fig:yplus-stineni-A}.
+
+            \begin{table}[ht!]
+                \centering
+                \begin{tabular}{ll}
+                    \multicolumn{2}{l}{Míra natažení prvního elementu (aspect ratio) $\unit{1}$}                            \\ \hline
+                    \multicolumn{2}{c}{$6.2$}                                                                        \\ \hline
+                    \multicolumn{1}{l|}{Poměrný růst velikosti elementů $\unit{1}$} & Počet prismatických vrstev $\unit{1}$ \\ \hline
+                    \multicolumn{1}{c|}{$1.2$}                                      & \multicolumn{1}{c}{$10$}                
+                \end{tabular}
+                \caption{Předepisované hodnoty při vytváření prismatických buněk.}
+                \label{tab:mezni-vrstva-nastaveni}
+            \end{table}
+
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics*[width=\textwidth, trim={5.0cm 1.0cm 5.8cm 2.0cm}]{300_VYPOCETNI_MODEL/yplus-stineni-A.eps}
+                \caption{Graf četností hodnot bezrozměrné vzdálenosti od stěny čidla A pro úlohu z kapitoly \ref{sec:stineni-A}. Průměrná hodnota je pro tento případ rovna $0.945$.}
+                \label{fig:yplus-stineni-A}
+            \end{figure}
+
+            \newpage
+
+
         \subsubsection{Objemová síť}
+
+        Při vytváření objemové sítě byly zvoleny polyhedrální buňky, které umožňují dosahovat přesnějších řešení oproti starším typům elementů při shodných počtech buňek. Umožňují navíc lepší odhad gradientu díky vyššímu počtu stěn a obecně lze s jejich použitím dosahovat lepší kvality sítě \cite{Sosnowski2018}. Postup generování objemové sítě byl následující:
+
+        \begin{enumerate}
+            \item Konverze povrchové triangulace na polygonální síť
+            \item Vygenerování vrstev prismatických buněk
+            \item Iterační generování polyhedrální objemové sítě ve zbytku objemu
+        \end{enumerate}
+
+        Maximální šikmost hotové sítě se vždy pohybovala pod hodnotou $0.85$. Počty buňek se pohybovaly v rozmezí $150 \div 300$ tisíc pro symetrické úlohy a $250 \div 500$ tisíc pro úlohy bez využití symetrie. Příklad výpočetní sítě je uveden na obrázku \ref{fig:sit-detail-stineni-A}.
+
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png}
+            \caption{Pohled na výpočetní síť z kapitoly \ref{sec:stineni-A} ze strany symetrie.}
+            \label{fig:sit-detail-stineni-A}
+        \end{figure}
+        
     \subsection{Numerický řešič}
         \subsubsection{Metoda konečných objemů}
         \subsubsection{Odhad gradientu}
