@@ -1,0 +1,192 @@
+\section{CFD model}
+    Během výpočtů jsem pracoval s předpokladem stacionárního vazkého proudění ideálního plynu, od čehož se odvíjí i forma níže uvedených rovnic. 
+    \subsection{Základní systém rovnic}
+        
+        \subsubsection{Rovnice kontinuity}
+            Zákon zachování hmotnosti je pro stlačitelné stacionární proudění popsán následující rovnicí:
+            \begin{equation} \label{eq:rovnice-kontinuity}
+                \nabla \cdot  \brac{\rho \Vec{u}} = 0  
+            \end{equation}
+            \noindent kde $\rho \unit{\frac{kg}{m^3}}$ je hustota a $\Vec{u} \unit{\frac{m}{s^2}}$  je rychlost proudění.
+        
+        \subsubsection{Pohybová rovnice}
+            Přenos hybnosti je popsán Navier-Stokesovými rovnicemi pro stacionární proudění:
+            \begin{equation} \label{eq:pohybova-rovnice}
+                \nabla \cdot \brac{\rho \Vec{u} \otimes \Vec{u}} = - \nabla p + \nabla \cdot \Tensor{\tau} + \Vec{f}
+            \end{equation}
+            \noindent kde $p \unit{Pa}$ je statický tlak, $\Vec{f} \unit{\frac{N}{m^3}}$ je vektor vnějších sil a $\Tensor{\tau} \unit{\frac{N}{m^2}}$ je tenzor vazkých napětí daný následujícím vztahem:
+            \begin{equation} \label{eq:tenzor-vazkych-napeti}
+                \Tensor{\tau} = \mu \Brac{\nabla \Vec{u} + \nabla \Vec{u}^T - \frac{2}{3} \brac{\nabla \cdot \Vec{u}} I}
+            \end{equation}
+            \noindent kde $\mu \unit{Pa \cdot s}$ je dynamická viskozita a $I \unit{1}$ je jednotková matice.
+            
+        \subsubsection{Energetická rovnice}
+            Řešení stlačitelného proudění vyžaduje doplnění energetické rovnice, kterou lze zapsat následovně:
+            \begin{equation} \label{eq:energeticka-rovnice}
+                \nabla \brac{\rho \Vec{u} H + \Vec{q} - \Tensor{\tau} \cdot \Vec{u}} = 0
+            \end{equation}
+            \noindent kde $H \unit{\frac{J}{kg}}$ je celková měrná entalpie a $\Vec{q} \unit{\frac{W}{m^2}}$ je vektor tepelného toku.
+        \subsubsection{Konstitutivní vztahy}
+        \smallSection{Stavová rovnice ideálního plynu}
+        Rovnice popisuje vazbu mezi stavovými veličinami tekutiny:
+        \begin{equation} \label{eq:stavova-rovnice}
+            \frac{p}{\rho} = r T
+        \end{equation}
+        \noindent kde $T \unit{K}$ je termodynamická teplota a $r \unit{\frac{J}{kg \cdot K}}$ je měrná plynová konstanta, pro vzduch rovna $287.2 \unit{\frac{J}{kg \cdot K}}$.
+        
+        \smallSection{Celková měrná entalpie}
+        Měrnou entalpii proudění $h \unit{\frac{J}{kg}}$ lze určit ze vztahu:
+        \begin{equation} \label{eq:entalpie}
+            h = c_p T = e + \frac{p}{\rho} = c_v T + \frac{p}{\rho}
+        \end{equation}
+        \noindent kde $c_p \, , \; c_v  \unit{\frac{J}{kg \cdot K}}$ jsou měrné tepelné kapacity za konstantního tlaku, resp. konstantního objemu a $e \unit{\frac{J}{kg}}$ je měrná energie. Přičtením měrné kinetické energie proudění dostáváme celkovou měrnou entalpii $H$:
+        \begin{equation} \label{eq:celkova-entalpie}
+            H = h + \frac{\norm{\Vec{u}}^2}{2}
+        \end{equation}
+        
+    \subsection{Model turbulence}
+        TODO
+        \begin{equation} \label{eq:rovnice-pro-k} 
+             \frac{\partial}{\partial t} \brac{\rho k} + \nabla \cdot \brac{\rho k \Vec{u}} = \nabla \cdot \brac{\Gamma _k \nabla k} + G _k - Y _k + S _k + G _b
+        \end{equation}
+    \newpage
+    \subsection{Výpočetní geometrie}
+        Vzhledem k charakteru řešeného problému byla geometrie proměnlivá. Jednotícím prvkem byla přítomnost alespoň jednoho ze dvou teplotních čidel, jehož restituční faktor byl zkoumán. Podle aktuální simulace se však měnilo uspořádání a přítomnost dalších geometrických prvků, jako například stínění.
+    
+        \subsubsection{Výpočetní oblast}
+            Výpočty byly prováděny na geometrii umístěné v kontrolní oblasti tvaru válce o průměru $250 \Unit{mm}$ a délce $450 \Unit{mm}$. Vzhledem k rozměrům čidel, respektive celkové konstrukce, se jednalo o dostatečně velký kontrolní objem, který neměl ovlivňovat proudění okolo sondy. Veškeré měřené geometrie byly ve válci umístěné $100 \Unit{mm}$ od vstupní oblasti, viz obrázek \ref{fig:vypocetni-oblast}, ze kterého je patrné i umístění souřadného systému, na který bude dále v práci odkazováno.
+            
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=\textwidth]{300_VYPOCETNI_MODEL/Vypocetni_oblast.png}
+                \caption{Výpočetní oblast s vyznačením souřadného systému a polohy měřených geometrií.}
+                \label{fig:vypocetni-oblast}
+            \end{figure}
+        
+        \subsubsection{Využití symetrie}
+            U všech zkoumaných geometrií se nacházela alespoň jedna rovina symetrie – bylo tedy možné využít této výhody pro úsporu výpočetního výkonu. Veškeré simulace uvedené v kapitolách \ref{sec:konstrukcni-upravy} a \ref{sec:finalni-geometrie} s výjimkou analýzy směrové citlivosti v rovině $XZ$ byly provedeny s využitím symetrie výpočetního modelu, viz obrázek \ref{fig:vypocetni-oblast-symetrie}.
+            
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=\textwidth]{300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png}
+                \caption{Výpočetní oblast pro řešení symetrických úloh.}
+                \label{fig:vypocetni-oblast-symetrie}
+            \end{figure}
+         
+	\newpage
+        \subsubsection{Materiály}
+            Během výpočtů byly uvažovány celkem tři materiály, ze kterých se skládala geometrie – trubice byla tvořena mosazí, čidla byla uvažována jako homogenní tělesa z keramiky $Al_2 O_3$ a těsnění bylo reprezentováno pryží. Použité fyzikální vlastnosti jednotlivých materiálů jsou uvedeny v tabulce \ref{tab:materialy}.
+            
+            \renewcommand{\arraystretch}{2}
+            \begin{table}[ht!]
+                \centering
+                %\resizebox{.7\textwidth}{!}{%
+                \begin{tabular}{l|l|l|l}
+                                                                                  & Mosaz                        & Pryž                        &  Keramika                      \\ \hline
+                    Hustota $\unit{\frac{kg}{m^3}}$                               & \multicolumn{1}{c|}{$8730$}  & \multicolumn{1}{c|}{$1100$} & \multicolumn{1}{c}{$3500$}     \\ \hline
+                    Měrná tepelná kapacita $\unit{\frac{J}{kg \cdot K}}$          & \multicolumn{1}{c|}{$400$}   & \multicolumn{1}{c|}{$1300$} & \multicolumn{1}{c}{$700$}      \\ \hline
+                    Tepelná vodivost $\unit{\frac{W}{m \cdot K}}$                 & \multicolumn{1}{c|}{$96$}    & \multicolumn{1}{c|}{$0.09$} & \multicolumn{1}{c}{$30$}      
+                \end{tabular}%
+                %}
+                \caption{Fyzikální vlastnosti použitých materiálů.}
+                \label{tab:materialy}
+            \end{table}
+            
+            Jako proudící médium byl uvažován vzduch splňující stavovou rovnici ideální plynu (viz vztah \ref{eq:stavova-rovnice}) s následujícími vlastnostmi:
+
+		\begin{table}[ht!]
+			\centering
+			%\resizebox{.7\textwidth}{!}{%
+			\begin{tabular}{l|l}
+				Měrná plynová konstanta $\unit{\frac{J}{kg \cdot K}}$ & Poissonovo číslo $\unit{1}$ \\ \hline
+				\multicolumn{1}{c|}{$287$}                                                                        & \multicolumn{1}{c}{$1.4$}                \\ \hline
+				Tepelná vodivost $\unit{\frac{W}{m \cdot K}}$ & Dynamická viskozita $\unit{Pa \cdot s}$ \\ \hline				
+				\multicolumn{1}{c|}{$2.42 \cdot 10^{-2}$}                          &  \multicolumn{1}{c}{$1.7894 \cdot 10^{-05}$}     
+			\end{tabular}%
+			%}
+			\caption{Fyzikální vlastnosti vzduchu.}
+			\label{tab:vzduch}
+		\end{table}
+            
+            
+     \newpage      
+    \subsection{Okrajové podmínky}
+        \subsubsection{Hranice výpočetní oblasti}
+			Hranice válcové kontrolní oblasti byla rozdělena na tři části s odlišnými okrajovými podmínkami – podstavy válce představovaly vstup a výstup a jeho plášť poté nenarušený proud (viz obrázek \ref{fig:okrajove-podminky}). Ve všech oblastech byly předepsány hodnoty uvedené v tabulce \ref{tab:spolecne-op}. Ve vstupní oblasti byla dále zadávána rychlost proudění, respektive velikost vektoru rychlosti a jeho směrové cosiny (využito při analýze směrové citlivosti). Hranice nenarušeného proudu měla předepisovánu hodnotu Machova čísla a směr proudění (opět ve formě směrových cosinů vektoru rychlosti). 
+
+	     \begin{figure}[ht!]
+                    \centering
+                        \begin{subfigure}{0.3\textwidth}
+                             \centering
+                             \captionsetup{width=.9\linewidth}
+                                \includegraphics[width=\textwidth]{300_VYPOCETNI_MODEL/op-inlet.png}
+                             \caption{Vstupní oblast.}
+                             \label{fig:inlet}
+                         \end{subfigure}
+                         \begin{subfigure}{0.3\textwidth}
+                             \centering
+                             \captionsetup{width=.9\linewidth}
+                             \includegraphics[width=\textwidth]{300_VYPOCETNI_MODEL/op-farfield.png}
+                             \caption{Nenarušený proud.}
+                             \label{fig:farfield}
+                         \end{subfigure}
+					\begin{subfigure}{0.3\textwidth}
+                             \centering
+                             \captionsetup{width=.9\linewidth}
+                             \includegraphics[width=\textwidth]{300_VYPOCETNI_MODEL/op-outlet.png}
+                             \caption{Výstupní oblast.}
+                             \label{fig:outlet}
+                         \end{subfigure}
+                    \caption{Části hranice pro aplikování okrajových podmínek.}
+                    \label{fig:okrajove-podminky}
+         \end{figure}
+
+         \begin{table}[ht!]
+            \centering
+            %\resizebox{.7\textwidth}{!}{%
+            \begin{tabular}{l|l}
+                Statický tlak $\unit{Pa}$       & Statická teplota $\unit{K}$ \\ \hline
+                \multicolumn{1}{c|}{$10^{5}$}    & \multicolumn{1}{c}{300}     \\ \hline
+                Intenzita turbulence $\unit{\%}$ & Směšovací délka $\unit{m}$  \\ \hline
+                \multicolumn{1}{c|}{2.5}         & \multicolumn{1}{c}{0.01}   
+            \end{tabular}%
+            %}
+            \caption{Hodnoty předepisované na hranici kontrolní oblasti.}
+            \label{tab:spolecne-op}
+        \end{table}
+
+         Výchozí rychlostí použitou pro testování bylo $250 \Unit{\frac{m}{s}}$, tomu odpovídá při teplotě $300 \Unit{K}$ Machovo číslo $0.72$. Nebude-li dále uvedeno jinak, pak byly pro výpočet použity právě tyto hodnoty.
+			
+        
+        \subsubsection{Stěny}
+            Při numerických simulacích bylo pro vyhodnocení restitučních faktorů počítat s přestupem tepla do pevných látek a s jeho šířením objemem. V místech kontaktu proudícího média s stěnami geometrie byla proto použita podmínka sdílené teploty – teplota na hranici tekutiny byla přenesena na hranici tělesa.
+
+    \newpage
+    \subsection{Výpočetní síť}
+        Vytváření modelů probíhalo v prostředí software Autodesk Inventor (verze 2021 a 2022), odkud byly následně vyexportovány ve formátu \textit{.dwg}. K přípravě pro síťování byl následně použit software Ansys SpaceClaim (verze 2020b-2021b), jehož účel spočíval primárně ve sdílení topologie modelu, vytváření jmenných sekcí a exportu do optimalizovaného formátu \textit{.pmdb}. Samotné síťování poté probíhalo v software Ansys Fluent (verze 2020b-2021b).
+        \subsubsection{Povrchová síť}
+            Prvním krokem při vytváření výpočetní sítě pro řešič bylo importování geometrie (soubor \textit{.pmdb}) a vysíťování jejích ploch pomocí triangulace. Zde bylo použito následující nastavení:
+
+            \begin{table}[ht!]
+                \centering
+                \begin{tabular}{l|l}
+                    $\frac{\textrm{Minimální}}{\textrm{Maximální}}$ velikost elementů $\unit{mm}$                                            & Poměrný růst velikosti elementů $\unit{1}$ \\ \hline
+                    \multicolumn{1}{c|}{$\frac{0.1}{15}$}                                                              & \multicolumn{1}{c}{$1.2$}                  \\ \hline
+                    Maximální úhel překlenutí $\unit{deg}$                                                         & Minimální dělení hran $\unit{1}$           \\ \hline
+                    \multicolumn{1}{c|}{$10$}                                                                      & \multicolumn{1}{c}{3}                     
+                \end{tabular}
+                \caption{Předepisované hodnoty při vytváření povrchové sítě.}
+                \label{tab:povrchova-sit-nastaveni}
+            \end{table}
+
+            Kvalita povrchové sítě byla následně kontrolována, aby šikmost žádného elementu nepřesáhla $0.5$. Šikmost představuje odchylku geometrie buňky od optimálního tvaru (v případě triangulace se jedná o rovnostranný trojúhelník). Její hodnota se pohybuje mezi $0 \div 1$, kde $0$ odpovídá nejlepší kvalitě. Pro správný průběh a konvergenci výpočtů je dopočeno, aby maximální šikmost nepřesahovala $0.95$ a aby se průměrná šikmost pohybovala nejvýše okolo hodnoty $0.33$ \cite{Ansys2020User}.
+        \subsubsection{Zjemnění v mezní vrstvě}
+        \subsubsection{Objemová síť}
+    \subsection{Numerický řešič}
+        \subsubsection{Metoda konečných objemů}
+        \subsubsection{Odhad gradientu}
+        \subsubsection{Aproximace hodnot na stěnách}
+        \subsubsection{Numerické schéma}
+
+        
+        
