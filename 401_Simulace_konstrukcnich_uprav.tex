@@ -3,17 +3,21 @@
     
     \subsection{Studie citlivosti výpočetní sítě}
         TODO
+    \newpage
     \subsection{Sonda bez stínění čidla B}
-        Analýzu konstrukčních úprav zahájilo zkoumání nejjednodušší varianty sondy – s původními rozměry stínění čidla A a bez jakéhokoli odstínění čidla B. Cílem bylo určit problematická místa, která bude vhodné zkoumat jako první. Použitý model je znázorněn na obrázku \ref{fig:sonda-bez-stineni-B}, konkrétní rozměry jsou uvedeny v příloze \ref{fig:sonda-bez-stineni-B-vykres}. Zkoumáno bylo chování restitučních faktorů při různých rychlostech nabíhajícího proudu v rozmezí $100 \div 325 \unit{\frac{m}{s}}$ a při vychýlení sondy ve dvou rovinách – v rovině symetrie $XY$ (natočení značeno jako $\varphi _Z$) a poté kolmo na rovinu symetrie (rovina $XZ$, značeno $\varphi _Y$).
-        
+        Analýzu konstrukčních úprav zahájilo zkoumání nejjednodušší varianty sondy – s původními rozměry stínění čidla A a bez jakéhokoli odstínění čidla B. Cílem bylo určit problematická místa, která bude vhodné zkoumat jako první. Použitý model je znázorněn na obrázku \ref{fig:sonda-bez-stineni-B}, konkrétní rozměry jsou uvedeny v příloze \ref{fig:sonda-bez-stineni-B-vykres}. 
+
         \begin{figure}[ht!]
             \centering
             \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_bez_stineni_B.png}
             \caption{Sonda bez stínění čidla B}
             \label{fig:sonda-bez-stineni-B}
         \end{figure}
+        
+        Zkoumáno bylo chování restitučních faktorů při různých rychlostech nabíhajícího proudu v rozmezí $100 \div 325 \unit{\frac{m}{s}}$ s krokem $25 \Unit{\frac{m}{s}}$ a při vychýlení sondy ve dvou rovinách – v rovině symetrie $XY$ (natočení značeno jako $\varphi _Z$) a poté kolmo na rovinu symetrie (rovina $XZ$, značeno $\varphi _Y$), v obou případech s krokem $2.5^o$ v rozmezí $\pm 15^o$.
+                
         \subsubsection{Chování při různých rychlostech proudění}
-            Výpočet byl proveden s následujícími okrajovými podmínkami:
+            Výsledky výpočtu jsou znázorněny v obrázku \ref{fig:sonda-bez-stineni-rychlosti}. Z průběhu restitučního faktoru čidla B lze usuzovat, že docházelo k výraznějšímu ovlivnění proudění v jeho blízkosti vlivem stínění čidla A. To je patrné i z obrázku \ref{fig:sonda-bez-stineni-vizualizace}. 
             
             \begin{figure}[ht!]
                 \centering
@@ -21,8 +25,29 @@
                 \caption{Závislost restitučních faktorů sondy bez stínění čidla B na rychlosti proudění}
                 \label{fig:sonda-bez-stineni-rychlosti}
             \end{figure}
+
+            \begin{figure}[ht!]
+                \centering
+                \begin{subfigure}{0.45\textwidth}
+                    \centering
+                    \captionsetup{width=.9\linewidth}
+                    \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_bez_stineni_vizualizace_rychlost.png}
+                    \caption{Rychlostní pole.}
+                \end{subfigure}
+                \begin{subfigure}{0.45\textwidth}
+                    \centering
+                    \captionsetup{width=.9\linewidth}
+                    \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_bez_stineni_vizualizace_teplota.png}
+                    \caption{Teplotní pole.}
+                \end{subfigure}
+                \caption{Vizualizace vypočtených dat v rovině symetrie pro rychlost proudění $250 \Unit{\frac{m}{s}}$.}
+                \label{fig:sonda-bez-stineni-vizualizace}
+            \end{figure}
+
+
+        \newpage
         \subsubsection{Směrová citlivost v rovině symetrie}
-            DATA
+            Při natáčení sondy směrem dolů (tedy v záporném smyslu otáčení, kdy proud směřuje na vršek sondy) docházelo k zastínění čidla B, které se tak nacházelo částečně v úplavu trubice stínící čidlo A. To způsobilo výraznou změnu jeho restitučního faktoru, jak je patrné z obrázku \ref{fig:sonda-bez-stineni-rovina-symetrie} – relativní odchylka od hodnoty nevychýlené sondy byla pro natočení $-15^o$ rovna $7.4 \Unit{\%}$. Při natočení sondy opačným směrem nedocházelo k výrazným výchylkám restitučních faktorů, zde relativní odchylka nepřekročila $0.2 \Unit{\%}$.
             
             \begin{figure}[ht!]
                 \centering
@@ -31,7 +56,7 @@
                 \label{fig:sonda-bez-stineni-rovina-symetrie}
             \end{figure}
         \subsubsection{Směrová citlivost kolmo na rovinu symetrie}
-            DATA
+            Vychýlení sondy kolmo na rovinu symetrie neukázalo žádné vážné problémy (viz obrázek \ref{fig:sonda-bez-stineni-kolma-rovina}). Nejvyšší relativní odchylka restitučních faktorů nepřekročila $1.4 \Unit{\%}$ u čidla A a $1.8 \Unit{\%}$ u čidla B.
             
              \begin{figure}[ht!]
                 \centering
@@ -39,15 +64,38 @@
                 \caption{Závislost restitučních faktorů sondy bez stínění čidla B na natočení kolmo na rovinu symetrie}
                 \label{fig:sonda-bez-stineni-kolma-rovina}
             \end{figure}
-    \newpage
+
+        \subsubsection{Zhodnocení}
+            Problematickým místem první verze sondy se ukázalo čidlo B, které bylo ovlivňováno stíněním čidla A jak při změnách rychlosti proudění, tak při změnách natočení sondy. Prvním návrhem konstrukční úpravy tak bylo jeho odstínění.
+    
     \subsection{Sonda se stíněním čidla B}
-        DATA
+        Odstínění čidla B bylo zajištěno pomocí trubice $5.8 \times 0.4 \Unit{mm}$ uchycené ke stínění čidla A, viz obrázek \ref{fig:sonda-se-stinenim-B}. Detailní geometrie spolu s použitými rozměry modelu jsou uvedeny v příloze \ref{fig:sonda-se-stinenim-B-vykres}. 
         
         \begin{figure}[ht!]
             \centering
             \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_se_stinenim_B.png}
             \caption{Sonda se stíněním čidla B}
             \label{fig:sonda-se-stinenim-B}
+        \end{figure}
+
+        Pro tuto geometrii byl proveden pouze jeden výpočet, a to pro rychlost $250 \Unit{\frac{m}{s}}$. Důvodem byla volba příliš úzké stínící trubice, která způsobovala výrazně vyšší ohřev čidla B oproti původní verzi (restituční faktor narostl o $7.3 \Unit{\%})$. 
+
+        \begin{figure}[ht!]
+            \centering
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \captionsetup{width=.9\linewidth}
+                \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_se_stinenim_B_vizualizace_rychlost.png}
+                \caption{Rychlostní pole.}
+            \end{subfigure}
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \captionsetup{width=.9\linewidth}
+                \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_se_stinenim_B_vizualizace_teplota.png}
+                \caption{Teplotní pole.}
+            \end{subfigure}
+            \caption{Vizualizace vypočtených dat v rovině symetrie pro rychlost proudění $250 \Unit{\frac{m}{s}}$.}
+            \label{fig:sonda-se-stinenim-B-vizualizace}
         \end{figure}
     
     \newpage
