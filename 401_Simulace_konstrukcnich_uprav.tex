@@ -4,7 +4,7 @@
     \subsection{Studie citlivosti výpočetní sítě}
         TODO
     \newpage
-    \subsection{Sonda bez stínění čidla B}
+    \subsection{Sonda bez stínění čidla B} \label{sec:sonda-bez-stineni-B}
         Analýzu konstrukčních úprav zahájilo zkoumání nejjednodušší varianty sondy – s původními rozměry stínění čidla A a bez jakéhokoli odstínění čidla B. Cílem bylo určit problematická místa, která bude vhodné zkoumat jako první. Použitý model je znázorněn na obrázku \ref{fig:sonda-bez-stineni-B}, konkrétní rozměry jsou uvedeny v příloze \ref{fig:sonda-bez-stineni-B-vykres}. 
 
         \begin{figure}[ht!]
@@ -21,8 +21,8 @@
             
             \begin{figure}[ht!]
                 \centering
-                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 5.7cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rychlosti.eps}
-                \caption{Závislost restitučních faktorů sondy bez stínění čidla B na rychlosti proudění}
+                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 2.7cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rychlosti.eps}
+                \caption{Závislost restitučních faktorů sondy bez stínění čidla B na rychlosti proudění.}
                 \label{fig:sonda-bez-stineni-rychlosti}
             \end{figure}
 
@@ -40,7 +40,7 @@
                     \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_bez_stineni_vizualizace_teplota.png}
                     \caption{Teplotní pole.}
                 \end{subfigure}
-                \caption{Vizualizace vypočtených dat v rovině symetrie pro rychlost proudění $250 \Unit{\frac{m}{s}}$.}
+                \caption{Vizualizace vypočtených dat pro sondu bez stínění čidla B v rovině symetrie pro rychlost proudění $250 \Unit{\frac{m}{s}}$.}
                 \label{fig:sonda-bez-stineni-vizualizace}
             \end{figure}
 
@@ -51,8 +51,8 @@
             
             \begin{figure}[ht!]
                 \centering
-                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 5.8cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rovina_symetrie}
-                \caption{Závislost restitučních faktorů sondy bez stínění čidla B na natočení sondy v rovině symetrie}
+                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 2.7cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rovina_symetrie}
+                \caption{Závislost restitučních faktorů sondy bez stínění čidla B na natočení sondy v rovině symetrie.}
                 \label{fig:sonda-bez-stineni-rovina-symetrie}
             \end{figure}
         \subsubsection{Směrová citlivost kolmo na rovinu symetrie}
@@ -60,8 +60,8 @@
             
              \begin{figure}[ht!]
                 \centering
-                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 5.8cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_kolma_rovina}
-                \caption{Závislost restitučních faktorů sondy bez stínění čidla B na natočení kolmo na rovinu symetrie}
+                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 2.7cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_kolma_rovina}
+                \caption{Závislost restitučních faktorů sondy bez stínění čidla B na natočení kolmo na rovinu symetrie.}
                 \label{fig:sonda-bez-stineni-kolma-rovina}
             \end{figure}
 
@@ -94,13 +94,13 @@
                 \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_se_stinenim_B_vizualizace_teplota.png}
                 \caption{Teplotní pole.}
             \end{subfigure}
-            \caption{Vizualizace vypočtených dat v rovině symetrie pro rychlost proudění $250 \Unit{\frac{m}{s}}$.}
+            \caption{Vizualizace vypočtených dat pro sondu se stíněním čidla B v rovině symetrie pro rychlost proudění $250 \Unit{\frac{m}{s}}$.}
             \label{fig:sonda-se-stinenim-B-vizualizace}
         \end{figure}
     
     \newpage
     \subsection{Sonda s rozšířeným stíněním čidla B}
-        DATA
+        Oproti předchozí úpravě došlo pouze ke zvětšení trubice stínící čidlo B – místo původního rozměru byla použito stínění o vnějším průměru $8 \Unit{mm}$ a tloušťce stěny $0.45 \Unit{mm}$ (geometrie podrobně popsána v příloze \ref{fig:sonda-s-rozsirenym-stinenim-B-vykres}). Zde byl již ohřev čidla B přijatelný a bylo tak analyzováno chování sondy obdobně, jako v kapitole \ref{sec:sonda-bez-stineni-B} – byla zkoumána závislost restitučních faktorů na rychlosti proudění v rozmezí $125 \div 325 \Unit{\frac{m}{s}}$ a na natočení v rovině symetrie a kolmo na ní, opět v rozsahu $\pm 15^o$.
         
         \begin{figure}[ht!]
             \centering
@@ -110,32 +110,53 @@
         \end{figure}
         
         \subsubsection{Chování při různých rychlostech proudění}
-            DATA
+            Výsledky výpočtu shrnuje obrázek \ref{fig:sonda-s-rosirenym-stinenim-rychlosti}. Přidáním stínící trubice došlo ke snížení vlivu stínění čidla A, nicméně za cenu zvýšení restitučního faktoru čidla B, a to o přibližně $5 \Unit{\%}$.
             
             \begin{figure}[ht!]
                 \centering
-                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 5.8cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rychlosti.eps}
+                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 2.7cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rychlosti.eps}
                 \caption{Závislost restitučních faktorů sondy s rozšířeným stíněním čidla B na rychlosti proudění}
                 \label{fig:sonda-s-rosirenym-stinenim-rychlosti}
             \end{figure}
+
+            \begin{figure}[ht!]
+                \centering
+                \begin{subfigure}{0.45\textwidth}
+                    \centering
+                    \captionsetup{width=.9\linewidth}
+                    \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_s_rozsirenym_stinenim_B_vizualizace_rychlost.png}
+                    \caption{Rychlostní pole.}
+                \end{subfigure}
+                \begin{subfigure}{0.45\textwidth}
+                    \centering
+                    \captionsetup{width=.9\linewidth}
+                    \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_s_rozsirenym_stinenim_B_vizualizace_teplota.png}
+                    \caption{Teplotní pole.}
+                \end{subfigure}
+                \caption{Vizualizace vypočtených dat pro sondu s rozšířeným stíněním čidla B v rovině symetrie pro rychlost proudění $250 \Unit{\frac{m}{s}}$.}
+                \label{fig:sonda-s-rozsirenym-stinenim-B-vizualizace}
+            \end{figure}
         \subsubsection{Směrová citlivost v rovině symetrie}
-            DATA
+            Zde bylo zlepšení vlivem přidání stínění nejpatrnější. Restituční faktor čidla B se oproti variantě sondy bez stínění (kapitola \ref{sec:sonda-bez-stineni-B}) při natáčení v rovině symetrie prakticky neměnil, viz obrázek \ref{fig:sonda-s-rosirenym-stinenim-rovina-symetrie}.
             
             \begin{figure}[ht!]
                 \centering
-                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 5.8cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rovina_symetrie}
+                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 2.7cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rovina_symetrie}
                 \caption{Závislost restitučních faktorů sondy s rozšířeným stíněním čidla B na natočení sondy v rovině symetrie}
                 \label{fig:sonda-s-rosirenym-stinenim-rovina-symetrie}
             \end{figure}
         \subsubsection{Směrová citlivost kolmo na rovinu symetrie}
-            DATA
+            Výsledky výpočtů, reprezentovány na obrázku \ref{fig:sonda-s-rosirenym-stinenim-kolma-rovina}, představovaly i v tomto případě zlepšení chování restitučního faktoru čidla B, nebylo však tak výrazné, jako při natáčení sondy v rovině symetrie.
             
              \begin{figure}[ht!]
                 \centering
-                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 5.8cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_kolma_rovina}
+                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 2.7cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_kolma_rovina}
                 \caption{Závislost restitučních faktorů sondy s rozšířeným stíněním čidla B na natočení kolmo na rovinu symetrie}
                 \label{fig:sonda-s-rosirenym-stinenim-kolma-rovina}
             \end{figure}
+
+        \subsubsection{Zhodnocení}
+            Přidáním stínění k čidlu B došlo ke snížení směrové citlivosti sondy a k zmenšení vlivu stínění čidla A na restituční faktor čidla B. Negativním dopadem této úpravy geometrie byl vyšší ohřev čidla B, dalším krokem analýzy konstrukčních úprav tak bylo detailnější zkoumání vlivu průměru stínění čidla B na jeho restituční faktor.
         
     \newpage
     \subsection{Vliv průměru stínění čidla B}
