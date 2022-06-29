@@ -3,6 +3,27 @@
     
     \subsection{Studie citlivosti výpočetní sítě}
         TODO
+
+        \begin{table}[ht!]
+            \centering
+            \resizebox{\textwidth}{!}{%
+            \begin{tabular}{l|l|l|l|l|l|l|l}
+                                                    & Síť 1  & Síť 2   & Síť 3   & Síť 4   & Síť 5   & Síť 6   & Síť 7   \\ \hline
+            Minimální velikost elementů $\unit{mm}$ & 0.5    & 0.4     & 0.3     & 0.2     & 0.1     & 0.05    & 0.005   \\ \hline
+            Maximální velikost elementů $\unit{mm}$ & 15     & 15      & 15      & 15      & 15      & 10      & 5       \\ \hline
+            Výsledný počet buněk sítě $\unit{1}$    & 89 968 & 131 245 & 212 916 & 296 188 & 457 783 & 472 442 & 542 825
+            \end{tabular}%
+            }
+            \caption{Parametry síťování pro citlivostní analýzu sítě.}
+            \label{tab:citlivost-site}
+            \end{table}
+
+        \begin{figure}[ht!]
+            \centering
+            \includegraphics*[width=\textwidth, trim={3.9cm 1.0cm 2.7cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/citlivost_site.eps}
+            \caption{Závislost restitučních faktorů sondy bez stínění čidla B na rychlosti proudění.}
+            \label{fig:citlivost-site}
+        \end{figure}
     \newpage
     \subsection{Sonda bez stínění čidla B} \label{sec:sonda-bez-stineni-B}
         Analýzu konstrukčních úprav zahájilo zkoumání nejjednodušší varianty sondy – s původními rozměry stínění čidla A a bez jakéhokoli odstínění čidla B. Cílem bylo určit problematická místa, která bude vhodné zkoumat jako první. Použitý model je znázorněn na obrázku \ref{fig:sonda-bez-stineni-B}, konkrétní rozměry jsou uvedeny v příloze \ref{fig:sonda-bez-stineni-B-vykres}. 
@@ -110,7 +131,7 @@
         \end{figure}
         
         \subsubsection{Chování při různých rychlostech proudění}
-            Výsledky výpočtu shrnuje obrázek \ref{fig:sonda-s-rosirenym-stinenim-rychlosti}. Přidáním stínící trubice došlo ke snížení vlivu stínění čidla A, nicméně za cenu zvýšení restitučního faktoru čidla B, a to o přibližně $5 \Unit{\%}$.
+            Výsledky výpočtu shrnuje obrázek \ref{fig:sonda-s-rosirenym-stinenim-rychlosti}. Přidáním stínící trubice došlo ke snížení vlivu stínění čidla A za cenu zvýšení restitučního faktoru čidla B, a to o přibližně $5 \Unit{\%}$.
             
             \begin{figure}[ht!]
                 \centering
@@ -158,7 +179,6 @@
         \subsubsection{Zhodnocení}
             Přidáním stínění k čidlu B došlo ke snížení směrové citlivosti sondy a k zmenšení vlivu stínění čidla A na restituční faktor čidla B. Negativním dopadem této úpravy geometrie byl vyšší ohřev čidla B, dalším krokem analýzy konstrukčních úprav tak bylo detailnější zkoumání vlivu průměru stínění čidla B na jeho restituční faktor.
         
-    \newpage
     \subsection{Vliv průměru stínění čidla B}
         DATA
         
