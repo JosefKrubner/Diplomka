@@ -162,7 +162,7 @@
             Při numerických simulacích bylo pro vyhodnocení restitučních faktorů třeba počítat s přestupem tepla do pevných látek a s jeho šířením objemem. V místech kontaktu proudícího média se stěnami geometrie byla proto použita podmínka sdílené teploty – teplota na hranici tekutiny byla přenesena na hranici tělesa.
 
     \newpage
-    \subsection{Výpočetní síť}
+    \subsection{Výpočetní síť} \label{sec:vypocetni-sit}
         Vytváření modelů probíhalo v prostředí software Autodesk Inventor (verze 2021 a 2022), odkud byly následně vyexportovány ve formátu \textit{.dwg}. K přípravě pro síťování byl následně použit software Ansys SpaceClaim (verze 2020b-2021b), jehož účel spočíval primárně ve sdílení topologie modelu, vytváření jmenných sekcí a exportu do optimalizovaného formátu \textit{.pmdb}. Samotné síťování poté probíhalo v software Ansys Fluent (verze 2020b-2021b).
         \subsubsection{Povrchová síť}
             Prvním krokem při vytváření výpočetní sítě pro řešič bylo importování geometrie (soubor \textit{.pmdb}) a vysíťování jejích ploch pomocí triangulace. Zde bylo použito následující nastavení:
@@ -215,7 +215,7 @@
             \item Iterační generování polyhedrální objemové sítě ve zbytku objemu
         \end{enumerate}
 
-        Maximální šikmost hotové sítě se vždy pohybovala pod hodnotou $0.85$. Počty buňek se pohybovaly v rozmezí $150 \div 300$ tisíc pro symetrické úlohy a $250 \div 500$ tisíc pro úlohy bez využití symetrie. Příklad výpočetní sítě je uveden na obrázku \ref{fig:sit-detail-stineni-A}.
+        Maximální šikmost hotové sítě se vždy pohybovala pod hodnotou $0.85$. Počty buňek se pohybovaly v rozmezí $450 \div 550$ tisíc pro symetrické úlohy a $850 \div 950$ tisíc pro úlohy bez využití symetrie. Příklad výpočetní sítě je uveden na obrázku \ref{fig:sit-detail-stineni-A}.
 
         \begin{figure}
             \centering

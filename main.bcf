@@ -2351,8 +2351,10 @@
   <bcf:section number="0">
     <bcf:citekey order="1">Ansys2020User</bcf:citekey>
     <bcf:citekey order="2">Sosnowski2018</bcf:citekey>
-    <bcf:citekey order="3">Ansys2020User</bcf:citekey>
-    <bcf:citekey order="4">Sosnowski2018</bcf:citekey>
+    <bcf:citekey order="3">Shapiro1954</bcf:citekey>
+    <bcf:citekey order="4">Ansys2020User</bcf:citekey>
+    <bcf:citekey order="5">Sosnowski2018</bcf:citekey>
+    <bcf:citekey order="6">Shapiro1954</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  29 JUN 2022 21:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  4 JUL 2022 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1159,7 +1159,7 @@ AV/Grafy/citlivost_site.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/citlivost_site-eps-converted-to.pdf, id
-=669, 1927.2pt x 995.72pt>
+=673, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/citlivost_site-eps-converted-to.pd
 f Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/citlivost_site-eps-converted-to.pdf
@@ -1170,7 +1170,7 @@ eps-converted-to.pdf  used on input line 23.
  [24 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/citlivost_site-eps-converted-to.
 pdf>]
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_bez_stineni_B.png, id=6
-83, 5057.89626pt x 2843.62375pt>
+87, 5057.89626pt x 2843.62375pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_bez_stineni_B.png 
 Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_bez_stineni_B.png>
@@ -1191,7 +1191,7 @@ _UPRAV/Grafy/01_rychlosti-eps-converted-to.pdf 400_SIMULACE_KONSTRUKCNICH_UPRAV
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rychlosti-eps-converted-to.pdf, id=6
-86, 1927.2pt x 995.72pt>
+90, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rychlosti-eps-converted-to.pdf 
 Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rychlosti-eps-converted-to.pdf>
@@ -1199,7 +1199,7 @@ Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rychlosti-ep
 s-converted-to.pdf  used on input line 45.
 (pdftex.def)             Requested size: 441.01773pt x 238.61932pt.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_bez_stineni_vizualizace_ryc
-hlost.png, id=688, 1003.75pt x 1003.75pt>
+hlost.png, id=692, 1003.75pt x 1003.75pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_bez_stineni_vizualizac
 e_rychlost.png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_bez_stineni_vizualizace
@@ -1208,7 +1208,7 @@ Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_bez
 _stineni_vizualizace_rychlost.png  used on input line 55.
 (pdftex.def)             Requested size: 198.45662pt x 198.44905pt.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_bez_stineni_vizualizace_tep
-lota.png, id=689, 1003.75pt x 1003.75pt>
+lota.png, id=693, 1003.75pt x 1003.75pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_bez_stineni_vizualizac
 e_teplota.png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_bez_stineni_vizualizace
@@ -1232,7 +1232,7 @@ _UPRAV/Grafy/01_rovina_symetrie.eps>
 (epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rovina_symetrie-eps-converted-to.pdf
-, id=698, 1927.2pt x 995.72pt>
+, id=702, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rovina_symetrie-eps-converted-t
 o.pdf Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rovina_symetrie-eps-converted-to
@@ -1258,7 +1258,7 @@ RAV/Grafy/01_kolma_rovina.eps>
 (epstopdf)             \includegraphics on input line 84.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_kolma_rovina-eps-converted-to.pdf, i
-d=710, 1927.2pt x 995.72pt>
+d=714, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_kolma_rovina-eps-converted-to.p
 df Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_kolma_rovina-eps-converted-to.pd
@@ -1270,7 +1270,7 @@ Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_kolma_rovina
 -to.pdf> <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_kolma_rovina-eps-converte
 d-to.pdf>]
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_se_stinenim_B.png, id=7
-29, 5057.89626pt x 2843.62375pt>
+33, 5057.89626pt x 2843.62375pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_se_stinenim_B.png 
 Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_se_stinenim_B.png>
@@ -1278,7 +1278,7 @@ Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda
 _se_stinenim_B.png  used on input line 97.
 (pdftex.def)             Requested size: 441.01773pt x 247.9313pt.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_se_stinenim_B_vizualizace_r
-ychlost.png, id=730, 1003.75pt x 1003.75pt>
+ychlost.png, id=734, 1003.75pt x 1003.75pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_se_stinenim_B_vizualiz
 ace_rychlost.png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_se_stinenim_B_vizualiza
@@ -1287,7 +1287,7 @@ Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_se_
 stinenim_B_vizualizace_rychlost.png  used on input line 109.
 (pdftex.def)             Requested size: 198.45662pt x 198.44905pt.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_se_stinenim_B_vizualizace_t
-eplota.png, id=731, 1003.75pt x 1003.75pt>
+eplota.png, id=735, 1003.75pt x 1003.75pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_se_stinenim_B_vizualiz
 ace_teplota.png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_se_stinenim_B_vizualiza
@@ -1298,7 +1298,7 @@ stinenim_B_vizualizace_teplota.png  used on input line 115.
  [28 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_se_stinenim_B.pn
 g>]
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_s_rozsirenym_stinenim_B
-.png, id=740, 5057.89626pt x 2843.62375pt>
+.png, id=744, 5057.89626pt x 2843.62375pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_s_rozsirenym_stine
 nim_B.png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_s_rozsirenym_stinen
@@ -1320,7 +1320,7 @@ _UPRAV/Grafy/03_rychlosti-eps-converted-to.pdf 400_SIMULACE_KONSTRUKCNICH_UPRAV
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rychlosti-eps-converted-to.pdf, id=7
-42, 1927.2pt x 995.72pt>
+46, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rychlosti-eps-converted-to.pdf 
 Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rychlosti-eps-converted-to.pdf>
@@ -1332,7 +1332,7 @@ izace_rychlost.png (PNG copy)> <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/
 sonda_se_stinenim_B_vizualizace_teplota.png (PNG copy)> <./400_SIMULACE_KONSTRU
 KCNICH_UPRAV/Vykresy_rendery/Sonda_s_rozsirenym_stinenim_B.png>]
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_s_rozsirenym_stinenim_B_viz
-ualizace_rychlost.png, id=750, 1003.75pt x 1003.75pt>
+ualizace_rychlost.png, id=754, 1003.75pt x 1003.75pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_s_rozsirenym_stinenim_
 B_vizualizace_rychlost.png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_s_rozsirenym_stinenim_B
@@ -1341,7 +1341,7 @@ Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_s_r
 ozsirenym_stinenim_B_vizualizace_rychlost.png  used on input line 148.
 (pdftex.def)             Requested size: 198.45662pt x 198.44905pt.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_s_rozsirenym_stinenim_B_viz
-ualizace_teplota.png, id=751, 1003.75pt x 1003.75pt>
+ualizace_teplota.png, id=755, 1003.75pt x 1003.75pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_s_rozsirenym_stinenim_
 B_vizualizace_teplota.png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_s_rozsirenym_stinenim_B
@@ -1363,7 +1363,7 @@ _UPRAV/Grafy/03_rovina_symetrie.eps>
 (epstopdf)             \includegraphics on input line 165.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rovina_symetrie-eps-converted-to.pdf
-, id=754, 1927.2pt x 995.72pt>
+, id=758, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rovina_symetrie-eps-converted-t
 o.pdf Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rovina_symetrie-eps-converted-to
@@ -1389,7 +1389,7 @@ RAV/Grafy/03_kolma_rovina.eps>
 (epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_kolma_rovina-eps-converted-to.pdf, i
-d=766, 1927.2pt x 995.72pt>
+d=770, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_kolma_rovina-eps-converted-to.p
 df Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_kolma_rovina-eps-converted-to.pd
@@ -1400,7 +1400,7 @@ Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_kolma_rovina
  [31 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rovina_symetrie-eps-converted
 -to.pdf> <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_kolma_rovina-eps-converte
 d-to.pdf>]
-<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_B.png, id=783, 5057.8
+<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_B.png, id=788, 5057.8
 9626pt x 2843.62375pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_B.png Graphic fi
 le (type png)
@@ -1419,106 +1419,110 @@ prumer_stineni_B-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=400_SIMULACE_KONSTRUKCNICH
 _UPRAV/Grafy/04_prumer_stineni_B-eps-converted-to.pdf 400_SIMULACE_KONSTRUKCNIC
 H_UPRAV/Grafy/04_prumer_stineni_B.eps>
-(epstopdf)             \includegraphics on input line 195.
+(epstopdf)             \includegraphics on input line 196.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/04_prumer_stineni_B-eps-converted-to.pd
-f, id=784, 1927.2pt x 995.72pt>
+f, id=790, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/04_prumer_stineni_B-eps-converted-
 to.pdf Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/04_prumer_stineni_B-eps-converted-t
 o.pdf>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/04_prumer_stine
-ni_B-eps-converted-to.pdf  used on input line 195.
+ni_B-eps-converted-to.pdf  used on input line 196.
 (pdftex.def)             Requested size: 441.01773pt x 251.81575pt.
  [32 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_B.png>]
-<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_A.png, id=791, 5057.8
+<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_A.png, id=799, 5057.8
 9626pt x 2843.62375pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_A.png Graphic fi
 le (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_A.png>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stine
-ni_A.png  used on input line 206.
+ni_A.png  used on input line 207.
 (pdftex.def)             Requested size: 441.01773pt x 247.9313pt.
+ [33 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/04_prumer_stineni_B-eps-converte
+d-to.pdf> <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_A.png>]
 Package epstopdf Info: Source file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/05_
 prumer_stineni_A.eps>
-(epstopdf)                    date: 2022-06-25 09:33:33
-(epstopdf)                    size: 54453 bytes
+(epstopdf)                    date: 2022-07-04 12:10:45
+(epstopdf)                    size: 55699 bytes
 (epstopdf)             Output file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/05_
 prumer_stineni_A-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-06-25 09:33:33
-(epstopdf)                    size: 19067 bytes
+(epstopdf)                    date: 2022-07-04 12:17:20
+(epstopdf)                    size: 18977 bytes
 (epstopdf)             Command: <repstopdf --outfile=400_SIMULACE_KONSTRUKCNICH
 _UPRAV/Grafy/05_prumer_stineni_A-eps-converted-to.pdf 400_SIMULACE_KONSTRUKCNIC
 H_UPRAV/Grafy/05_prumer_stineni_A.eps>
-(epstopdf)             \includegraphics on input line 213.
+(epstopdf)             \includegraphics on input line 216.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/05_prumer_stineni_A-eps-converted-to.pd
-f, id=792, 1927.2pt x 995.72pt>
+f, id=815, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/05_prumer_stineni_A-eps-converted-
 to.pdf Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/05_prumer_stineni_A-eps-converted-t
 o.pdf>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/05_prumer_stine
-ni_A-eps-converted-to.pdf  used on input line 213.
+ni_A-eps-converted-to.pdf  used on input line 216.
 (pdftex.def)             Requested size: 441.01773pt x 248.92644pt.
- [33 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/04_prumer_stineni_B-eps-converte
-d-to.pdf> <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_A.png>]
+ [34 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/05_prumer_stineni_A-eps-converte
+d-to.pdf>]
 Package epstopdf Info: Source file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/06_
 poloha_odvetrani_A.eps>
-(epstopdf)                    date: 2022-06-25 09:33:33
-(epstopdf)                    size: 64573 bytes
+(epstopdf)                    date: 2022-07-04 11:39:06
+(epstopdf)                    size: 64577 bytes
 (epstopdf)             Output file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/06_
 poloha_odvetrani_A-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-06-25 09:33:33
-(epstopdf)                    size: 23610 bytes
+(epstopdf)                    date: 2022-07-04 11:39:47
+(epstopdf)                    size: 23602 bytes
 (epstopdf)             Command: <repstopdf --outfile=400_SIMULACE_KONSTRUKCNICH
 _UPRAV/Grafy/06_poloha_odvetrani_A-eps-converted-to.pdf 400_SIMULACE_KONSTRUKCN
 ICH_UPRAV/Grafy/06_poloha_odvetrani_A.eps>
-(epstopdf)             \includegraphics on input line 224.
+(epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/06_poloha_odvetrani_A-eps-converted-to.
-pdf, id=807, 1927.2pt x 995.72pt>
+pdf, id=828, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/06_poloha_odvetrani_A-eps-converte
 d-to.pdf Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/06_poloha_odvetrani_A-eps-converted
 -to.pdf>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/06_poloha_odvet
-rani_A-eps-converted-to.pdf  used on input line 224.
+rani_A-eps-converted-to.pdf  used on input line 229.
 (pdftex.def)             Requested size: 441.01773pt x 248.92644pt.
- [34 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/05_prumer_stineni_A-eps-converte
-d-to.pdf> <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/06_poloha_odvetrani_A-eps-c
-onverted-to.pdf>]
+ [35 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/06_poloha_odvetrani_A-eps-conver
+ted-to.pdf>]
 Package epstopdf Info: Source file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/07_
 prumer_odvetrani_A.eps>
-(epstopdf)                    date: 2022-06-25 09:33:33
-(epstopdf)                    size: 50543 bytes
+(epstopdf)                    date: 2022-07-04 12:19:21
+(epstopdf)                    size: 50546 bytes
 (epstopdf)             Output file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/07_
 prumer_odvetrani_A-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-06-25 09:33:33
-(epstopdf)                    size: 18293 bytes
+(epstopdf)                    date: 2022-07-04 12:23:26
+(epstopdf)                    size: 18490 bytes
 (epstopdf)             Command: <repstopdf --outfile=400_SIMULACE_KONSTRUKCNICH
 _UPRAV/Grafy/07_prumer_odvetrani_A-eps-converted-to.pdf 400_SIMULACE_KONSTRUKCN
 ICH_UPRAV/Grafy/07_prumer_odvetrani_A.eps>
-(epstopdf)             \includegraphics on input line 235.
+(epstopdf)             \includegraphics on input line 242.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/07_prumer_odvetrani_A-eps-converted-to.
-pdf, id=823, 1927.2pt x 995.72pt>
+pdf, id=843, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/07_prumer_odvetrani_A-eps-converte
 d-to.pdf Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/07_prumer_odvetrani_A-eps-converted
 -to.pdf>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/07_prumer_odvet
-rani_A-eps-converted-to.pdf  used on input line 235.
+rani_A-eps-converted-to.pdf  used on input line 242.
 (pdftex.def)             Requested size: 441.01773pt x 248.92644pt.
- [35 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/07_prumer_odvetrani_A-eps-conver
+ [36 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/07_prumer_odvetrani_A-eps-conver
 ted-to.pdf>]
-<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A.png, id=834, 5057.8
+
+LaTeX Warning: Citation 'Shapiro1954' on page 37 undefined on input line 249.
+
+<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A.png, id=856, 5057.8
 9626pt x 2843.62375pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A.png Graphic fi
 le (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A.png>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuz
-or_A.png  used on input line 246.
+or_A.png  used on input line 253.
 (pdftex.def)             Requested size: 441.01773pt x 247.9313pt.
 Package epstopdf Info: Source file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/08_
 divergentni_cast_A.eps>
@@ -1531,26 +1535,25 @@ divergentni_cast_A-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=400_SIMULACE_KONSTRUKCNICH
 _UPRAV/Grafy/08_divergentni_cast_A-eps-converted-to.pdf 400_SIMULACE_KONSTRUKCN
 ICH_UPRAV/Grafy/08_divergentni_cast_A.eps>
-(epstopdf)             \includegraphics on input line 253.
+(epstopdf)             \includegraphics on input line 262.
 Package epstopdf Info: Output file is already uptodate.
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/08_divergentni_cast_A-eps-converted-to.
-pdf, id=835, 1927.2pt x 995.72pt>
+pdf, id=858, 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/08_divergentni_cast_A-eps-converte
 d-to.pdf Graphic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/08_divergentni_cast_A-eps-converted
 -to.pdf>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/08_divergentni_
-cast_A-eps-converted-to.pdf  used on input line 253.
+cast_A-eps-converted-to.pdf  used on input line 262.
 (pdftex.def)             Requested size: 441.01773pt x 248.92644pt.
- [36 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/08_divergentni_cast_A-eps-conver
-ted-to.pdf> <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A.png>]
-<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita.png, id=847, 5057.8962
+[37 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A.png>]
+<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita.png, id=867, 5057.8962
 6pt x 2843.62375pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita.png Graphic file 
 (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita.png>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavit
-a.png  used on input line 264.
+a.png  used on input line 273.
 (pdftex.def)             Requested size: 441.01773pt x 247.9313pt.
 Package epstopdf Info: Source file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kav
 ita.eps>
@@ -1563,25 +1566,26 @@ ita-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=400_SIMULACE_KONSTRUKCNICH
 _UPRAV/Grafy/kavita-eps-converted-to.pdf 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy
 /kavita.eps>
-(epstopdf)             \includegraphics on input line 271.
+(epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
-<400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita-eps-converted-to.pdf, id=848, 19
+<400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita-eps-converted-to.pdf, id=868, 19
 27.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita-eps-converted-to.pdf Graphi
 c file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita-eps-converted-to.pdf>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita-eps-conv
-erted-to.pdf  used on input line 271.
+erted-to.pdf  used on input line 280.
 (pdftex.def)             Requested size: 441.01773pt x 248.92644pt.
- [37 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita-eps-converted-to.pdf> <./
-400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita.png>]
-<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B.png, id=862, 5057.89
+
+[38 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/08_divergentni_cast_A-eps-convert
+ed-to.pdf> <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita.png>]
+<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B.png, id=880, 5057.89
 626pt x 2843.62375pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B.png Graphic fil
 e (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B.png>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavit
-a_B.png  used on input line 283.
+a_B.png  used on input line 292.
 (pdftex.def)             Requested size: 441.01773pt x 247.9313pt.
 Package epstopdf Info: Source file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kav
 ita_B.eps>
@@ -1594,22 +1598,24 @@ ita_B-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=400_SIMULACE_KONSTRUKCNICH
 _UPRAV/Grafy/kavita_B-eps-converted-to.pdf 400_SIMULACE_KONSTRUKCNICH_UPRAV/Gra
 fy/kavita_B.eps>
-(epstopdf)             \includegraphics on input line 290.
+(epstopdf)             \includegraphics on input line 299.
 Package epstopdf Info: Output file is already uptodate.
-<400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B-eps-converted-to.pdf, id=863, 
+<400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B-eps-converted-to.pdf, id=881, 
 1927.2pt x 995.72pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B-eps-converted-to.pdf Grap
 hic file (type pdf)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B-eps-converted-to.pdf>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B-eps-co
-nverted-to.pdf  used on input line 290.
+nverted-to.pdf  used on input line 299.
 (pdftex.def)             Requested size: 441.01773pt x 248.92644pt.
- [38 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B-eps-converted-to.pdf> <
-./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B.png>]) [39] (./501_
-Finalni_geometrie.tex) [40] (./ZAVER.tex) [41]
-(./901_literatura.tex) [42] (./902_prilohy.tex
+
+[39 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita-eps-converted-to.pdf> <./4
+00_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B.png>]) [40 <./400_SIMU
+LACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B-eps-converted-to.pdf>]
+(./501_Finalni_geometrie.tex) [41] (./ZAVER.tex) [42] (./901_literatura.tex)
+[43] (./902_prilohy.tex
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_bez_stineni_B_vykres.pn
-g, id=891, 1659.19875pt x 2347.77126pt>
+g, id=915, 1659.19875pt x 2347.77126pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_bez_stineni_B_vykr
 es.png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_bez_stineni_B_vykre
@@ -1617,10 +1623,10 @@ s.png>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda
 _bez_stineni_B_vykres.png  used on input line 5.
 (pdftex.def)             Requested size: 441.01773pt x 624.01929pt.
- [43 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_bez_stineni_B_vy
+ [44 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_bez_stineni_B_vy
 kres.png>]
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_se_stinenim_B_vykres.pn
-g, id=900, 1659.19875pt x 2347.77126pt>
+g, id=923, 1659.19875pt x 2347.77126pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_se_stinenim_B_vykr
 es.png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_se_stinenim_B_vykre
@@ -1628,10 +1634,10 @@ s.png>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda
 _se_stinenim_B_vykres.png  used on input line 12.
 (pdftex.def)             Requested size: 441.01773pt x 624.01929pt.
- [44 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_se_stinenim_B_vy
+ [45 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_se_stinenim_B_vy
 kres.png>]
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_s_rozsirenym_stinenim_B
-_vykres.png, id=908, 1659.19875pt x 2347.77126pt>
+_vykres.png, id=931, 1659.19875pt x 2347.77126pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_s_rozsirenym_stine
 nim_B_vykres.png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_s_rozsirenym_stinen
@@ -1639,10 +1645,10 @@ im_B_vykres.png>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda
 _s_rozsirenym_stinenim_B_vykres.png  used on input line 19.
 (pdftex.def)             Requested size: 441.01773pt x 624.01929pt.
- [45 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_s_rozsirenym_sti
+ [46 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_s_rozsirenym_sti
 nenim_B_vykres.png>]
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prumer_stineni_B_vykres.png, 
-id=916, 1659.19875pt x 2347.77126pt>
+id=939, 1659.19875pt x 2347.77126pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prumer_stineni_B_vykres.
 png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prumer_stineni_B_vykres.p
@@ -1650,10 +1656,10 @@ ng>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prume
 r_stineni_B_vykres.png  used on input line 26.
 (pdftex.def)             Requested size: 441.01773pt x 624.01929pt.
- [46 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prumer_stineni_B_vykre
+ [47 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prumer_stineni_B_vykre
 s.png>]
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prumer_stineni_A_vykres.png, 
-id=925, 1659.19875pt x 2347.77126pt>
+id=947, 1659.19875pt x 2347.77126pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prumer_stineni_A_vykres.
 png Graphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prumer_stineni_A_vykres.p
@@ -1661,19 +1667,20 @@ ng>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prume
 r_stineni_A_vykres.png  used on input line 33.
 (pdftex.def)             Requested size: 441.01773pt x 624.01929pt.
- [47 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prumer_stineni_A_vykre
+ [48 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Prumer_stineni_A_vykre
 s.png>]
-<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Odvetrani_A_vykres.png, id=93
-4, 1659.19875pt x 2347.77126pt>
+<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Odvetrani_A_vykres.png, id=95
+5, 1659.19875pt x 2347.77126pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Odvetrani_A_vykres.png G
 raphic file (type png)
 <use 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Odvetrani_A_vykres.png>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Odvet
 rani_A_vykres.png  used on input line 40.
 (pdftex.def)             Requested size: 441.01773pt x 624.01929pt.
- [48 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Odvetrani_A_vykres.png
->]
-<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A_vykres.png, id=943,
+
+[49 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Odvetrani_A_vykres.png>
+]
+<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A_vykres.png, id=964,
  1659.19875pt x 2347.77126pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A_vykres.png Gra
 phic file (type png)
@@ -1681,8 +1688,8 @@ phic file (type png)
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuz
 or_A_vykres.png  used on input line 47.
 (pdftex.def)             Requested size: 441.01773pt x 624.01929pt.
- [49 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A_vykres.png>]
-<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_vykres.png, id=953, 16
+ [50 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A_vykres.png>]
+<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_vykres.png, id=973, 16
 59.19875pt x 2347.77126pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_vykres.png Graphi
 c file (type png)
@@ -1690,8 +1697,8 @@ c file (type png)
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavit
 a_vykres.png  used on input line 54.
 (pdftex.def)             Requested size: 441.01773pt x 624.01929pt.
- [50 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_vykres.png>]
-<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B_vykres.png, id=962, 
+ [51 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_vykres.png>]
+<400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B_vykres.png, id=982, 
 1659.19875pt x 2347.77126pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B_vykres.png Grap
 hic file (type png)
@@ -1699,9 +1706,10 @@ hic file (type png)
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavit
 a_B_vykres.png  used on input line 60.
 (pdftex.def)             Requested size: 441.01773pt x 624.01929pt.
-) 
+)
+
 AED: lastpage setting LastPage
-[51 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B_vykres.png>]
+[52 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B_vykres.png>]
 (./main.aux)
 
 LaTeX Warning: There were undefined references.
@@ -1718,13 +1726,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24015 strings out of 478037
- 440872 string characters out of 5843053
- 1154932 words of memory out of 5000000
- 41800 multiletter control sequences out of 15000+600000
+ 24018 strings out of 478037
+ 440920 string characters out of 5843053
+ 1155080 words of memory out of 5000000
+ 41802 multiletter control sequences out of 15000+600000
  484250 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,17n,80p,953b,2122s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,17n,80p,978b,2122s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dis
@@ -1743,10 +1751,10 @@ b><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texl
 ive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/t
 exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2022/texmf-dist/
 fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (51 pages, 8947412 bytes).
+Output written on main.pdf (52 pages, 8956151 bytes).
 PDF statistics:
- 1099 PDF objects out of 1200 (max. 8388607)
- 883 compressed objects within 9 object streams
- 210 named destinations out of 1000 (max. 500000)
+ 1120 PDF objects out of 1200 (max. 8388607)
+ 902 compressed objects within 10 object streams
+ 211 named destinations out of 1000 (max. 500000)
  904 words of extra memory for PDF output out of 10000 (max. 10000000)
 

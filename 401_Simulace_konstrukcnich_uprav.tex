@@ -1,8 +1,6 @@
-\section{CFD analýza konstrukčních úprav} \label{sec:konstrukcni-upravy}
-    TODO
-    
+\section{CFD analýza konstrukčních úprav} \label{sec:konstrukcni-upravy}    
     \subsection{Studie citlivosti výpočetní sítě}
-        TODO
+        Nutným předpokladem pro věrohodnost výpočtů je jejich dostatečná přesnost. Ta může být ovlivněna například vhodností použitého fyzikálního modelu, numerického schématu, ale také i kvalitou a jemností výpočetní sítě. Pro zahájení CFD testování konstruknčních úprav DRTA sondy bylo tak třeba se jako první zaměřit na vliv výpočetní sítě na výsledky výpočtů. Bylo testováno celkem sedm různých sítí s odlišně velikými elementy. Postup jejich tvorby odpovídá kapitole \ref{sec:vypocetni-sit}, diverzity bylo dosaženo prostřednictvím změn parametrů povrchové sítě. Ty jsou společně s celkovými počty buněk uvedeny v tabulce \ref{tab:citlivost-site}. Ostatní parametry sítě byly zachovány. Analýza byla provedena na výchozím modelu sondy s využitím roviny symetrie, viz kapitola \ref{sec:sonda-bez-stineni-B}.
 
         \begin{table}[ht!]
             \centering
@@ -18,10 +16,12 @@
             \label{tab:citlivost-site}
             \end{table}
 
+        Vzhledem k cíli výpočtů byly jako sledované parametry zvoleny restituční faktory teplotních čidel. Jejich průběh v závislosti na použité síti je uveden na obrázku \ref{fig:citlivost-site}. Zde je patrné, že u sítí $1 \div 4$ docházelo k výraznému nárůstu hodnot restitučních faktorů, zatímco u sítí $5 \div 7$ se hodnoty prakticky neměnily – bylo je tedy možné označit za vhodné kandidáty. Pro další výpočty byla zvolena síť $5$, nejhrubší z přijatelných sítí.
+
         \begin{figure}[ht!]
             \centering
             \includegraphics*[width=\textwidth, trim={3.9cm 1.0cm 2.7cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/citlivost_site.eps}
-            \caption{Závislost restitučních faktorů sondy bez stínění čidla B na rychlosti proudění.}
+            \caption{Závislost restitučních faktorů sondy bez stínění čidla B na jemnosti výpočetní sítě.}
             \label{fig:citlivost-site}
         \end{figure}
     \newpage
@@ -158,7 +158,7 @@
                 \label{fig:sonda-s-rozsirenym-stinenim-B-vizualizace}
             \end{figure}
         \subsubsection{Směrová citlivost v rovině symetrie}
-            Zde bylo zlepšení vlivem přidání stínění nejpatrnější. Restituční faktor čidla B se oproti variantě sondy bez stínění (kapitola \ref{sec:sonda-bez-stineni-B}) při natáčení v rovině symetrie prakticky neměnil, viz obrázek \ref{fig:sonda-s-rosirenym-stinenim-rovina-symetrie}.
+            Zde bylo zlepšení vlivem přidání stínění nejpatrnější. Restituční faktor čidla B se oproti variantě sondy bez stínění (kapitola \ref{sec:sonda-bez-stineni-B}) vyrovnal a nedocházelo již k výraznému vlivu stínění čidla A, viz obrázek \ref{fig:sonda-s-rosirenym-stinenim-rovina-symetrie}.
             
             \begin{figure}[ht!]
                 \centering
@@ -167,7 +167,7 @@
                 \label{fig:sonda-s-rosirenym-stinenim-rovina-symetrie}
             \end{figure}
         \subsubsection{Směrová citlivost kolmo na rovinu symetrie}
-            Výsledky výpočtů, reprezentovány na obrázku \ref{fig:sonda-s-rosirenym-stinenim-kolma-rovina}, představovaly i v tomto případě zlepšení chování restitučního faktoru čidla B, nebylo však tak výrazné, jako při natáčení sondy v rovině symetrie.
+            Výsledky výpočtů, reprezentované obrázkem \ref{fig:sonda-s-rosirenym-stinenim-kolma-rovina}, představovaly i v tomto případě zlepšení chování restitučního faktoru čidla B, nebylo však tak výrazné, jako při natáčení sondy v rovině symetrie.
             
              \begin{figure}[ht!]
                 \centering
@@ -177,10 +177,10 @@
             \end{figure}
 
         \subsubsection{Zhodnocení}
-            Přidáním stínění k čidlu B došlo ke snížení směrové citlivosti sondy a k zmenšení vlivu stínění čidla A na restituční faktor čidla B. Negativním dopadem této úpravy geometrie byl vyšší ohřev čidla B, dalším krokem analýzy konstrukčních úprav tak bylo detailnější zkoumání vlivu průměru stínění čidla B na jeho restituční faktor.
+            Přidáním stínění k čidlu B došlo ke snížení směrové citlivosti sondy a ke zmenšení vlivu stínění čidla A na restituční faktor čidla B. Negativním dopadem této úpravy geometrie byl vyšší ohřev čidla B, dalším krokem analýzy konstrukčních úprav tak bylo detailnější zkoumání vlivu průměru stínění čidla B na jeho restituční faktor.
         
     \subsection{Vliv průměru stínění čidla B}
-        DATA
+        Čidlo B vyžadovalo stínění kvůli snížení směrové citlivosti a eliminaci vlivu trubice stínící čidlo A, dalším krokem ve zkoumání konstrukčních úprav tak bylo analyzování, jaký rozměr stínění je dostačující a jaký naopak způsobuje příliš vysoký ohřev. Podrobnější znalost této závislosti by totiž umožnila oproti předešlým kapitolám určit s větší jistotou rozměr stínění, který bude optimální co do míry ohřevu čidla, tak i do rozměrů stínění, které by měly být co nejmenší. Zkoumáno bylo celkem 18 velikostí stínění s vnitřním průměrem v rozmězí $3.5 \div 20 \Unit{mm}$, viz výkres v příloze \ref{fig:prumer-stineni-B-vykres}. Výpočty byly provedeny pro rychlost proudění $250 \Unit{\frac{m}{s}}$ bez natočení.
         
         \begin{figure}[ht!]
             \centering
@@ -189,6 +189,7 @@
             \label{fig:stineni-B}
         \end{figure}
         
+        Chování restitučního faktoru je patrné z obrázku \ref{fig:prumer-stineni-B}. Od průměru $16 \Unit{mm}$ došlo k jeho ustálení, nicméně vzhledem ke snaze o zachování malých rozměrů sondy se jevily jako vhodnější průměry $7 \div 9 \Unit{mm}$, které se nachází v pásmu $2.5 \div 5 \%$ relativní odchylky od ustálené hodnoty.
         
         \begin{figure}[ht!]
             \centering
@@ -199,7 +200,7 @@
     
     \newpage
     \subsection{Vliv průměru stínění čidla A} \label{sec:stineni-A}
-        DATA
+        Zatímco u čidla B byla snaha o dosažení co nejmenšího restitučního faktoru, pro čidlo A bylo naopak klíčové se co nejvíce příbližit měření klidové teploty ($f_A \rightarrow 1$). První analýzou zkoumající možnosti zvýšení restitučního faktoru čidla A bylo, podobně jako v předešlé kapitole, testování vlivu průměru stínící trubice. Analýza byla provedena pro celkem devět rozměrů v rozmězí $2 \div 6 \Unit{mm}$, viz příloha \ref{fig:prumer-stineni-A-vykres} opět pro rychlost proudění $250 \Unit{\frac{m}{s}}$ bez natočení.
         
         \begin{figure}[ht!]
             \centering
@@ -207,6 +208,8 @@
             \caption{Stínění čidla A}
             \label{fig:stineni-A}
         \end{figure}
+
+        Vzhledem k tomu, že rozměr i poloha odvětrání byly zachovány, docházelo při zvětšování průměru stínění k zmenšování poměru výstupních a vstupních průřezů stínění (průměru $2 \Unit{mm}$ odpovídající poměr $0.500$ oproti průměru $6 \Unit{mm}$ s poměrem $0.0556$). Docházelo tak pravděpodobně k většímu zbrždění plynu uvitř trubice, což způsobilo nárůst měřené teploty. Vypočítané hodnoty jsou reprezentovány obrázkem \ref{fig:prumer-stineni-A}. Zde, podobně jako u stínění čidla B, byly jako nejvhodnější (při zohlednění rozměrů a velikosti restitučního faktoru) vybrány průměry v rozmezí $3 \div 4.5 \Unit{mm}$.
         
         \begin{figure}[ht!]
             \centering
@@ -217,7 +220,9 @@
     
    \newpage
      \subsection{Vliv polohy odvětrání čidla A}
-        DATA
+        Idea stojící za analýzou umístění odvětrání spočívala v tom, že v prostoru za odvětráním nedocházelo prakticky k žádnému proudění a nemuselo tedy docházet k optimálnímu prohřátí čidla A, které má měřicí těleso (platinový drát) umístěné podél skoro celé své délky. Zkoumán byl tak vliv polohy odvětrání, se vzdáleností od čela stínící trubice v rozmezí $2 \div 18 \Unit{mm}$, viz výkres \ref{fig:odvetrani-A-vykres}. Průměr stínění byl shodný s původní verzí sondy, výpočty byly provedeny pro rychlost proudění $250 \Unit{\frac{m}{s}}$ bez natočení.
+
+        Změna polohy odvětrání se ukázala v souvislosti s nárůstem restitučního faktoru čidla A jako významná, viz obrázek \ref{fig:poloha-odvetrani-A}. Nejvyšší hodnoty bylo dosaženo umístěním $18 \Unit{mm}$ od čela stínící trubice ($2 \Unit{mm}$ před těsněním), kdy oproti původní poloze došlo k nárůstu restitučního faktoru o $1.25 \Unit{\%}$.
         
           \begin{figure}[ht!]
             \centering
@@ -227,8 +232,10 @@
         \end{figure}
     
     \newpage
-    \subsection{Vliv průměru odvětrání čidla A}
-        DATA
+    \subsection{Vliv průměru odvětrání čidla A} \label{sec:prumer-odvetrani}
+        Jak již bylo zmíněno v kapitole \ref{sec:stineni-A}, restituční faktor čidla A byl pravděpodobně ovlivněn poměrem mezi výstupními a vstupními průřezy. Vedle změny průřezu stínící trubice lze tento poměr ovlivit i prostřednictvím různých rozměrů odvětrání, což bylo zkoumáno v této kapitole. Trubice byla použitá shodná, jako v původní verzi sondy, rozměr odvětrání byl volen v rozmezí $0 \div 1.5 \Unit{mm}$ (tedy včetně zaslepení odvětrávacích otvorů). Detainí rozměry modelu jsou uvedeny v příloze \ref{fig:odvetrani-A-vykres}. Analýza byla provedena pro rychlost proudění $250 \Unit{\frac{m}{s}}$ bez natočení.
+
+        Výsledky výpočtů jsou uvedeny na obrázku \ref{fig:prumer-odvetrani-A}. Maximálního restitučního faktoru bylo dosaženo při zmenšení průměru odvětrání na $0.5 \Unit{mm}$. Při dalším zmenšování docházelo pravděpodobně k výraznému narušení proudění trubicí, což vedlo ke značnému poklesu restitučního faktoru.
         
         \begin{figure}[ht!]
             \centering
@@ -239,7 +246,7 @@
     
     \newpage
     \subsection{Vliv přidání divergentního vstupu pro čidlo A}
-        DATA
+        Při měření klidových teplot pomocí termočlánků se lze setkat s konstrukcemi obsahujícími vstupní difuzor, který slouží ke zbrzdění proudění. Termočlánek je poté umístěn na jeho konci \cite{Shapiro1954}. Vzhledem k charakteru geometrie čidel Pt100 nelze hovořit o bodovém měření teploty, takže jeho umístění by bylo v rámci konstrukce pro termočlánek problematické. Samotná myšlenka zpomalení proudění prostřednictvím difuzoru však představovala možnost, jak zvýšit restituční faktor čidla A. Testování této úpravy bylo provedeno pro vrcholové úhly difuzoru v rozmezí $2^o \div 12^o$, detailní popis geometrie je uveden v příloze \ref{fig:difuzor-A-vykres}. Rychlost proudění byla shodná s předešlými simulacemi ($250 \Unit{\frac{m}{s}}$).
         
         \begin{figure}[ht!]
             \centering
@@ -247,6 +254,8 @@
             \caption{Čidlo A s divergentním vstupem}
             \label{fig:difuzor-A}
         \end{figure}
+
+        Výsledky simulací (viz obrázek \ref{fig:divergentni-cast-A}) nepotvrdily vhodnost přidání divergentní části ke stínění čidla A. S rostoucím vrcholovým úhlem docházelo k poklesu restitučního faktoru, jehož velikost (lišící se od předešlých kapitol) lze vysvětlit použitím větší trubice s odvětráním těsně před těsněním (oba faktory přispěly k nárůstu restitučního faktoru).
     
         \begin{figure}[ht!]
             \centering
