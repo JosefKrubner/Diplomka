@@ -1,18 +1,54 @@
 \section{Návrh a analýza finální geometrie} \label{sec:finalni-geometrie}
     \subsection{Návrh konstrukčních úprav}
-        \subsubsection{Čidlo A}
-            TODO
-        \subsubsection{Čidlo B}
-            TODO
-        \subsubsection{Materiál}
-            TODO
+        
+
+        \begin{figure}[ht!]
+            \centering
+            \includegraphics[width=\textwidth]{500_FINAL/sonda_final.png}
+            \caption{Finální verze DRTA sondy}
+            \label{fig:sonda-final}
+        \end{figure}
             
     \subsection{CFD analýza}
         \subsubsection{Chování při různých rychlostech proudění}
-            TODO
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 2.7cm 2.0cm}]{500_FINAL/final_rychlosti.eps}
+                \caption{Závislost restitučních faktorů upravené sondy na rychlosti proudění.}
+                \label{fig:sonda-final-rychlosti}
+            \end{figure}
+
+            \begin{figure}[ht!]
+                \centering
+                \begin{subfigure}{0.45\textwidth}
+                    \centering
+                    \captionsetup{width=.9\linewidth}
+                    \includegraphics[width=\textwidth]{500_FINAL/SIM_Final_XY0_rychlost.png}
+                    \caption{Rychlostní pole.}
+                \end{subfigure}
+                \begin{subfigure}{0.45\textwidth}
+                    \centering
+                    \captionsetup{width=.9\linewidth}
+                    \includegraphics[width=\textwidth]{500_FINAL/SIM_Final_XY0_teplota.png}
+                    \caption{Teplotní pole.}
+                \end{subfigure}
+                \caption{Vizualizace vypočtených dat pro upravenou sondu v rovině symetrie pro rychlost proudění $250 \Unit{\frac{m}{s}}$.}
+                \label{fig:sonda-final-vizualizace}
+            \end{figure}
         \subsubsection{Směrová citlivost v rovině symetrie}
-            TODO
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 2.7cm 2.0cm}]{500_FINAL/final_symetrie.eps}
+                \caption{Závislost restitučních faktorů upravené sondy na natočení v rovině symetrie.}
+                \label{fig:sonda-final-symetrie}
+            \end{figure}
         \subsubsection{Směrová citlivost kolmo na rovinu symetrie}
-            TODO
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 2.7cm 2.0cm}]{500_FINAL/final_kolmo.eps}
+                \caption{Závislost restitučních faktorů upravené sondy na natočení kolmo na rovinu symetrie.}
+                \label{fig:sonda-final-kolma-rovina}
+            \end{figure}
+        \subsubsection{Volba materiálu trubice}
         
         

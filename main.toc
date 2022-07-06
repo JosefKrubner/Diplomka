@@ -68,5 +68,5 @@
 \contentsline {subsubsection}{\numberline {6.2.2}Směrová citlivost v rovině symetrie}{41}{subsubsection.6.2.2}%
 \contentsline {subsubsection}{\numberline {6.2.3}Směrová citlivost kolmo na rovinu symetrie}{41}{subsubsection.6.2.3}%
 \contentsline {section}{\numberline {7}Závěr}{42}{section.7}%
-\contentsline {section}{Seznam použité literatury}{43}{section*.54}%
+\contentsline {section}{Seznam použité literatury}{43}{section*.58}%
 \contentsline {section}{\numberline {8}Přílohy}{44}{section.8}%
