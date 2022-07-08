@@ -1,36 +1,25 @@
 \babel@toc {czech}{}\relax 
-\contentsline {figure}{\numberline {3.2.1}{\ignorespaces Výchozí geometrie DRTA sondy.\relax }}{14}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.3.1}{\ignorespaces Výpočetní oblast s vyznačením souřadného systému a polohy měřených geometrií.\relax }}{17}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.3.2}{\ignorespaces Výpočetní oblast pro řešení symetrických úloh.\relax }}{18}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.4.1}{\ignorespaces Části hranice pro aplikování okrajových podmínek (v jednotlivých obrázcích označeny žlutou barvou).\relax }}{20}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.5.1}{\ignorespaces Graf četností hodnot bezrozměrné vzdálenosti od stěny čidla A pro úlohu z kapitoly \ref {sec:stineni-A}. Průměrná hodnota je pro tento případ rovna $0.945$.\relax }}{22}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.5.2}{\ignorespaces Pohled na výpočetní síť z kapitoly \ref {sec:stineni-A} ze strany symetrie.\relax }}{23}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.1.1}{\ignorespaces Závislost restitučních faktorů sondy bez stínění čidla B na jemnosti výpočetní sítě.\relax }}{24}{figure.caption.29}%
-\contentsline {figure}{\numberline {5.2.1}{\ignorespaces Sonda bez stínění čidla B\relax }}{25}{figure.caption.30}%
-\contentsline {figure}{\numberline {5.2.2}{\ignorespaces Závislost restitučních faktorů sondy bez stínění čidla B na rychlosti proudění.\relax }}{26}{figure.caption.31}%
-\contentsline {figure}{\numberline {5.2.3}{\ignorespaces Vizualizace vypočtených dat pro sondu bez stínění čidla B v rovině symetrie pro rychlost proudění $250 \, \frac {m}{s}$.\relax }}{26}{figure.caption.32}%
-\contentsline {figure}{\numberline {5.2.4}{\ignorespaces Závislost restitučních faktorů sondy bez stínění čidla B na natočení sondy v rovině symetrie.\relax }}{27}{figure.caption.33}%
-\contentsline {figure}{\numberline {5.2.5}{\ignorespaces Závislost restitučních faktorů sondy bez stínění čidla B na natočení kolmo na rovinu symetrie.\relax }}{27}{figure.caption.34}%
-\contentsline {figure}{\numberline {5.3.1}{\ignorespaces Sonda se stíněním čidla B\relax }}{28}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.3.2}{\ignorespaces Vizualizace vypočtených dat pro sondu se stíněním čidla B v rovině symetrie pro rychlost proudění $250 \, \frac {m}{s}$.\relax }}{29}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.4.1}{\ignorespaces Sonda se stíněním čidla B\relax }}{29}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.4.2}{\ignorespaces Závislost restitučních faktorů sondy s rozšířeným stíněním čidla B na rychlosti proudění\relax }}{30}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.4.3}{\ignorespaces Vizualizace vypočtených dat pro sondu s rozšířeným stíněním čidla B v rovině symetrie pro rychlost proudění $250 \, \frac {m}{s}$.\relax }}{30}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.4.4}{\ignorespaces Závislost restitučních faktorů sondy s rozšířeným stíněním čidla B na natočení sondy v rovině symetrie\relax }}{31}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.4.5}{\ignorespaces Závislost restitučních faktorů sondy s rozšířeným stíněním čidla B na natočení kolmo na rovinu symetrie\relax }}{31}{figure.caption.41}%
-\contentsline {figure}{\numberline {5.5.1}{\ignorespaces Stínění čidla B\relax }}{32}{figure.caption.42}%
-\contentsline {figure}{\numberline {5.5.2}{\ignorespaces Závislost restitučního faktoru čidla B na průměru stínění\relax }}{33}{figure.caption.43}%
-\contentsline {figure}{\numberline {5.6.1}{\ignorespaces Stínění čidla A\relax }}{33}{figure.caption.44}%
-\contentsline {figure}{\numberline {5.6.2}{\ignorespaces Závislost restitučního faktoru čidla A na průměru stínění\relax }}{34}{figure.caption.45}%
-\contentsline {figure}{\numberline {5.7.1}{\ignorespaces Závislost restitučního faktoru čidla A na poloze odvětrání\relax }}{35}{figure.caption.46}%
-\contentsline {figure}{\numberline {5.8.1}{\ignorespaces Závislost restitučního faktoru čidla A na průměru odvětrání\relax }}{36}{figure.caption.47}%
-\contentsline {figure}{\numberline {5.9.1}{\ignorespaces Čidlo A s divergentním vstupem\relax }}{37}{figure.caption.48}%
-\contentsline {figure}{\numberline {5.9.2}{\ignorespaces Závislost restitučního faktoru čidla A na vrcholovém úhlu divergentního vstupu\relax }}{38}{figure.caption.49}%
-\contentsline {figure}{\numberline {5.10.1}{\ignorespaces Čidlo A s přidanou kavitou do stínění\relax }}{38}{figure.caption.50}%
-\contentsline {figure}{\numberline {5.10.2}{\ignorespaces Závislost restitučního faktoru čidla A na tloušťce kavity uvnitř stínění\relax }}{39}{figure.caption.51}%
-\contentsline {figure}{\numberline {5.11.1}{\ignorespaces Čidlo B s přidanou kavitou do stínění\relax }}{39}{figure.caption.52}%
-\contentsline {figure}{\numberline {5.11.2}{\ignorespaces Závislost restitučního faktoru čidla B na tloušťce kavity uvnitř stínění\relax }}{40}{figure.caption.53}%
-\contentsline {figure}{\numberline {6.2.1}{\ignorespaces Závislost restitučních faktorů upravené sondy na rychlosti proudění.\relax }}{41}{figure.caption.54}%
-\contentsline {figure}{\numberline {6.2.2}{\ignorespaces Vizualizace vypočtených dat pro upravenou sondu v rovině symetrie pro rychlost proudění $250 \, \frac {m}{s}$.\relax }}{42}{figure.caption.55}%
-\contentsline {figure}{\numberline {6.2.3}{\ignorespaces Závislost restitučních faktorů upravené sondy na natočení v rovině symetrie.\relax }}{42}{figure.caption.56}%
-\contentsline {figure}{\numberline {6.2.4}{\ignorespaces Závislost restitučních faktorů upravené sondy na natočení kolmo na rovinu symetrie.\relax }}{43}{figure.caption.57}%
+\contentsline {figure}{\numberline {1.1.1}{\ignorespaces Závislost restitučních faktorů sondy bez stínění čidla B na jemnosti výpočetní sítě.\relax }}{11}{figure.caption.16}%
+\contentsline {figure}{\numberline {1.2.1}{\ignorespaces Sonda bez stínění čidla B\relax }}{12}{figure.caption.17}%
+\contentsline {figure}{\numberline {1.2.2}{\ignorespaces Závislost restitučních faktorů sondy bez stínění čidla B na rychlosti proudění.\relax }}{13}{figure.caption.18}%
+\contentsline {figure}{\numberline {1.2.3}{\ignorespaces Vizualizace vypočtených dat pro sondu bez stínění čidla B v rovině symetrie pro rychlost proudění $250 \, \frac {m}{s}$.\relax }}{13}{figure.caption.19}%
+\contentsline {figure}{\numberline {1.2.4}{\ignorespaces Závislost restitučních faktorů sondy bez stínění čidla B na natočení sondy v rovině symetrie.\relax }}{14}{figure.caption.20}%
+\contentsline {figure}{\numberline {1.2.5}{\ignorespaces Závislost restitučních faktorů sondy bez stínění čidla B na natočení kolmo na rovinu symetrie.\relax }}{14}{figure.caption.21}%
+\contentsline {figure}{\numberline {1.3.1}{\ignorespaces Sonda se stíněním čidla B\relax }}{15}{figure.caption.22}%
+\contentsline {figure}{\numberline {1.3.2}{\ignorespaces Vizualizace vypočtených dat pro sondu se stíněním čidla B v rovině symetrie pro rychlost proudění $250 \, \frac {m}{s}$.\relax }}{16}{figure.caption.23}%
+\contentsline {figure}{\numberline {1.4.1}{\ignorespaces Sonda se stíněním čidla B\relax }}{16}{figure.caption.24}%
+\contentsline {figure}{\numberline {1.4.2}{\ignorespaces Závislost restitučních faktorů sondy s rozšířeným stíněním čidla B na rychlosti proudění\relax }}{17}{figure.caption.25}%
+\contentsline {figure}{\numberline {1.4.3}{\ignorespaces Vizualizace vypočtených dat pro sondu s rozšířeným stíněním čidla B v rovině symetrie pro rychlost proudění $250 \, \frac {m}{s}$.\relax }}{17}{figure.caption.26}%
+\contentsline {figure}{\numberline {1.4.4}{\ignorespaces Závislost restitučních faktorů sondy s rozšířeným stíněním čidla B na natočení sondy v rovině symetrie\relax }}{18}{figure.caption.27}%
+\contentsline {figure}{\numberline {1.4.5}{\ignorespaces Závislost restitučních faktorů sondy s rozšířeným stíněním čidla B na natočení kolmo na rovinu symetrie\relax }}{18}{figure.caption.28}%
+\contentsline {figure}{\numberline {1.5.1}{\ignorespaces Stínění čidla B\relax }}{19}{figure.caption.29}%
+\contentsline {figure}{\numberline {1.5.2}{\ignorespaces Závislost restitučního faktoru čidla B na průměru stínění\relax }}{20}{figure.caption.30}%
+\contentsline {figure}{\numberline {1.6.1}{\ignorespaces Stínění čidla A\relax }}{20}{figure.caption.31}%
+\contentsline {figure}{\numberline {1.6.2}{\ignorespaces Závislost restitučního faktoru čidla A na průměru stínění\relax }}{21}{figure.caption.32}%
+\contentsline {figure}{\numberline {1.7.1}{\ignorespaces Závislost restitučního faktoru čidla A na poloze odvětrání\relax }}{22}{figure.caption.33}%
+\contentsline {figure}{\numberline {1.8.1}{\ignorespaces Závislost restitučního faktoru čidla A na průměru odvětrání\relax }}{23}{figure.caption.34}%
+\contentsline {figure}{\numberline {1.9.1}{\ignorespaces Čidlo A s divergentním vstupem\relax }}{24}{figure.caption.35}%
+\contentsline {figure}{\numberline {1.9.2}{\ignorespaces Závislost restitučního faktoru čidla A na vrcholovém úhlu divergentního vstupu\relax }}{25}{figure.caption.36}%
+\contentsline {figure}{\numberline {1.10.1}{\ignorespaces Modely pro testování vlivu přidání kavity do stínění.\relax }}{25}{figure.caption.37}%
+\contentsline {figure}{\numberline {1.10.2}{\ignorespaces Závislost restitučního faktoru čidla A na tloušťce kavity uvnitř stínění.\relax }}{26}{figure.caption.38}%
+\contentsline {figure}{\numberline {1.10.3}{\ignorespaces Závislost restitučního faktoru čidla B na tloušťce kavity uvnitř stínění.\relax }}{26}{figure.caption.39}%

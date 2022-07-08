@@ -36,7 +36,8 @@
         \end{figure}
         
         Zkoumáno bylo chování restitučních faktorů při různých rychlostech nabíhajícího proudu v rozmezí $100 \div 325 \unit{\frac{m}{s}}$ s krokem $25 \Unit{\frac{m}{s}}$ a při vychýlení sondy ve dvou rovinách – v rovině symetrie $XY$ (natočení značeno jako $\varphi _Z$) a poté kolmo na rovinu symetrie (rovina $XZ$, značeno $\varphi _Y$), v obou případech s krokem $2.5^o$ v rozmezí $\pm 15^o$.
-                
+        
+        \newpage
         \subsubsection{Chování při různých rychlostech proudění}
             Výsledky výpočtu jsou znázorněny v obrázku \ref{fig:sonda-bez-stineni-rychlosti}. Z průběhu restitučního faktoru čidla B lze usuzovat, že docházelo k výraznějšímu ovlivnění proudění v jeho blízkosti vlivem stínění čidla A. To je patrné i z obrázku \ref{fig:sonda-bez-stineni-vizualizace}. 
             
@@ -88,7 +89,7 @@
 
         \subsubsection{Zhodnocení}
             Problematickým místem první verze sondy se ukázalo čidlo B, které bylo ovlivňováno stíněním čidla A jak při změnách rychlosti proudění, tak při změnách natočení sondy. Prvním návrhem konstrukční úpravy tak bylo jeho odstínění.
-    
+    \newpage
     \subsection{Sonda se stíněním čidla B}
         Odstínění čidla B bylo zajištěno pomocí trubice $5.8 \times 0.4 \Unit{mm}$ uchycené ke stínění čidla A, viz obrázek \ref{fig:sonda-se-stinenim-B}. Detailní geometrie spolu s použitými rozměry modelu jsou uvedeny v příloze \ref{fig:sonda-se-stinenim-B-vykres}. 
         
@@ -157,6 +158,7 @@
                 \caption{Vizualizace vypočtených dat pro sondu s rozšířeným stíněním čidla B v rovině symetrie pro rychlost proudění $250 \Unit{\frac{m}{s}}$.}
                 \label{fig:sonda-s-rozsirenym-stinenim-B-vizualizace}
             \end{figure}
+        \newpage
         \subsubsection{Směrová citlivost v rovině symetrie}
             Zde bylo zlepšení vlivem přidání stínění nejpatrnější. Restituční faktor čidla B se oproti variantě sondy bez stínění (kapitola \ref{sec:sonda-bez-stineni-B}) vyrovnal a nedocházelo již k výraznému vlivu stínění čidla A, viz obrázek \ref{fig:sonda-s-rosirenym-stinenim-rovina-symetrie}.
             
@@ -178,18 +180,18 @@
 
         \subsubsection{Zhodnocení}
             Přidáním stínění k čidlu B došlo ke snížení směrové citlivosti sondy a ke zmenšení vlivu stínění čidla A na restituční faktor čidla B. Negativním dopadem této úpravy geometrie byl vyšší ohřev čidla B, dalším krokem analýzy konstrukčních úprav tak bylo detailnější zkoumání vlivu průměru stínění čidla B na jeho restituční faktor.
-        
+    
+    \newpage
     \subsection{Vliv průměru stínění čidla B}
-        Čidlo B vyžadovalo stínění kvůli snížení směrové citlivosti a eliminaci vlivu trubice stínící čidlo A, dalším krokem ve zkoumání konstrukčních úprav tak bylo analyzování, jaký rozměr stínění je dostačující a jaký naopak způsobuje příliš vysoký ohřev. Podrobnější znalost této závislosti by totiž umožnila oproti předešlým kapitolám určit s větší jistotou rozměr stínění, který bude optimální co do míry ohřevu čidla, tak i do rozměrů stínění, které by měly být co nejmenší. Zkoumáno bylo celkem 18 velikostí stínění s vnitřním průměrem v rozmězí $3.5 \div 20 \Unit{mm}$, viz výkres v příloze \ref{fig:prumer-stineni-B-vykres}. Výpočty byly provedeny pro rychlost proudění $250 \Unit{\frac{m}{s}}$ bez natočení.
-        
+        Čidlo B vyžadovalo stínění kvůli snížení směrové citlivosti a eliminaci vlivu trubice stínící čidlo A, dalším krokem ve zkoumání konstrukčních úprav tak bylo analyzování, jaký rozměr stínění je dostačující a jaký naopak způsobuje příliš vysoký ohřev. Podrobnější znalost této závislosti by totiž umožnila oproti předešlým kapitolám určit s\,větší jistotou rozměr stínění, který bude optimální co do míry ohřevu čidla, tak i do rozměrů stínění, které by měly být co nejmenší. 
         \begin{figure}[ht!]
             \centering
             \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_B.png}
             \caption{Stínění čidla B}
             \label{fig:stineni-B}
         \end{figure}
-        
-        Chování restitučního faktoru je patrné z obrázku \ref{fig:prumer-stineni-B}. Od průměru $16 \Unit{mm}$ došlo k jeho ustálení, nicméně vzhledem ke snaze o zachování malých rozměrů sondy se jevily jako vhodnější průměry $7 \div 9 \Unit{mm}$, které se nachází v pásmu $2.5 \div 5 \%$ relativní odchylky od ustálené hodnoty.
+
+        Zkoumáno bylo celkem 18 velikostí stínění s vnitřním průměrem v rozmezí \linebreak$3.5 \div 20\Unit{mm}$, viz výkres v příloze \ref{fig:prumer-stineni-B-vykres}. Výpočty byly provedeny pro rychlost proudění $250 \Unit{\frac{m}{s}}$ bez natočení. Chování restitučního faktoru je patrné z obrázku \ref{fig:prumer-stineni-B}. Od průměru $16 \Unit{mm}$ došlo k jeho ustálení, nicméně vzhledem ke snaze o zachování malých rozměrů sondy se jevily jako vhodnější průměry $7 \div 9 \Unit{mm}$, které se nachází v pásmu $2.5 \div 5 \%$ relativní odchylky od ustálené hodnoty.
         
         \begin{figure}[ht!]
             \centering
@@ -265,43 +267,45 @@
         \end{figure}
     
     \newpage
-    \subsection{Vliv přidání kavity do stínění čidla A}
-        DATA
+    \subsection{Vliv přidání kavity do stínění} \label{sec:kavita}
+        Poslední zkoumanou konstrukční úpravou před návrhem finální sondy bylo přidání kavity do stínění čidel – cílem bylo určit, jak moc dojde vlivem částečného odizolování od okolního proudění ke změně restitučních faktorů. Kavita ve stínění byla tvořena mezerou mezi vnitřní a vnější stěnou trubice, která byla proměnlivá v rozmezí $0 \div 1.5 \Unit{mm}$, viz přílohy \ref{fig:kavita-A-vykres}, \ref{fig:kavita-B-vykres} pro detailní geometrii konstrukce pro čidlo A, resp. pro čidlo B. Numerické testování probíhalo pro rychlost proudění $250 \Unit{\frac{m}{s}}$ bez natočení.
+
+        \begin{figure}[ht!]
+            \centering
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita.png}
+                \caption{Čidlo A s přidanou kavitou do stínění}
+                \label{fig:kavita-A}
+            \end{subfigure}
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B.png}
+                \caption{Čidlo B s přidanou kavitou do stínění}
+                \label{fig:kavita-B}
+            \end{subfigure}
+            \caption{Modely pro testování vlivu přidání kavity do stínění.}
+            \label{fig:kavita-modely}
+        \end{figure}
         
-        \begin{figure}[ht!]
-            \centering
-            \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita.png}
-            \caption{Čidlo A s přidanou kavitou do stínění}
-            \label{fig:kavita-A}
-        \end{figure}
-    
-        \begin{figure}[ht!]
-            \centering
-            \includegraphics*[width=\textwidth, trim={5.25cm 1.0cm 5.8cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita.eps}
-            \caption{Závislost restitučního faktoru čidla A na tloušťce kavity uvnitř stínění}
-            \label{fig:kavita-A-graf}
-        \end{figure}
-    
-    \newpage
-    
-    \subsection{Vliv přidání kavity do stínění čidla B}
-        DATA
+        \subsubsection{Čidlo A}
+            Chování restitučního faktoru, viz obrázek \ref{fig:kavita-A-graf}, bylo přesně opačné oproti očekáváním – při odizolování vnitřního prostoru byl předpokládán pokles tepelného toku stěnou a tím pádem zachování vyšší teploty proudění. K rozporu s předpoklady mohlo dojít vlivem zvětšení geometrie, která tak více narušovala proudění v okolí čidla a jeho stínění.
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics*[width=\textwidth, trim={5.25cm 1.0cm 5.8cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita.eps}
+                \caption{Závislost restitučního faktoru čidla A na tloušťce kavity uvnitř stínění.}
+                \label{fig:kavita-A-graf}
+            \end{figure}
         
-        \begin{figure}[ht!]
-            \centering
-            \includegraphics[width=\textwidth]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Kavita_B.png}
-            \caption{Čidlo B s přidanou kavitou do stínění}
-            \label{fig:kavita-B}
-        \end{figure}
-    
-        \begin{figure}[ht!]
-            \centering
-            \includegraphics*[width=\textwidth, trim={5.25cm 1.0cm 5.8cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B.eps}
-            \caption{Závislost restitučního faktoru čidla B na tloušťce kavity uvnitř stínění}
-            \label{fig:kavita-B-graf}
-        \end{figure}
-    
-    \newpage
-    \subsection{Vliv materiálu trubice sondy}
-        TODO
+        \newpage
+        
+        \subsubsection{Čidlo B}
+            V tomto případě výsledky odpovídají předpokladům – změna velikosti kavity ve stínění neměla prakticky žádný vliv na velikost restitučního faktoru čidla B, viz obrázek \ref{fig:kavita-B-graf} (změna restitučního faktoru nepřekročila $0.4 \Unit{\%}$).
+        
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics*[width=\textwidth, trim={5.0cm 1.0cm 5.8cm 2.0cm}]{400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B.eps}
+                \caption{Závislost restitučního faktoru čidla B na tloušťce kavity uvnitř stínění.}
+                \label{fig:kavita-B-graf}
+            \end{figure}
     

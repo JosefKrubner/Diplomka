@@ -1,72 +1,27 @@
 \babel@toc {czech}{}\relax 
-\contentsline {section}{Seznam použitých symbolů a zkratek}{9}{section*.7}%
-\contentsline {subsection}{Seznam symbolů}{9}{section*.8}%
-\contentsline {subsection}{Seznam zkratek}{9}{table.caption.9}%
-\contentsline {subsection}{Seznam použitých indexů}{10}{section*.12}%
-\contentsline {section}{Seznam obrázků}{10}{table.caption.13}%
-\contentsline {section}{\numberline {1}Úvod}{12}{section.1}%
-\contentsline {section}{\numberline {2}Měření teplot při vysokých podzvukových rychlostech}{13}{section.2}%
-\contentsline {subsubsection}{\numberline {2.0.1}Dynamický ohřev}{13}{subsubsection.2.0.1}%
-\contentsline {subsubsection}{\numberline {2.0.2}Restituční faktor}{13}{subsubsection.2.0.2}%
-\contentsline {subsection}{\numberline {2.1}Dynamická teplota}{13}{subsection.2.1}%
-\contentsline {section}{\numberline {3}DRTA sonda}{14}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Princip fungování}{14}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Víceprvková sonda}{14}{subsubsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.2}Výchozí geometrie}{14}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Cíle numerických simulací}{14}{subsection.3.3}%
-\contentsline {section}{\numberline {4}CFD model}{15}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Základní systém rovnic}{15}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Rovnice kontinuity}{15}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Pohybová rovnice}{15}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Energetická rovnice}{15}{subsubsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.4}Konstitutivní vztahy}{15}{subsubsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.2}Model turbulence}{16}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Výpočetní geometrie}{17}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Výpočetní oblast}{17}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Využití symetrie}{18}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Materiály}{19}{subsubsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.4}Okrajové podmínky}{20}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Hranice výpočetní oblasti}{20}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Stěny}{20}{subsubsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.5}Výpočetní síť}{21}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Povrchová síť}{21}{subsubsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}Zjemnění v mezní vrstvě}{21}{subsubsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.3}Objemová síť}{22}{subsubsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.6}Numerický řešič}{23}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Metoda konečných objemů}{23}{subsubsection.4.6.1}%
-\contentsline {subsubsection}{\numberline {4.6.2}Odhad gradientu}{23}{subsubsection.4.6.2}%
-\contentsline {subsubsection}{\numberline {4.6.3}Aproximace hodnot na stěnách}{23}{subsubsection.4.6.3}%
-\contentsline {subsubsection}{\numberline {4.6.4}Numerické schéma}{23}{subsubsection.4.6.4}%
-\contentsline {section}{\numberline {5}CFD analýza konstrukčních úprav}{24}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Studie citlivosti výpočetní sítě}{24}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Sonda bez stínění čidla B}{25}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Chování při různých rychlostech proudění}{25}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Směrová citlivost v rovině symetrie}{26}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Směrová citlivost kolmo na rovinu symetrie}{27}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}Zhodnocení}{28}{subsubsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.3}Sonda se stíněním čidla B}{28}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Sonda s rozšířeným stíněním čidla B}{29}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Chování při různých rychlostech proudění}{30}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}Směrová citlivost v rovině symetrie}{30}{subsubsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.3}Směrová citlivost kolmo na rovinu symetrie}{31}{subsubsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.4}Zhodnocení}{32}{subsubsection.5.4.4}%
-\contentsline {subsection}{\numberline {5.5}Vliv průměru stínění čidla B}{32}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Vliv průměru stínění čidla A}{33}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Vliv polohy odvětrání čidla A}{35}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Vliv průměru odvětrání čidla A}{36}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Vliv přidání divergentního vstupu pro čidlo A}{37}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Vliv přidání kavity do stínění čidla A}{38}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}Vliv přidání kavity do stínění čidla B}{39}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}Vliv materiálu trubice sondy}{40}{subsection.5.12}%
-\contentsline {section}{\numberline {6}Návrh a analýza finální geometrie}{41}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Návrh konstrukčních úprav}{41}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Čidlo A}{41}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Čidlo B}{41}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Materiál}{41}{subsubsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.2}CFD analýza}{41}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Chování při různých rychlostech proudění}{41}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Směrová citlivost v rovině symetrie}{41}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Směrová citlivost kolmo na rovinu symetrie}{41}{subsubsection.6.2.3}%
-\contentsline {section}{\numberline {7}Závěr}{42}{section.7}%
-\contentsline {section}{Seznam použité literatury}{43}{section*.58}%
-\contentsline {section}{\numberline {8}Přílohy}{44}{section.8}%
+\contentsline {section}{Seznam použitých symbolů a zkratek}{8}{section*.7}%
+\contentsline {subsection}{Seznam symbolů}{8}{section*.8}%
+\contentsline {subsection}{Seznam zkratek}{8}{table.caption.9}%
+\contentsline {subsection}{Seznam použitých indexů}{9}{section*.12}%
+\contentsline {section}{Seznam obrázků}{9}{table.caption.13}%
+\contentsline {section}{\numberline {1}CFD analýza konstrukčních úprav}{11}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Studie citlivosti výpočetní sítě}{11}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Sonda bez stínění čidla B}{12}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Chování při různých rychlostech proudění}{12}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Směrová citlivost v rovině symetrie}{13}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Směrová citlivost kolmo na rovinu symetrie}{14}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Zhodnocení}{15}{subsubsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.3}Sonda se stíněním čidla B}{15}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Sonda s rozšířeným stíněním čidla B}{16}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Chování při různých rychlostech proudění}{17}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Směrová citlivost v rovině symetrie}{17}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}Směrová citlivost kolmo na rovinu symetrie}{18}{subsubsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.4}Zhodnocení}{19}{subsubsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.5}Vliv průměru stínění čidla B}{19}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Vliv průměru stínění čidla A}{20}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Vliv polohy odvětrání čidla A}{22}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Vliv průměru odvětrání čidla A}{23}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Vliv přidání divergentního vstupu pro čidlo A}{24}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Vliv přidání kavity do stínění}{25}{subsection.1.10}%
+\contentsline {subsubsection}{\numberline {1.10.1}Čidlo A}{25}{subsubsection.1.10.1}%
+\contentsline {subsubsection}{\numberline {1.10.2}Čidlo B}{26}{subsubsection.1.10.2}%
