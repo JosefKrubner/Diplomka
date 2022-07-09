@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  8 JUL 2022 21:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  9 JUL 2022 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,7 +907,7 @@ e
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(99.58464pt, 441.01773pt, 56.9055pt)
 * v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
@@ -915,13 +915,13 @@ e
 * \textwidth=441.01773pt
 * \textheight=702.78308pt
 * \oddsidemargin=27.31465pt
-* \evensidemargin=27.31465pt
+* \evensidemargin=-15.36449pt
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=35.0pt
+* \marginparwidth=85.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -929,8 +929,8 @@ e
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1025,6 +1025,14 @@ Graphic file (type png)
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda
 _bez_stineni_B.png  used on input line 33.
 (pdftex.def)             Requested size: 441.01773pt x 192.45493pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [2 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Sonda_bez_stineni_B.png>
 ]
 Package epstopdf Info: Source file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_
@@ -1114,8 +1122,17 @@ f>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_kolma_rovina
 -eps-converted-to.pdf  used on input line 85.
 (pdftex.def)             Requested size: 441.01773pt x 238.61932pt.
- [4 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rovina_symetrie-eps-converted-
-to.pdf>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/01_rovina_symetrie-eps-converted-t
+o.pdf>]
 
 LaTeX Warning: Reference `fig:sonda-se-stinenim-B-vykres' on page 5 undefined o
 n input line 94.
@@ -1183,6 +1200,18 @@ Graphic file (type pdf)
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rychlosti-ep
 s-converted-to.pdf  used on input line 139.
 (pdftex.def)             Requested size: 441.01773pt x 238.61932pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [6 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/sonda_se_stinenim_B_vizualiz
 ace_rychlost.png (PNG copy)> <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vizualizace/so
 nda_se_stinenim_B_vizualizace_teplota.png (PNG copy)> <./400_SIMULACE_KONSTRUKC
@@ -1253,8 +1282,17 @@ f>
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_kolma_rovina
 -eps-converted-to.pdf  used on input line 176.
 (pdftex.def)             Requested size: 441.01773pt x 238.61932pt.
- [8 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rovina_symetrie-eps-converted-
-to.pdf>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/03_rovina_symetrie-eps-converted-t
+o.pdf>]
 <400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_B.png, id=252, 3791.1
 6376pt x 1186.4325pt>
 File: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_B.png Graphic fi
@@ -1304,6 +1342,14 @@ le (type png)
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stine
 ni_A.png  used on input line 209.
 (pdftex.def)             Requested size: 441.01773pt x 103.01021pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [10 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/04_prumer_stineni_B-eps-converted
 -to.pdf> <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Stineni_A.png>]
 Package epstopdf Info: Source file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/05_
@@ -1357,6 +1403,14 @@ d-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/06_poloha_odvet
 rani_A-eps-converted-to.pdf  used on input line 232.
 (pdftex.def)             Requested size: 441.01773pt x 248.92644pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [12 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/06_poloha_odvetrani_A-eps-convert
 ed-to.pdf>]
 
@@ -1424,6 +1478,14 @@ d-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/08_divergentni_
 cast_A-eps-converted-to.pdf  used on input line 265.
 (pdftex.def)             Requested size: 441.01773pt x 248.92644pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [14 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/08_divergentni_cast_A-eps-convert
 ed-to.pdf> <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Vykresy_rendery/Difuzor_A.png>]
 
@@ -1452,12 +1514,12 @@ a_B.png  used on input line 284.
 (pdftex.def)             Requested size: 198.45662pt x 60.44424pt.
 Package epstopdf Info: Source file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kav
 ita.eps>
-(epstopdf)                    date: 2022-07-08 14:28:44
-(epstopdf)                    size: 51876 bytes
+(epstopdf)                    date: 2022-07-09 10:35:55
+(epstopdf)                    size: 51087 bytes
 (epstopdf)             Output file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kav
 ita-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-08 14:31:55
-(epstopdf)                    size: 19571 bytes
+(epstopdf)                    date: 2022-07-09 10:36:18
+(epstopdf)                    size: 19249 bytes
 (epstopdf)             Command: <repstopdf --outfile=400_SIMULACE_KONSTRUKCNICH
 _UPRAV/Grafy/kavita-eps-converted-to.pdf 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy
 /kavita.eps>
@@ -1481,12 +1543,12 @@ m¥na ve-li-kosti ka-vity vestín¥ní
 
 Package epstopdf Info: Source file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kav
 ita_B.eps>
-(epstopdf)                    date: 2022-07-08 14:30:32
-(epstopdf)                    size: 53556 bytes
+(epstopdf)                    date: 2022-07-09 10:34:56
+(epstopdf)                    size: 52762 bytes
 (epstopdf)             Output file: <400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kav
 ita_B-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-07-08 14:31:58
-(epstopdf)                    size: 20453 bytes
+(epstopdf)                    date: 2022-07-09 10:36:22
+(epstopdf)                    size: 20136 bytes
 (epstopdf)             Command: <repstopdf --outfile=400_SIMULACE_KONSTRUKCNICH
 _UPRAV/Grafy/kavita_B-eps-converted-to.pdf 400_SIMULACE_KONSTRUKCNICH_UPRAV/Gra
 fy/kavita_B.eps>
@@ -1500,7 +1562,16 @@ hic file (type pdf)
 Package pdftex.def Info: 400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B-eps-co
 nverted-to.pdf  used on input line 308.
 (pdftex.def)             Requested size: 441.01773pt x 247.84293pt.
-) [16 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B-eps-converted-to.pdf>]
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16 <./400_SIMULACE_KONSTRUKCNICH_UPRAV/Grafy/kavita_B-eps-converted-to.pdf>]
 (./501_Finalni_geometrie.tex
 
 LaTeX Warning: Reference `sec:sonda-se-stinenim-B' on page 17 undefined on inpu
@@ -1531,26 +1602,36 @@ Package epstopdf Info: Source file: <500_FINAL/final_rychlosti.eps>
 (epstopdf)                    size: 58157 bytes
 (epstopdf)             Command: <repstopdf --outfile=500_FINAL/final_rychlosti-
 eps-converted-to.pdf 500_FINAL/final_rychlosti.eps>
-(epstopdf)             \includegraphics on input line 32.
+(epstopdf)             \includegraphics on input line 33.
 Package epstopdf Info: Output file is already uptodate.
-<500_FINAL/final_rychlosti-eps-converted-to.pdf, id=386, 1927.2pt x 995.72pt>
+<500_FINAL/final_rychlosti-eps-converted-to.pdf, id=387, 1927.2pt x 995.72pt>
 File: 500_FINAL/final_rychlosti-eps-converted-to.pdf Graphic file (type pdf)
 <use 500_FINAL/final_rychlosti-eps-converted-to.pdf>
 Package pdftex.def Info: 500_FINAL/final_rychlosti-eps-converted-to.pdf  used o
-n input line 32.
+n input line 33.
 (pdftex.def)             Requested size: 441.01773pt x 238.61932pt.
-<500_FINAL/SIM_Final_XY0_rychlost.png, id=388, 1003.75pt x 1003.75pt>
+<500_FINAL/SIM_Final_XY0_rychlost.png, id=389, 1003.75pt x 1003.75pt>
 File: 500_FINAL/SIM_Final_XY0_rychlost.png Graphic file (type png)
 <use 500_FINAL/SIM_Final_XY0_rychlost.png>
 Package pdftex.def Info: 500_FINAL/SIM_Final_XY0_rychlost.png  used on input li
-ne 42.
+ne 45.
 (pdftex.def)             Requested size: 198.45662pt x 198.44905pt.
-<500_FINAL/SIM_Final_XY0_teplota.png, id=389, 1003.75pt x 1003.75pt>
+<500_FINAL/SIM_Final_XY0_teplota.png, id=390, 1003.75pt x 1003.75pt>
 File: 500_FINAL/SIM_Final_XY0_teplota.png Graphic file (type png)
 <use 500_FINAL/SIM_Final_XY0_teplota.png>
 Package pdftex.def Info: 500_FINAL/SIM_Final_XY0_teplota.png  used on input lin
-e 48.
+e 51.
 (pdftex.def)             Requested size: 198.45662pt x 198.44905pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18 <./500_FINAL/final_rychlosti-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <500_FINAL/final_XY.eps>
 (epstopdf)                    date: 2022-07-08 20:47:25
 (epstopdf)                    size: 150904 bytes
@@ -1559,17 +1640,14 @@ Package epstopdf Info: Source file: <500_FINAL/final_XY.eps>
 (epstopdf)                    size: 59797 bytes
 (epstopdf)             Command: <repstopdf --outfile=500_FINAL/final_XY-eps-con
 verted-to.pdf 500_FINAL/final_XY.eps>
-(epstopdf)             \includegraphics on input line 57.
+(epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
-<500_FINAL/final_XY-eps-converted-to.pdf, id=390, 1927.2pt x 995.72pt>
+<500_FINAL/final_XY-eps-converted-to.pdf, id=401, 1927.2pt x 995.72pt>
 File: 500_FINAL/final_XY-eps-converted-to.pdf Graphic file (type pdf)
 <use 500_FINAL/final_XY-eps-converted-to.pdf>
 Package pdftex.def Info: 500_FINAL/final_XY-eps-converted-to.pdf  used on input
- line 57.
+ line 62.
 (pdftex.def)             Requested size: 441.01773pt x 238.61932pt.
-
-[18 <./500_FINAL/final_rychlosti-eps-converted-to.pdf> <./500_FINAL/SIM_Final_X
-Y0_rychlost.png (PNG copy)> <./500_FINAL/SIM_Final_XY0_teplota.png>]
 Package epstopdf Info: Source file: <500_FINAL/final_XZ.eps>
 (epstopdf)                    date: 2022-07-08 20:47:41
 (epstopdf)                    size: 154831 bytes
@@ -1578,13 +1656,13 @@ Package epstopdf Info: Source file: <500_FINAL/final_XZ.eps>
 (epstopdf)                    size: 61401 bytes
 (epstopdf)             Command: <repstopdf --outfile=500_FINAL/final_XZ-eps-con
 verted-to.pdf 500_FINAL/final_XZ.eps>
-(epstopdf)             \includegraphics on input line 64.
+(epstopdf)             \includegraphics on input line 69.
 Package epstopdf Info: Output file is already uptodate.
-<500_FINAL/final_XZ-eps-converted-to.pdf, id=404, 1927.2pt x 995.72pt>
+<500_FINAL/final_XZ-eps-converted-to.pdf, id=403, 1927.2pt x 995.72pt>
 File: 500_FINAL/final_XZ-eps-converted-to.pdf Graphic file (type pdf)
 <use 500_FINAL/final_XZ-eps-converted-to.pdf>
 Package pdftex.def Info: 500_FINAL/final_XZ-eps-converted-to.pdf  used on input
- line 64.
+ line 69.
 (pdftex.def)             Requested size: 441.01773pt x 238.61932pt.
 Package epstopdf Info: Source file: <500_FINAL/final_rozdil_restitucnich_faktor
 u.eps>
@@ -1597,24 +1675,60 @@ u-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=500_FINAL/final_rozdil_res
 titucnich_faktoru-eps-converted-to.pdf 500_FINAL/final_rozdil_restitucnich_fakt
 oru.eps>
-(epstopdf)             \includegraphics on input line 74.
+(epstopdf)             \includegraphics on input line 79.
 Package epstopdf Info: Output file is already uptodate.
-<500_FINAL/final_rozdil_restitucnich_faktoru-eps-converted-to.pdf, id=406, 1927
+<500_FINAL/final_rozdil_restitucnich_faktoru-eps-converted-to.pdf, id=405, 1927
 .2pt x 995.72pt>
 File: 500_FINAL/final_rozdil_restitucnich_faktoru-eps-converted-to.pdf Graphic 
 file (type pdf)
 <use 500_FINAL/final_rozdil_restitucnich_faktoru-eps-converted-to.pdf>
 Package pdftex.def Info: 500_FINAL/final_rozdil_restitucnich_faktoru-eps-conver
-ted-to.pdf  used on input line 74.
+ted-to.pdf  used on input line 79.
 (pdftex.def)             Requested size: 441.01773pt x 224.66592pt.
+Package epstopdf Info: Source file: <500_FINAL/final_chyba_mereni.eps>
+(epstopdf)                    date: 2022-07-09 11:46:55
+(epstopdf)                    size: 136266 bytes
+(epstopdf)             Output file: <500_FINAL/final_chyba_mereni-eps-converted
+-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=500_FINAL/final_chyba_mere
+ni-eps-converted-to.pdf 500_FINAL/final_chyba_mereni.eps>
+(epstopdf)             \includegraphics on input line 86.
+runsystem(repstopdf --outfile=500_FINAL/final_chyba_mereni-eps-converted-to.pdf
+ 500_FINAL/final_chyba_mereni.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <500_FINAL/final_chyba_mereni-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2022-07-09 11:48:46
+(epstopdf)                    size: 50493 bytes.
+<500_FINAL/final_chyba_mereni-eps-converted-to.pdf, id=407, 1927.2pt x 995.72pt
+>
+File: 500_FINAL/final_chyba_mereni-eps-converted-to.pdf Graphic file (type pdf)
+
+<use 500_FINAL/final_chyba_mereni-eps-converted-to.pdf>
+Package pdftex.def Info: 500_FINAL/final_chyba_mereni-eps-converted-to.pdf  use
+d on input line 86.
+(pdftex.def)             Requested size: 441.01773pt x 238.61932pt.
 )
 
 AED: lastpage setting LastPage
-[19 <./500_FINAL/final_XY-eps-converted-to.pdf> <./500_FINAL/final_XZ-eps-conve
-rted-to.pdf>] [20 <./500_FINAL/final_rozdil_restitucnich_faktoru-eps-converted-
-to.pdf>] (./main.aux)
+[19 <./500_FINAL/final_XY-eps-converted-to.pdf> <./500_FINAL/SIM_Final_XY0_rych
+lost.png (PNG copy)> <./500_FINAL/SIM_Final_XY0_teplota.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20 <./500_FINAL/final_XZ-eps-converted-to.pdf> <./500_FINAL/final_rozdil_resti
+tucnich_faktoru-eps-converted-to.pdf>] [21 <./500_FINAL/final_chyba_mereni-eps-
+converted-to.pdf>] (./main.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7CAD78A93320BA7E8417ADA460EB1B88;6537.
@@ -1628,13 +1742,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23630 strings out of 478037
- 430369 string characters out of 5843053
- 1144438 words of memory out of 5000000
- 41613 multiletter control sequences out of 15000+600000
+ 23640 strings out of 478037
+ 430760 string characters out of 5843053
+ 1144465 words of memory out of 5000000
+ 41620 multiletter control sequences out of 15000+600000
  482036 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,11n,80p,980b,1633s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,11n,80p,980b,1636s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dis
@@ -1648,10 +1762,10 @@ exlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/202
 st/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/t
 ype1/public/cm-super/sfrm1095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
 c/cm-super/sfrm1200.pfb>
-Output written on main.pdf (20 pages, 7161996 bytes).
+Output written on main.pdf (21 pages, 7210675 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
- 82 named destinations out of 1000 (max. 500000)
- 521 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 532 PDF objects out of 1000 (max. 8388607)
+ 390 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 532 words of extra memory for PDF output out of 10000 (max. 10000000)
 

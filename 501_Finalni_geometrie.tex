@@ -25,14 +25,17 @@
         \end{figure}
         
     \subsection{CFD analýza}
-        Chování restitučních faktorů bylo analyzováno stejným postupem, jako v kapitolách \ref{sec:sonda-bez-stineni-B} a \ref{sec:sonda-s-rozsirenym-stinenim-B} – byla zkoumána jejich závislost na rychlosti proudění ($100 \div 325 \Unit{\frac{m}{s}}$ )a na natočení v rovině symetrie a kolmo na ní (v rozmezí $\pm 15^o$). Nakonec byl zkoumán vliv materiálu trubice, kde byla mosaz nahrazena ocelí a polykarbonátem.
+        Chování restitučních faktorů bylo analyzováno stejným postupem, jako v kapitolách \ref{sec:sonda-bez-stineni-B} a \ref{sec:sonda-s-rozsirenym-stinenim-B} – byla zkoumána jejich závislost na rychlosti proudění ($100 \div 325 \Unit{\frac{m}{s}}$ ) a na natočení v rovině symetrie a kolmo na ní (v rozmezí $\pm 15^o$). Nakonec byl zkoumán vliv materiálu trubice, kde byla mosaz nahrazena ocelí a poté polykarbonátem.
         \subsubsection{Chování při různých rychlostech proudění}
+            Přidané stínění k čidlu B zajistilo částečné vyrovnání průběhu rozdílu restitučních faktorů, což je nejvíce patrné pro rychlosti proudění do $225 \Unit{\frac{m}{s}}$, viz obrázek \ref{fig:sonda-final-rychlosti}. Při dalším zvyšování Machova čísla docházelo k poklesu rozdílu až na $92 \Unit{\%}$ hodnoty odpovídající rychlosti $250 \Unit{\frac{m}{s}}$, která byla rovna $0.1232$. 
             \begin{figure}[ht!]
                 \centering
                 \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 2.7cm 2.0cm}]{500_FINAL/final_rychlosti.eps}
                 \caption{Závislost restitučních faktorů upravené sondy na rychlosti proudění.}
                 \label{fig:sonda-final-rychlosti}
             \end{figure}
+
+            Restituční faktor čidla A vzrostl v průměru o přibližně $2.03 \Unit{\%}$, nárůst u čidla B byl $1.76 \Unit{\%}$ pro rychlost $250 \Unit{\frac{m}{s}}$ a $2.54 \Unit{\%}$ pro rychlost $325 \Unit{\frac{m}{s}}$. Při nejnižší zkoumané rychlosti restituční faktor poklesl o $1.33 \Unit{\%}$, došlo tedy ke zlepšení jeho výsledného průběhu (přiblížení k \uv{rovnoběžným} průběhům), což se promítlo do již zmíněného vyrovnání rozdílu restitučních faktorů.
 
             \begin{figure}[ht!]
                 \centering
@@ -51,6 +54,8 @@
                 \caption{Vizualizace vypočtených dat pro upravenou sondu v rovině symetrie pro rychlost proudění $250 \Unit{\frac{m}{s}}$.}
                 \label{fig:sonda-final-vizualizace}
             \end{figure}
+
+        \newpage
         \subsubsection{Směrová citlivost v rovině symetrie}
             \begin{figure}[ht!]
                 \centering
@@ -72,8 +77,15 @@
             \begin{figure}[ht!]
                 \centering
                 \includegraphics*[width=\textwidth, trim={0.0cm 1.0cm 1.0cm 0.0cm}]{500_FINAL/final_rozdil_restitucnich_faktoru.eps}
-                \caption{Porovnání závislostí rozdílu restitučních faktorů s vyznačením $2.5\%$ ,$5\%$ a $10\%$\,odchylky od hodnoty v nevychýleném stavu a rychlosti proudění $250 \Unit{\frac{m}{s}}$.}
+                \caption{Porovnání závislostí rozdílu restitučních faktorů s vyznačením $2.5\%$ ,$5\%$ a $10\%$\,odchylky od hodnoty v nevychýleném stavu a při rychlosti proudění $250 \Unit{\frac{m}{s}}$.}
                 \label{fig:sonda-final-rozdil-restitucnich-faktoru}
+            \end{figure}
+
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics*[width=\textwidth, trim={5.9cm 1.0cm 2.7cm 2.0cm}]{500_FINAL/final_chyba_mereni.eps}
+                \caption{Rozložení chyb měření rychlosti při uvažování konstantního rozdílu restitučních faktorů.}
+                \label{fig:sonda-final-chyba-mereni}
             \end{figure}
 
 
