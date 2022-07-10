@@ -66,5 +66,4 @@
 \contentsline {subsection}{\numberline {5.3}Zhodnocení}{43}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Volba materiálu trubice}{44}{subsection.5.4}%
 \contentsline {section}{Závěr}{46}{section*.64}%
-\contentsline {section}{Seznam použité literatury}{47}{section*.65}%
-\contentsline {section}{Přílohy}{48}{section*.66}%
+\contentsline {section}{Přílohy}{47}{section*.65}%
