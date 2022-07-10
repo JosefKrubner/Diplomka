@@ -1,4 +1,5 @@
-\section{Přílohy}
+\section*{Přílohy}
+\addcontentsline{toc}{section}{Přílohy}
 \sectionPriloha{Sonda bez stínění čidla B} \label{fig:sonda-bez-stineni-B-vykres}
     \begin{figure}[ht!]
         \centering
@@ -64,3 +65,27 @@
         \centering
         \includegraphics[width=\textwidth]{500_FINAL/sonda_final_vykres.png}
     \end{figure}
+
+\sectionPriloha{Odvození chyby určení rychlosti při uvažování konstantního rozdílu restitučních faktorů} \label{sec:odvozeni-chyby}
+    Pro účely odvození uvažujme následující veličiny:
+    \begin{itemize}
+        \item[–] $\Delta f$ skutečný rozdíl restitučních faktorů
+        \item[–] $\Delta f_n$ jmenovitý rozdíl restitučních faktorů
+        \item[–] $\delta f = \Delta f_n - \Delta f$ odchylku jmenovité a skutečné hodnoty rozdílu restitučních faktorů
+        \item[–] $\Delta T_f$ rozdíl měřených teplot
+        \item[–] $\overline{u} = \sqrt{\frac{2 c_p \Delta T_f}{\Delta f_n}}$ odhad rychlosti pomocí $\Delta f_n$
+        \item[–] $u = \sqrt{\frac{2 c_p \Delta T_f}{\Delta f}}$ skutečnou rychlost
+        \item[–] $\varepsilon _u = \frac{u - \overline{u}}{u}$ relativní chybu měření rychlosti
+        \item[–] $\varepsilon _f = \frac{\delta f}{\Delta f}$ relativní odchylku skutečného a jmenovitého rozdílu restitučních faktorů
+    \end{itemize}
+
+    Vyjádřeme podíl odhadované a skutečné rychlosti jako funkce $\varepsilon _f$:
+    \begin{equation*}
+        \frac{\overline{u}}{u} = \frac{\sqrt{\frac{2 c_p \Delta T_f}{\Delta f_n}}}{\sqrt{\frac{2 c_p \Delta T_f}{\Delta f}}} = \sqrt{\frac{\Delta f}{\Delta  f + \delta f}} = \sqrt{\frac{1}{1 + \frac{\delta f}{\Delta f}}} = \sqrt{\frac{1}{1+\varepsilon _f}}
+    \end{equation*}
+
+    Nyní lze již jednoduše vyjádřit závislost $\varepsilon _u = \varepsilon _u \brac{\varepsilon _f}$:
+
+    \begin{equation*}
+        \varepsilon _u = \frac{u - \overline{u}}{u} = 1 - \frac{\overline{u}}{u} = 1 - \sqrt{\frac{1}{1+\varepsilon _f}}
+    \end{equation*}

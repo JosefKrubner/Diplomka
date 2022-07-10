@@ -377,4 +377,13 @@
   publisher = {{EDP} Sciences},
 }
 
+@Book{Shapiro1954,
+  author    = {Shapiro, Ascher H.},
+  publisher = {John Wiley & Sons},
+  title     = {Dynamics of Thermodynamics and Compressible Fluid},
+  year      = {1954},
+  isbn      = {9780471068457},
+  pages     = {647},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
