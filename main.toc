@@ -19,21 +19,21 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Pohybová rovnice}{13}{subsubsection.3.1.2}%
 \contentsline {subsubsection}{\numberline {3.1.3}Energetická rovnice}{13}{subsubsection.3.1.3}%
 \contentsline {subsubsection}{\numberline {3.1.4}Konstitutivní vztahy}{13}{subsubsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.2}Model turbulence}{15}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Výpočetní geometrie}{17}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Výpočetní oblast}{17}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Využití symetrie}{18}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Materiály}{19}{subsubsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.4}Okrajové podmínky}{20}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Hranice výpočetní oblasti}{20}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Stěny}{20}{subsubsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.5}Výpočetní síť}{21}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Povrchová síť}{21}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Zjemnění v mezní vrstvě}{21}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}Objemová síť}{22}{subsubsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.6}Numerický řešič}{23}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}Metoda konečných objemů}{23}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}Odhad gradientu}{23}{subsubsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.3}Aproximace hodnot na stěnách}{23}{subsubsection.3.6.3}%
-\contentsline {subsubsection}{\numberline {3.6.4}Numerické schéma}{23}{subsubsection.3.6.4}%
-\contentsline {subsubsection}{\numberline {3.6.5}Určení restitučních faktorů}{23}{subsubsection.3.6.5}%
+\contentsline {subsection}{\numberline {3.2}Model turbulence}{14}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Výpočetní geometrie}{16}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Výpočetní oblast}{16}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Využití symetrie}{17}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Materiály}{18}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}Okrajové podmínky}{19}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Hranice výpočetní oblasti}{19}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Stěny}{19}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}Výpočetní síť}{20}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Povrchová síť}{20}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Zjemnění v mezní vrstvě}{20}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Objemová síť}{21}{subsubsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.6}Numerický řešič}{22}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Metoda konečných objemů}{22}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Odhad gradientu}{22}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Aproximace hodnot na stěnách}{22}{subsubsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.4}Numerické schéma}{22}{subsubsection.3.6.4}%
+\contentsline {subsubsection}{\numberline {3.6.5}Určení restitučních faktorů}{22}{subsubsection.3.6.5}%

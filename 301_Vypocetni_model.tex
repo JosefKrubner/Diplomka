@@ -45,52 +45,76 @@
         \end{equation}
         
     \subsection{Model turbulence}
-        Pokračování – theory guide, s106, BSL
-        \begin{align} \label{eq:rovnice-pro-k} 
-            \nabla \cdot \brac{\rho k \Vec{u}} &= \nabla \cdot \brac{\Gamma _k \nabla k} + G _k - Y _k + S _k + G _b \\
-            \Gamma _k &= \mu + \frac{\mu _t}{\sigma _k} \\
-            \mu _t &= \alpha ^* \frac{\rho k}{\omega} \\
-            \mu _t &= \alpha ^* \frac{\rho k}{\omega} \\
-            \alpha ^* &= \alpha ^* _\infty \brac{\frac{\alpha _0 ^* + \frac{Re_t}{R_k}}{1 + \frac{Re_t}{R_k}}} \\
-            Re_t &= \frac{\rho k}{\mu \omega} \\
-            R_k &= 6 \\
-            \alpha ^* _0 &= \frac{\beta _i}{3} \\
-            G_k &= \mu _t S^2 \\
-            S &= \sqrt{2 \Tensor{S} : \Tensor{S}} \\
-            \Tensor{S} &= \frac{1}{2} \brac{\nabla \Vec{u} + \nabla \Vec{u} ^T} \\
-            Y _k &= \rho \beta ^* f_{\beta ^*} k \omega \\
-            f_{\beta ^*} &= \begin{cases} 
-                1 & X_k \leq 0 \\
-                \frac{1 + 680 X _k ^2}{1 + 400 X _k ^2} & X _k > 0 \\                
-                \end{cases} \\
-            X _k &= \frac{1}{\omega ^3} \nabla k \cdot \nabla \omega \\
-            \beta ^* &= \beta ^* _i \Brac{1 + \zeta ^* F \brac{\Ma_t}} \\
-            \beta _i ^* &= \beta _\infty ^* \Brac{\frac{\frac{4}{15} + \brac{\frac{Re_t}{R_\beta}}^4}{1 + \brac{\frac{Re_t}{R_\beta}}^4}}
-        \end{align}
+        
+        Transportní rovnice pro turbulentní kinetickou energii má následující tvar:
+        \begin{equation} \label{eq:rovnice-pro-k} 
+            \nabla \cdot \brac{\rho k \Vec{u}} = \nabla \cdot \brac{\Gamma _k \nabla k} + G _k - Y _k
+        \end{equation}
+        \noindent kde dílčí členy jsou popsány následovně:
+        \begin{multicols}{2}
+            \vztah{Produkce $k$}{G_k = \mu _t S^2}
 
-        \begin{align} \label{eq:rovnice-pro-omega}
-            \nabla \cdot \brac{\rho \omega \Vec{u}} &= \nabla \cdot \brac{\Gamma _\omega \nabla \omega} + G _\omega - Y _\omega + S _\omega + G _{\omega b} \\
-            \Gamma _\omega &= \mu + \frac{\mu _t}{\sigma _\omega} \\
-            G _\omega &= \alpha \frac{\omega}{k} G _k \\
-            \alpha &= \frac{\alpha _\infty}{\alpha ^*}\brac{\frac{\alpha _0 + \frac{Re_t}{R_\omega}}{1 + \frac{Re_t}{R_\omega}}} \\
-            Y _\omega &= \rho \beta f_\beta \omega ^2 \\
-            f _\beta &= \frac{1 + 70 X \omega}{1 + 80 X _\omega} \\
-            X _\omega &= \left| \frac{\brac{\Tensor{\Omega} \cdot \Tensor{\Omega}} : \Tensor{S}}{\brac{\beta _\omega ^* \omega}^3} \right| \\
-            \Tensor{\Omega} &= \frac{1}{2} \brac{\nabla \Vec{u} - \nabla \Vec{u}^T} \\
-            \beta &= \beta _i \Brac{1 - \frac{\beta _i ^*}{\beta _i} \zeta ^* F\brac{\Ma_t}} \\
-            F \brac{\Ma_t} &= \begin{cases}
-                0   &   \Ma_t \leq \Ma_{t0} \\
-                \Ma_t ^2 - \Ma _{t0} ^2 & \Ma_t > \Ma _{t0} \\
-            \end{cases} \\
-            \Ma _t ^2 &= \frac{2k}{a^2} \\
-             a &= \sqrt{\kappa r T}
-        \end{align}
+            \vztah{Disipace $k$}{Y _k = \rho \beta ^* _\infty k \omega}
+
+            \vztah{Turbulentní vazkost}{\mu _t = \frac{\rho k}{\omega} \frac{1}{\max \brac{\frac{1}{\alpha ^*}, \frac{S F_2}{a_1 \omega}}}}
+            
+            \vztah{Difuzivita $k$}{\Gamma _k = \mu + \frac{\mu _t}{\sigma _k}}
+
+            \vztah{Turbulentní Reynoldsovo číslo}{Re_t = \frac{\rho k}{\mu \omega}}
+
+            \vztah{Turbulentní Prandtlovo číslo pro k}{\sigma _k = \frac{1}{\frac{F_1}{\sigma _{k,1}}+\frac{1-F_1}{\sigma _{k,2}}}}
+
+            \vztah{Difuze $\omega$}{D _\omega ^+ = \max \Brac{2 \rho \frac{1}{\sigma _{\omega , 2}}\frac{1}{\omega} \nabla k \cdot \nabla \omega, 10^{-10}}}
+
+            \vztah{Tenzor rychlosti deformace}{\Tensor{S} = \frac{1}{2} \brac{\nabla \Vec{u} + \nabla \Vec{u} ^T}}
+
+            \vzorec{S = \sqrt{2 \Tensor{S} : \Tensor{S}}}
+            
+            \vzorec{F_2 = \tanh \brac{\Phi _2 ^2}}
+
+            \vzorec{\Phi _2 = \max \brac{ 2 \frac{\sqrt{k}}{0.09 \omega y}, \frac{500 \mu}{\rho y^2 \omega}}}
+
+            \vzorec{F_1 = \tanh \brac{\Phi _1 ^4}}
+
+            \vzorec{\Phi _1 = \min \Brac{\max \brac{\frac{\sqrt{k}}{0.09 \omega y},\frac{500 \mu}{\rho y^2 \omega}}, \frac{4 \rho k}{\sigma _{\omega,2} D _\omega ^+ y^2}}}
+
+            \vzorec{\alpha ^* = \alpha ^* _\infty \brac{\frac{\alpha _0 ^* + \frac{Re_t}{R_k}}{1 + \frac{Re_t}{R_k}}}}
+
+            \vzorec{\alpha ^* _0 = \frac{\beta _i}{3}}
+
+            \vzorec{\beta _i = F_1 \beta _{i,1} + \brac{1 - F_1} \beta _{i,2}}
+        \end{multicols}
+
+        Obdobně lze zapsat rovnici pro specifickou rychlost disipace:
+        \begin{equation} \label{eq:rovnice-pro-omega}
+            \nabla \cdot \brac{\rho \omega \Vec{u}} = \nabla \cdot \brac{\Gamma _\omega \nabla \omega} + G _\omega - Y _\omega
+        \end{equation}
+        \noindent která se skládá z následujících členů:
+        \begin{multicols}{2}
+            \vztah{Produkce $\omega$}{G _\omega = \frac{\alpha \alpha ^*}{\nu _t} G _k}
+
+            \vztah{Disipace $\omega$}{Y _\omega = \rho \beta_i \omega ^2}
+            
+            \vztah{Difuzivita $\omega$}{\Gamma _\omega = \mu + \frac{\mu _t}{\sigma _\omega}}
+
+            \vztah{Turbulentní Prandtlovo číslo pro $\omega$}{\sigma _\omega = \frac{1}{\frac{F_1}{\sigma _{\omega,1}}+\frac{1-F_1}{\sigma _{\omega,2}}}}
+            
+            \vzorec{\alpha = \frac{\alpha _\infty}{\alpha ^*}\brac{\frac{\alpha _0 + \frac{Re_t}{R_\omega}}{1 + \frac{Re_t}{R_\omega}}}}
+
+            \vzorec{\alpha _\infty = F_1 \alpha _{\infty , 1} + \brac{1 - F_1} \alpha _{\infty , 2}}
+
+            \vzorec{\alpha _{\infty , 1} = \frac{\beta _{i,1}}{\beta _\infty ^*} - \frac{\chi ^2}{\sigma _{\omega , 1} \sqrt{\beta _\infty ^*}}}
+
+            \vzorec{\alpha _{\infty , 2} = \frac{\beta _{i,2}}{\beta _\infty ^*} - \frac{\chi ^2}{\sigma _{\omega , 2} \sqrt{\beta _\infty ^*}}}
+        \end{multicols}
 
         \begin{table}[ht!]
             \centering
-            \begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|l}
-            $\alpha _\infty ^*$ & $\alpha _\infty$ & $\alpha _0$  & $\beta _\infty ^*$ & $\beta _i$ & $R_\beta $ & $R_k$ & $R_\omega$ & $\zeta ^*$ & $\Ma _{t0}$ & $\sigma _k$ & $\sigma _\omega$ \\ \hline
-            $1$                 & $0.52$           & $\frac{1}{9} $& $0.09$             & $0.072$    & $8$        & $6$   & $2.95$     & $1.5$      & $0.25$      & $2$         & $2$             
+            \begin{tabular}{l|l|l|l|l|l|l|l}
+            $\alpha _\infty ^*$ &  $\alpha _0$    & $\beta _\infty ^*$   & $R_k$                & $R_\omega$       & $\chi$           & $a_1$    \\ \hline
+            $0.41$              &  $\frac{1}{9}$  & $0.09$               & $6$                  & $2.95$           & $0.25$           & $0.31$   \\ \hline
+            $\sigma _{k,1}$     & $\sigma _{k,2}$ & $\sigma _{\omega,1}$ & $\sigma _{\omega,2}$ & $\beta _{i,1}$   & $\beta _{i,2}$   &          \\ \hline
+            $1.176$             & $1$             & $2$                  & $1.168$              & $0.075$          & $0.0828$         &
             \end{tabular}
             \caption{Konstanty modelu k-$\omega$ SST.}
             \label{tab:konstanty-turbulence}

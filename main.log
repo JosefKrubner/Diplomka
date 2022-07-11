@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  10 JUL 2022 22:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  11 JUL 2022 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1079,9 +1079,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12 <./200_DRTA_SONDA/Vychozi_DRTA.png>] (./301_Vypocetni_model.tex [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1090,47 +1087,44 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[16]
-<300_VYPOCETNI_MODEL/Vypocetni_oblast.png, id=396, 1223.32031pt x 1072.005pt>
+[14] [15]
+<300_VYPOCETNI_MODEL/Vypocetni_oblast.png, id=366, 1223.32031pt x 1072.005pt>
 File: 300_VYPOCETNI_MODEL/Vypocetni_oblast.png Graphic file (type png)
 <use 300_VYPOCETNI_MODEL/Vypocetni_oblast.png>
 Package pdftex.def Info: 300_VYPOCETNI_MODEL/Vypocetni_oblast.png  used on inpu
-t line 107.
+t line 131.
 (pdftex.def)             Requested size: 441.01773pt x 386.4613pt.
 
 
-LaTeX Warning: Reference `sec:konstrukcni-upravy' on page 17 undefined on input
- line 113.
+LaTeX Warning: Reference `sec:konstrukcni-upravy' on page 16 undefined on input
+ line 137.
 
 
-LaTeX Warning: Reference `sec:finalni-geometrie' on page 17 undefined on input 
-line 113.
+LaTeX Warning: Reference `sec:finalni-geometrie' on page 16 undefined on input 
+line 137.
 
 
 Underfull \vbox (badness 1776) has occurred while \output is active []
 
- [17 <./300_VYPOCETNI_MODEL/Vypocetni_oblast.png>]
-<300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png, id=403, 1016.29688pt x 901.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16 <./300_VYPOCETNI_MODEL/Vypocetni_oblast.png>]
+<300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png, id=373, 1016.29688pt x 901.
 86937pt>
 File: 300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png Graphic file (type png)
 
 <use 300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png>
 Package pdftex.def Info: 300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png  use
-d on input line 117.
+d on input line 141.
 (pdftex.def)             Requested size: 441.01773pt x 391.36047pt.
-
+ [17 <./300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1139,38 +1133,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18 <./300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png>] [19]
-<300_VYPOCETNI_MODEL/op-inlet.png, id=420, 1659.19875pt x 1185.42876pt>
+[18]
+<300_VYPOCETNI_MODEL/op-inlet.png, id=389, 1659.19875pt x 1185.42876pt>
 File: 300_VYPOCETNI_MODEL/op-inlet.png Graphic file (type png)
 <use 300_VYPOCETNI_MODEL/op-inlet.png>
 Package pdftex.def Info: 300_VYPOCETNI_MODEL/op-inlet.png  used on input line 1
-68.
+92.
 (pdftex.def)             Requested size: 132.30666pt x 94.51065pt.
-<300_VYPOCETNI_MODEL/op-farfield.png, id=421, 1659.19875pt x 1185.42876pt>
+<300_VYPOCETNI_MODEL/op-farfield.png, id=390, 1659.19875pt x 1185.42876pt>
 File: 300_VYPOCETNI_MODEL/op-farfield.png Graphic file (type png)
 <use 300_VYPOCETNI_MODEL/op-farfield.png>
 Package pdftex.def Info: 300_VYPOCETNI_MODEL/op-farfield.png  used on input lin
-e 175.
+e 199.
 (pdftex.def)             Requested size: 132.30666pt x 94.51065pt.
-<300_VYPOCETNI_MODEL/op-outlet.png, id=422, 1659.19875pt x 1185.42876pt>
+<300_VYPOCETNI_MODEL/op-outlet.png, id=391, 1659.19875pt x 1185.42876pt>
 File: 300_VYPOCETNI_MODEL/op-outlet.png Graphic file (type png)
 <use 300_VYPOCETNI_MODEL/op-outlet.png>
 Package pdftex.def Info: 300_VYPOCETNI_MODEL/op-outlet.png  used on input line 
-182.
+206.
 (pdftex.def)             Requested size: 132.30666pt x 94.51065pt.
+ [19 <./300_VYPOCETNI_MODEL/op-inlet.png> <./300_VYPOCETNI_MODEL/op-farfield.pn
+g> <./300_VYPOCETNI_MODEL/op-outlet.png>]
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[20 <./300_VYPOCETNI_MODEL/op-inlet.png> <./300_VYPOCETNI_MODEL/op-farfield.png
-> <./300_VYPOCETNI_MODEL/op-outlet.png>]
-
-LaTeX Warning: Citation 'Ansys2020User' on page 21 undefined on input line 228.
+LaTeX Warning: Citation 'Ansys2020User' on page 20 undefined on input line 252.
 
 
 Package epstopdf Info: Source file: <300_VYPOCETNI_MODEL/yplus-stineni-A.eps>
@@ -1182,44 +1167,24 @@ nverted-to.pdf>
 (epstopdf)                    size: 13625 bytes
 (epstopdf)             Command: <repstopdf --outfile=300_VYPOCETNI_MODEL/yplus-
 stineni-A-eps-converted-to.pdf 300_VYPOCETNI_MODEL/yplus-stineni-A.eps>
-(epstopdf)             \includegraphics on input line 246.
+(epstopdf)             \includegraphics on input line 270.
 Package epstopdf Info: Output file is already uptodate.
-<300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf, id=435, 1927.2pt x 9
+<300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf, id=404, 1927.2pt x 9
 95.72pt>
 File: 300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use 300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf>
 Package pdftex.def Info: 300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.p
-df  used on input line 246.
+df  used on input line 270.
 (pdftex.def)             Requested size: 441.01773pt x 227.85608pt.
 
-LaTeX Warning: Reference `sec:stineni-A' on page 21 undefined on input line 247
+LaTeX Warning: Reference `sec:stineni-A' on page 20 undefined on input line 271
 .
 
 
-LaTeX Warning: Reference `sec:stineni-A' on page 21 undefined on input line 247
+LaTeX Warning: Reference `sec:stineni-A' on page 20 undefined on input line 271
 .
 
-[21]
-
-LaTeX Warning: Citation 'Sosnowski2018' on page 22 undefined on input line 256.
-
-
-<300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png, id=445, 1927.2pt x 1084.05pt>
-File: 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png Graphic file (type png)
-<use 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png>
-Package pdftex.def Info: 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png  used on 
-input line 268.
-(pdftex.def)             Requested size: 441.01773pt x 248.06912pt.
-
-LaTeX Warning: Reference `sec:stineni-A' on page 22 undefined on input line 269
-.
-
-
-LaTeX Warning: Reference `sec:stineni-A' on page 22 undefined on input line 269
-.
-
-)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1228,8 +1193,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22 <./300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf>] [23 <./300_VY
-POCETNI_MODEL/mesh_sym_odvetrani_A.png (PNG copy)>]
+[20]
+
+LaTeX Warning: Citation 'Sosnowski2018' on page 21 undefined on input line 280.
+
+
+<300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png, id=414, 1927.2pt x 1084.05pt>
+File: 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png Graphic file (type png)
+<use 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png>
+Package pdftex.def Info: 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png  used on 
+input line 292.
+(pdftex.def)             Requested size: 441.01773pt x 248.06912pt.
+
+LaTeX Warning: Reference `sec:stineni-A' on page 21 undefined on input line 293
+.
+
+
+LaTeX Warning: Reference `sec:stineni-A' on page 21 undefined on input line 293
+.
+
+) [21 <./300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22 <./300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png (PNG copy)>]
 
 AED: lastpage setting LastPage
 (./main.aux)
@@ -1248,39 +1240,39 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23380 strings out of 478037
- 406977 string characters out of 5843053
- 1152324 words of memory out of 5000000
- 41313 multiletter control sequences out of 15000+600000
- 486427 words of font info for 72 fonts, out of 8000000 for 9000
+ 23347 strings out of 478037
+ 406515 string characters out of 5843053
+ 1151359 words of memory out of 5000000
+ 41311 multiletter control sequences out of 15000+600000
+ 485033 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,17n,80p,953b,2122s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/
-sfbx1095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.p
-fb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/tex
-live/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2022/
-texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2022/texmf-dist
-/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
-cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/s
-frm1728.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1200.pf
-b>
-Output written on main.pdf (23 pages, 1915053 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2022/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/
+2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-su
+per/sfbx1095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx12
+00.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:
+/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2
+022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2022/texmf-
+dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts
+/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-sup
+er/sfrm1728.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti120
+0.pfb>
+Output written on main.pdf (22 pages, 1918068 bytes).
 PDF statistics:
- 589 PDF objects out of 1000 (max. 8388607)
- 482 compressed objects within 5 object streams
- 123 named destinations out of 1000 (max. 500000)
+ 553 PDF objects out of 1000 (max. 8388607)
+ 447 compressed objects within 5 object streams
+ 96 named destinations out of 1000 (max. 500000)
  371 words of extra memory for PDF output out of 10000 (max. 10000000)
 
