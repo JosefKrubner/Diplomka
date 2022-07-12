@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  11 JUL 2022 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  12 JUL 2022 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1058,7 +1058,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 2.
 
 ) [11] (./201_DRTA_sonda.tex
-Overfull \hbox (28.52301pt too wide) in paragraph at lines 4--5
+Overfull \hbox (28.52301pt too wide) in paragraph at lines 19--20
 []\T1/cmr/m/n/12 Zkoumaná sonda se skládá z dvou od-po-ro-vých tep-lotní £i-del
  Pt100 (mo-del \T1/cmr/m/it/12 1PT100K2515\T1/cmr/m/n/12 )
  []
@@ -1066,8 +1066,8 @@ Overfull \hbox (28.52301pt too wide) in paragraph at lines 4--5
 <200_DRTA_SONDA/Vychozi_DRTA.png, id=325, 2369.85374pt x 788.9475pt>
 File: 200_DRTA_SONDA/Vychozi_DRTA.png Graphic file (type png)
 <use 200_DRTA_SONDA/Vychozi_DRTA.png>
-Package pdftex.def Info: 200_DRTA_SONDA/Vychozi_DRTA.png  used on input line 8.
-
+Package pdftex.def Info: 200_DRTA_SONDA/Vychozi_DRTA.png  used on input line 23
+.
 (pdftex.def)             Requested size: 441.01773pt x 146.80772pt.
 )
 
@@ -1078,7 +1078,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12 <./200_DRTA_SONDA/Vychozi_DRTA.png>] (./301_Vypocetni_model.tex [13]
+[12] (./301_Vypocetni_model.tex [13 <./200_DRTA_SONDA/Vychozi_DRTA.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1088,7 +1088,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14] [15]
-<300_VYPOCETNI_MODEL/Vypocetni_oblast.png, id=366, 1223.32031pt x 1072.005pt>
+<300_VYPOCETNI_MODEL/Vypocetni_oblast.png, id=375, 1223.32031pt x 1072.005pt>
 File: 300_VYPOCETNI_MODEL/Vypocetni_oblast.png Graphic file (type png)
 <use 300_VYPOCETNI_MODEL/Vypocetni_oblast.png>
 Package pdftex.def Info: 300_VYPOCETNI_MODEL/Vypocetni_oblast.png  used on inpu
@@ -1116,7 +1116,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16 <./300_VYPOCETNI_MODEL/Vypocetni_oblast.png>]
-<300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png, id=373, 1016.29688pt x 901.
+<300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png, id=382, 1016.29688pt x 901.
 86937pt>
 File: 300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png Graphic file (type png)
 
@@ -1134,19 +1134,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
-<300_VYPOCETNI_MODEL/op-inlet.png, id=389, 1659.19875pt x 1185.42876pt>
+<300_VYPOCETNI_MODEL/op-inlet.png, id=398, 1659.19875pt x 1185.42876pt>
 File: 300_VYPOCETNI_MODEL/op-inlet.png Graphic file (type png)
 <use 300_VYPOCETNI_MODEL/op-inlet.png>
 Package pdftex.def Info: 300_VYPOCETNI_MODEL/op-inlet.png  used on input line 1
 92.
 (pdftex.def)             Requested size: 132.30666pt x 94.51065pt.
-<300_VYPOCETNI_MODEL/op-farfield.png, id=390, 1659.19875pt x 1185.42876pt>
+<300_VYPOCETNI_MODEL/op-farfield.png, id=399, 1659.19875pt x 1185.42876pt>
 File: 300_VYPOCETNI_MODEL/op-farfield.png Graphic file (type png)
 <use 300_VYPOCETNI_MODEL/op-farfield.png>
 Package pdftex.def Info: 300_VYPOCETNI_MODEL/op-farfield.png  used on input lin
 e 199.
 (pdftex.def)             Requested size: 132.30666pt x 94.51065pt.
-<300_VYPOCETNI_MODEL/op-outlet.png, id=391, 1659.19875pt x 1185.42876pt>
+<300_VYPOCETNI_MODEL/op-outlet.png, id=400, 1659.19875pt x 1185.42876pt>
 File: 300_VYPOCETNI_MODEL/op-outlet.png Graphic file (type png)
 <use 300_VYPOCETNI_MODEL/op-outlet.png>
 Package pdftex.def Info: 300_VYPOCETNI_MODEL/op-outlet.png  used on input line 
@@ -1169,7 +1169,7 @@ nverted-to.pdf>
 stineni-A-eps-converted-to.pdf 300_VYPOCETNI_MODEL/yplus-stineni-A.eps>
 (epstopdf)             \includegraphics on input line 270.
 Package epstopdf Info: Output file is already uptodate.
-<300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf, id=404, 1927.2pt x 9
+<300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf, id=413, 1927.2pt x 9
 95.72pt>
 File: 300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -1198,7 +1198,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Warning: Citation 'Sosnowski2018' on page 21 undefined on input line 280.
 
 
-<300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png, id=414, 1927.2pt x 1084.05pt>
+<300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png, id=423, 1927.2pt x 1084.05pt>
 File: 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png Graphic file (type png)
 <use 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png>
 Package pdftex.def Info: 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png  used on 
@@ -1240,11 +1240,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23347 strings out of 478037
- 406515 string characters out of 5843053
- 1151359 words of memory out of 5000000
- 41311 multiletter control sequences out of 15000+600000
- 485033 words of font info for 68 fonts, out of 8000000 for 9000
+ 23364 strings out of 478037
+ 406731 string characters out of 5843053
+ 1151411 words of memory out of 5000000
+ 41316 multiletter control sequences out of 15000+600000
+ 486427 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,17n,80p,953b,2122s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
@@ -1259,20 +1259,20 @@ c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/
 2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-su
-per/sfbx1095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx12
-00.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:
-/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2
-022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2022/texmf-
-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts
-/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-sup
-er/sfrm1728.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti120
-0.pfb>
-Output written on main.pdf (22 pages, 1918068 bytes).
+blic/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1
+095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c
+:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/
+2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2022/texmf
+-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2022/texmf-dist/font
+s/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pu
+blic/cm-super/sfrm1095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-su
+per/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm17
+28.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (22 pages, 1932879 bytes).
 PDF statistics:
- 553 PDF objects out of 1000 (max. 8388607)
- 447 compressed objects within 5 object streams
- 96 named destinations out of 1000 (max. 500000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 460 compressed objects within 5 object streams
+ 104 named destinations out of 1000 (max. 500000)
  371 words of extra memory for PDF output out of 10000 (max. 10000000)
 

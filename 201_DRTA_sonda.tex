@@ -1,5 +1,20 @@
 \section{DRTA sonda}
     \subsection{Princip fungování} \label{sec:DRTA-princip}
+        Princip měření rychlosti pomocí DRTA sondy (DRTA = \uv{\textit{Double Recovery Temperature Anemometry}}) spočívá ve využití dvou teplotních čidel, v tomto návrhu bylo pracováno s odporovými teplotními snímači Pt100. Komplikaci při použití jediného snímače pro určení rychlosti proudění představuje nutná znalost statické teploty. Ta lze jednoduše eliminovat přidáním druhého snímače s rozdílným restitučním faktorem:
+        \begin{align}
+            T_{rA} &= T + f_A \frac{u^2}{2 c_p} \\
+            T_{rB} &= T + f_B \frac{u^2}{2 c_p} \\
+            T_{rA} - T_{rB} &= \brac{f_A - f_b} \frac{u^2}{2 c_p} \\
+            u &= \sqrt{\frac{2 c_p \brac{T_{rA} - T_{rB}}}{\brac{f_A - f_b}}} \label{eq:mereni-rychlosti}             
+        \end{align}
+        \noindent kde indexy $A$, respektive $B$ odpovídají jednotlivým čidlům. Podobným způsobem lze sestavit vztah pro určení Machova čísla:
+        \begin{align}
+            T_{rA} &= T + f_A \frac{u^2}{2 c_p} \frac{a^2}{a^2} = T \brac{1 + f_A \frac{\kappa - 1}{2} \Ma ^2} \\
+            T_{rB} &=  T \brac{1 + f_B \frac{\kappa - 1}{2} \Ma ^2} \\
+            \frac{T_{rA}}{T_{rB}} &= \frac{1 + f_A \frac{\kappa - 1}{2} \Ma ^2}{1 + f_B \frac{\kappa - 1}{2} \Ma ^2} \\
+            \Ma &= \sqrt{\frac{2}{\kappa - 1} \frac{T_{rA}-T_{rB}}{T_{rB} f_A - T_{rA} f_B}}
+        \end{align}
+
     \subsection{Výchozí geometrie}
         Zkoumaná sonda se skládá z dvou odporových teplotní čidel Pt100 (model \textit{1PT100K2515}) o průměru $1.5 \unit{mm}$ a délce $25 \unit{mm}$. Ty jsou umístěny rovnoběžně ve směru proudění pomocí těsnění na jejich koncích, ukotveného v mosazné trubici o průměru $4 \Unit{mm}$ a tloušťce $0.4 \Unit{mm}$, která je využita zároveň k dosažení rozdílu restitučních faktorů jednotlivých čidel. Prostorové uspořádání sestavy je patrné z obrázku \ref{fig:vychozi-DRTA}. Vyšším restitučním faktorem disponuje čidlo umístěné uvnitř trubice a dále v práci o něm bude hovořeno jako o čidlu A. Proudění stíněním čidla A umožňují dva odvětrávací otvory umístěné $12 \Unit{mm}$ od vstupu do trubice. Čidlo umístěné volně v proudícím médiu vykazuje nižší restituční faktor a bude dále značeno jako čidlo B.
         
