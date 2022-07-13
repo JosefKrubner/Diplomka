@@ -1,7 +1,8 @@
 \babel@toc {czech}{}\relax 
 \contentsline {figure}{\numberline {2.2.1}{\ignorespaces Výchozí geometrie DRTA sondy.\relax }}{13}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.3.1}{\ignorespaces Výpočetní oblast s vyznačením souřadného systému a polohy měřených geometrií.\relax }}{16}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.3.2}{\ignorespaces Výpočetní oblast pro řešení symetrických úloh.\relax }}{17}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.4.1}{\ignorespaces Části hranice pro aplikování okrajových podmínek (v jednotlivých obrázcích označeny žlutou barvou).\relax }}{19}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.5.1}{\ignorespaces Graf četností hodnot bezrozměrné vzdálenosti od stěny čidla A pro úlohu z kapitoly \ref {sec:stineni-A}. Průměrná hodnota je pro tento případ rovna $0.945$.\relax }}{21}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.5.2}{\ignorespaces Pohled na výpočetní síť z kapitoly \ref {sec:stineni-A} ze strany symetrie.\relax }}{22}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.3.1}{\ignorespaces Výpočetní oblast s vyznačením souřadného systému a polohy měřených geometrií.\relax }}{18}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.3.2}{\ignorespaces Výpočetní oblast pro řešení symetrických úloh.\relax }}{19}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.4.1}{\ignorespaces Části hranice pro aplikování okrajových podmínek (v jednotlivých obrázcích označeny žlutou barvou).\relax }}{21}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.5.1}{\ignorespaces Graf četností hodnot bezrozměrné vzdálenosti od stěny čidla A pro úlohu z Kapitoly \ref {sec:stineni-A}. Průměrná hodnota byla pro tento případ rovna $0.945$.\relax }}{23}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.5.2}{\ignorespaces Pohled na výpočetní síť z Kapitoly \ref {sec:stineni-A} ze strany symetrie.\relax }}{24}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.6.1}{\ignorespaces Schéma pro určení gradientu pomocí metody nejmenších čtverců.\relax }}{25}{figure.caption.30}%

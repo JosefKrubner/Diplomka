@@ -1,5 +1,5 @@
 \section{CFD model}
-    Během výpočtů byl použit předpoklad stacionárního vazkého proudění ideálního plynu, od čehož se odvíjela i forma níže uvedených rovnic. 
+    Během výpočtů byl použit předpoklad stacionárního vazkého proudění ideálního plynu, od čehož se odvíjí i forma níže uvedených rovnic. 
     \subsection{Základní systém rovnic}
         
         \subsubsection{Rovnice kontinuity}
@@ -7,18 +7,18 @@
             \begin{equation} \label{eq:rovnice-kontinuity}
                 \nabla \cdot  \brac{\rho \Vec{u}} = 0  
             \end{equation}
-            \noindent kde $\rho \unit{\frac{kg}{m^3}}$ je hustota a $\Vec{u} \unit{\frac{m}{s^2}}$  je rychlost proudění.
+            \noindent kde $\rho \unit{\frac{kg}{m^3}}$ je hustota a $\Vec{u} \unit{\frac{m}{s}}$  je rychlost proudění.
         
         \subsubsection{Pohybová rovnice}
             Přenos hybnosti je popsán Navier-Stokesovými rovnicemi pro stacionární proudění:
             \begin{equation} \label{eq:pohybova-rovnice}
-                \nabla \cdot \brac{\rho \Vec{u} \otimes \Vec{u}} = - \nabla p + \nabla \cdot \Tensor{\tau} + \Vec{f}
+                \nabla \cdot \brac{\rho \Vec{u} \otimes \Vec{u}} = - \nabla p + \nabla \cdot \Tensor{\tau}
             \end{equation}
-            \noindent kde $p \unit{Pa}$ je statický tlak, $\Vec{f} \unit{\frac{N}{m^3}}$ je vektor vnějších sil a $\Tensor{\tau} \unit{\frac{N}{m^2}}$ je tenzor vazkých napětí daný následujícím vztahem:
+            \noindent kde $p \unit{Pa}$ je statický tlak a $\Tensor{\tau} \unit{\frac{N}{m^2}}$ je tenzor vazkých napětí daný následujícím vztahem:
             \begin{equation} \label{eq:tenzor-vazkych-napeti}
-                \Tensor{\tau} = \mu \Brac{\nabla \Vec{u} + \nabla \Vec{u}^T - \frac{2}{3} \brac{\nabla \cdot \Vec{u}} I}
+                \Tensor{\tau} = \mu \Brac{\nabla \Vec{u} + \nabla \Vec{u}^T - \frac{2}{3} \brac{\nabla \cdot \Vec{u}} \Tensor{I}}
             \end{equation}
-            \noindent kde $\mu \unit{Pa \cdot s}$ je dynamická viskozita a $I \unit{1}$ je jednotková matice.
+            \noindent kde $\mu \unit{Pa s}$ je dynamická viskozita a $\Tensor{I} \unit{1}$ je jednotková matice.
             
         \subsubsection{Energetická rovnice}
             Řešení stlačitelného proudění vyžaduje doplnění energetické rovnice, kterou lze zapsat následovně:
@@ -32,99 +32,85 @@
         \begin{equation} \label{eq:stavova-rovnice}
             \frac{p}{\rho} = r T
         \end{equation}
-        \noindent kde $T \unit{K}$ je termodynamická teplota a $r \unit{\frac{J}{kg \cdot K}}$ je měrná plynová konstanta, pro vzduch rovna $287.2 \unit{\frac{J}{kg \cdot K}}$.
+        \noindent kde $T \unit{K}$ je termodynamická teplota a $r \unit{\frac{J}{kg K}}$ je měrná plynová konstanta, pro vzduch rovna $287.2 \Unit{\frac{J}{kg K}}$.
         
         \smallSection{Celková měrná entalpie}
         Měrnou entalpii proudění $h \unit{\frac{J}{kg}}$ lze určit ze vztahu:
         \begin{equation} \label{eq:entalpie}
             h = c_p T = e + \frac{p}{\rho} = c_v T + \frac{p}{\rho}
         \end{equation}
-        \noindent kde $c_p \, , \; c_v  \unit{\frac{J}{kg \cdot K}}$ jsou měrné tepelné kapacity za konstantního tlaku, resp. konstantního objemu a $e \unit{\frac{J}{kg}}$ je měrná energie. Přičtením měrné kinetické energie proudění dostáváme celkovou měrnou entalpii $H$:
+        \noindent kde $c_p \, , \; c_v  \unit{\frac{J}{kg K}}$ jsou měrné tepelné kapacity za konstantního tlaku, resp. konstantního objemu a $e \unit{\frac{J}{kg}}$ je měrná energie. Přičtením měrné kinetické energie proudění dostáváme celkovou měrnou entalpii $H$:
         \begin{equation} \label{eq:celkova-entalpie}
             H = h + \frac{\norm{\Vec{u}}^2}{2}
         \end{equation}
+
+    \newpage
         
     \subsection{Model turbulence}
-        
-        Transportní rovnice pro turbulentní kinetickou energii má následující tvar:
+
+        Vzhledem k povaze řešených úloh byl zvolen dvourovnicový RANS (\textit{Reynolds Averaged Navier Stokes}) model turbulence $k-\omega$ SST (\textit{Shear Stress Transport}, viz Menter \cite{Menter1993,Menter1994}), který kombinuje výhody modelu $k-\varepsilon$ ve volném proudu a modelu $k-\omega$ ve vazké podvrstvě. Transportní rovnice pro $k-\omega$ SST mají následující tvar:
         \begin{equation} \label{eq:rovnice-pro-k} 
-            \nabla \cdot \brac{\rho k \Vec{u}} = \nabla \cdot \brac{\Gamma _k \nabla k} + G _k - Y _k
+            \nabla \cdot \brac{\rho k \Vec{u}} = P_k - \beta ^* \rho \omega k + \nabla \cdot \Brac{\brac{\mu + \sigma _k \mu _t} \nabla k}
         \end{equation}
-        \noindent kde dílčí členy jsou popsány následovně:
-        \begin{multicols}{2}
-            \vztah{Produkce $k$}{G_k = \mu _t S^2}
-
-            \vztah{Disipace $k$}{Y _k = \rho \beta ^* _\infty k \omega}
-
-            \vztah{Turbulentní vazkost}{\mu _t = \frac{\rho k}{\omega} \frac{1}{\max \brac{\frac{1}{\alpha ^*}, \frac{S F_2}{a_1 \omega}}}}
-            
-            \vztah{Difuzivita $k$}{\Gamma _k = \mu + \frac{\mu _t}{\sigma _k}}
-
-            \vztah{Turbulentní Reynoldsovo číslo}{Re_t = \frac{\rho k}{\mu \omega}}
-
-            \vztah{Turbulentní Prandtlovo číslo pro k}{\sigma _k = \frac{1}{\frac{F_1}{\sigma _{k,1}}+\frac{1-F_1}{\sigma _{k,2}}}}
-
-            \vztah{Difuze $\omega$}{D _\omega ^+ = \max \Brac{2 \rho \frac{1}{\sigma _{\omega , 2}}\frac{1}{\omega} \nabla k \cdot \nabla \omega, 10^{-10}}}
-
-            \vztah{Tenzor rychlosti deformace}{\Tensor{S} = \frac{1}{2} \brac{\nabla \Vec{u} + \nabla \Vec{u} ^T}}
-
-            \vzorec{S = \sqrt{2 \Tensor{S} : \Tensor{S}}}
-            
-            \vzorec{F_2 = \tanh \brac{\Phi _2 ^2}}
-
-            \vzorec{\Phi _2 = \max \brac{ 2 \frac{\sqrt{k}}{0.09 \omega y}, \frac{500 \mu}{\rho y^2 \omega}}}
-
-            \vzorec{F_1 = \tanh \brac{\Phi _1 ^4}}
-
-            \vzorec{\Phi _1 = \min \Brac{\max \brac{\frac{\sqrt{k}}{0.09 \omega y},\frac{500 \mu}{\rho y^2 \omega}}, \frac{4 \rho k}{\sigma _{\omega,2} D _\omega ^+ y^2}}}
-
-            \vzorec{\alpha ^* = \alpha ^* _\infty \brac{\frac{\alpha _0 ^* + \frac{Re_t}{R_k}}{1 + \frac{Re_t}{R_k}}}}
-
-            \vzorec{\alpha ^* _0 = \frac{\beta _i}{3}}
-
-            \vzorec{\beta _i = F_1 \beta _{i,1} + \brac{1 - F_1} \beta _{i,2}}
-        \end{multicols}
-
-        Obdobně lze zapsat rovnici pro specifickou rychlost disipace:
         \begin{equation} \label{eq:rovnice-pro-omega}
-            \nabla \cdot \brac{\rho \omega \Vec{u}} = \nabla \cdot \brac{\Gamma _\omega \nabla \omega} + G _\omega - Y _\omega
+            \nabla \cdot \brac{\rho \omega \Vec{u}} = \frac{\gamma}{\nu _t} P_k - \beta \rho \omega ^2 + \nabla \cdot \Brac{\brac{\mu + \sigma _\omega \mu _t} \nabla \omega} + 2 \brac{1 - F_1} \frac{\rho \sigma _{\omega 2}}{\omega} \nabla k \cdot \nabla \omega
         \end{equation}
-        \noindent která se skládá z následujících členů:
-        \begin{multicols}{2}
-            \vztah{Produkce $\omega$}{G _\omega = \frac{\alpha \alpha ^*}{\nu _t} G _k}
-
-            \vztah{Disipace $\omega$}{Y _\omega = \rho \beta_i \omega ^2}
-            
-            \vztah{Difuzivita $\omega$}{\Gamma _\omega = \mu + \frac{\mu _t}{\sigma _\omega}}
-
-            \vztah{Turbulentní Prandtlovo číslo pro $\omega$}{\sigma _\omega = \frac{1}{\frac{F_1}{\sigma _{\omega,1}}+\frac{1-F_1}{\sigma _{\omega,2}}}}
-            
-            \vzorec{\alpha = \frac{\alpha _\infty}{\alpha ^*}\brac{\frac{\alpha _0 + \frac{Re_t}{R_\omega}}{1 + \frac{Re_t}{R_\omega}}}}
-
-            \vzorec{\alpha _\infty = F_1 \alpha _{\infty , 1} + \brac{1 - F_1} \alpha _{\infty , 2}}
-
-            \vzorec{\alpha _{\infty , 1} = \frac{\beta _{i,1}}{\beta _\infty ^*} - \frac{\chi ^2}{\sigma _{\omega , 1} \sqrt{\beta _\infty ^*}}}
-
-            \vzorec{\alpha _{\infty , 2} = \frac{\beta _{i,2}}{\beta _\infty ^*} - \frac{\chi ^2}{\sigma _{\omega , 2} \sqrt{\beta _\infty ^*}}}
-        \end{multicols}
+        \noindent kde $k \unit{\frac{m^2}{s^2}}$ je turbulentní kinetická energie, $\omega \unit{\frac{1}{s}}$ je specifická rychlost disipace, $\mu \unit{Pa s}$ je dynamická viskozita a $\beta, \beta^*, \gamma, \sigma _k, \sigma _\omega, \sigma _{\omega 2}$ jsou konstanty. $P_k$ představuje produkci turbulentní kinetické energie, která je s využitím limiteru dána vztahem:
+        \begin{equation}
+            P_k = \min \brac{\Tensor{\tau} : \nabla \Vec{u}, 20 \beta ^* \rho \omega k}
+        \end{equation}
+        kde $\Tensor{\tau}$ je tenzor turbulentního napětí určený vztahem:
+        \begin{equation}
+            \Tensor{\tau} = \mu _t \brac{\nabla \Vec{u} + \nabla \Vec{u} ^T - \frac{2}{3} \nabla \cdot \Vec{u} \Tensor{I}} - \frac{2}{3} \rho k \Tensor{I}
+        \end{equation}
+        Poslední člen rovnice \ref{eq:rovnice-pro-omega} představuje příčnou difuzi, zajišťující přechod mezi modely $k-\omega$ a $k-\varepsilon$. Ten je zprostředkovaný funcí $F_1$:
+        \begin{equation}
+            F_1 = \tanh \Biggl\{ \min \Brac{ \max \brac{\frac{\sqrt{k}}{0.09 \omega y}, \frac{500 \nu}{y^2 \omega}, \frac{4 \rho \sigma _{\omega 2} k}{\var{CD}_{k \omega} y^2}}} \Biggr\} ^4  
+        \end{equation}
+        \noindent kde $y \unit{m}$ je vzdálenost od nejbližší stěny a $\var{CD}_{k \omega}$ odpovídá kladné části příčné difuze definované následujícím vztahem:
+        \begin{equation}
+            \var{CD}_{k \omega} = \max \brac{2 \rho \sigma _{\omega 2} \frac{1}{\omega} \nabla k \cdot \nabla \omega, 10^{-20}}
+        \end{equation}
+        Turbulentní vazkost $\nu _t$, respektive $\mu _t$, je definována jako:
+        \begin{equation} \label{eq:turbulentni-vazkost}
+            \nu _t = \frac{a_1 k}{\max \brac{a_1 \omega, \Omega F_2}} \hspace{1cm} \textrm{resp.} \hspace{1cm} \mu _t = \frac{\rho a_1 k}{\max \brac{a_1 \omega, \Omega F_2}}
+        \end{equation}
+        \noindent kde $\Omega$ představuje absolutní hodnotu vířivosti a $F_2$ je funkce daná vztahem:
+        \begin{equation}
+            F_2 = \tanh \Brac{\max \brac{2\frac{\sqrt{k}}{0.09 \omega y}, \frac{500 \nu}{y^2 \omega}}}^2
+        \end{equation}
+        \newpage
+        Konstanty $\beta, \gamma, \sigma _k$ a $\sigma _\omega$ jsou s ohledem na polohu (stěna/volný proud) definovány pomocí funkce $F_1$:
+        \begin{equation}
+            \Phi = F_1 \Phi _1 + \brac{1 - F_1} \Phi _2
+        \end{equation}
+        \noindent kde $\Phi$ představuje libovolnou z konstant. Pro úplnou reprezentaci modelu je tak třeba definovat pro všechny konstanty jejich hodnotu pro model $k-\omega$ (index $1$) a pro model $k-\varepsilon$ (index $2$):
 
         \begin{table}[ht!]
             \centering
-            \begin{tabular}{l|l|l|l|l|l|l|l}
-            $\alpha _\infty ^*$ &  $\alpha _0$    & $\beta _\infty ^*$   & $R_k$                & $R_\omega$       & $\chi$           & $a_1$    \\ \hline
-            $0.41$              &  $\frac{1}{9}$  & $0.09$               & $6$                  & $2.95$           & $0.25$           & $0.31$   \\ \hline
-            $\sigma _{k,1}$     & $\sigma _{k,2}$ & $\sigma _{\omega,1}$ & $\sigma _{\omega,2}$ & $\beta _{i,1}$   & $\beta _{i,2}$   &          \\ \hline
-            $1.176$             & $1$             & $2$                  & $1.168$              & $0.075$          & $0.0828$         &
+            \caption{Konstanty modelu k-$\omega$ SST \cite{Ansys2020Theory}.}
+            \begin{tabular}{l|l|l|l|l|l|l|l|l}
+                $\sigma _{k 1}$ & $\sigma _{\omega 1}$ & $\beta _1$ & $\sigma _{k 2}$ & $\sigma _{\omega 2}$ & $\beta _2$ & $\beta ^*$      & $\chi$               & $a_1$   \\ \hline
+                $1.176$         & $2$                  & $0.075   $ & $1$             & $1.168$              & $0.0828$   & $0.09$          & $0.41$               & $0.31$  \\           
             \end{tabular}
-            \caption{Konstanty modelu k-$\omega$ SST.}
             \label{tab:konstanty-turbulence}
-            \end{table}
+        \end{table}
+
+        \noindent Konstanty $\gamma _1$ a $\gamma _2$ jsou definovány následujícími vztahy:
+        \begin{equation}
+            \gamma _1 = \frac{\beta _1}{\beta ^*} - \frac{\sigma _{\omega 1} \chi ^2}{\sqrt{\beta ^*}}
+        \end{equation}
+
+        \begin{equation}
+            \gamma _1 = \frac{\beta _2}{\beta ^*} - \frac{\sigma _{\omega 2} \chi ^2}{\sqrt{\beta ^*}}
+        \end{equation}
+
     \newpage
     \subsection{Výpočetní geometrie}
         Vzhledem k charakteru řešeného problému byla geometrie proměnlivá. Jednotícím prvkem byla přítomnost alespoň jednoho ze dvou teplotních čidel, jehož restituční faktor byl zkoumán. Podle aktuální simulace se však měnilo uspořádání a přítomnost dalších geometrických prvků, jako například stínění.
     
         \subsubsection{Výpočetní oblast}
-            Výpočty byly prováděny na geometrii umístěné v kontrolní oblasti tvaru válce o průměru $250 \Unit{mm}$ a délce $450 \Unit{mm}$. Vzhledem k rozměrům čidel, respektive celkové konstrukce, se jednalo o dostatečně velký kontrolní objem, který neměl ovlivňovat proudění okolo sondy. Veškeré měřené geometrie byly ve válci umístěné $100 \Unit{mm}$ od vstupní oblasti, viz obrázek \ref{fig:vypocetni-oblast}, ze kterého je patrné i umístění souřadného systému, na který bude dále v práci odkazováno.
+            Výpočty byly prováděny na geometrii umístěné v kontrolní oblasti tvaru válce o průměru $250 \Unit{mm}$ a délce $450 \Unit{mm}$. Vzhledem k rozměrům čidel, respektive celkové konstrukce, se jednalo o dostatečně velký kontrolní objem, který neměl ovlivňovat proudění okolo sondy. Veškeré měřené geometrie byly ve válci umístěné $150 \Unit{mm}$ od vstupní oblasti, viz Obrázek \ref{fig:vypocetni-oblast}, ze kterého je patrné i umístění souřadného systému, na který bude dále v práci odkazováno.
             
             \begin{figure}[ht!]
                 \centering
@@ -134,7 +120,7 @@
             \end{figure}
         
         \subsubsection{Využití symetrie}
-            U všech zkoumaných geometrií se nacházela alespoň jedna rovina symetrie – bylo tedy možné využít této výhody pro úsporu výpočetního výkonu. Veškeré simulace uvedené v kapitolách \ref{sec:konstrukcni-upravy} a \ref{sec:finalni-geometrie} s výjimkou analýzy směrové citlivosti v rovině $XZ$ byly provedeny s využitím symetrie výpočetního modelu, viz obrázek \ref{fig:vypocetni-oblast-symetrie}.
+            U všech zkoumaných geometrií se nacházela alespoň jedna rovina symetrie – bylo tedy možné využít této výhody pro úsporu výpočetního výkonu. Veškeré simulace uvedené v Kapitolách \ref{sec:konstrukcni-upravy} a \ref{sec:finalni-geometrie} s výjimkou analýzy směrové citlivosti v rovině $XZ$ byly provedeny s využitím symetrie výpočetního modelu, viz Obrázek \ref{fig:vypocetni-oblast-symetrie}.
             
             \begin{figure}[ht!]
                 \centering
@@ -145,36 +131,36 @@
          
 	\newpage
         \subsubsection{Materiály}
-            Během výpočtů byly uvažovány celkem tři materiály, ze kterých se skládala geometrie – trubice byla tvořena mosazí, čidla byla uvažována jako homogenní tělesa z keramiky $Al_2 O_3$ a těsnění bylo reprezentováno pryží. Použité fyzikální vlastnosti jednotlivých materiálů jsou uvedeny v tabulce \ref{tab:materialy}.
+            Během výpočtů byly uvažovány celkem tři materiály, ze kterých se skládala geometrie – trubice byla tvořena mosazí, čidla byla uvažována jako homogenní tělesa z keramiky $Al_2 O_3$ a těsnění bylo reprezentováno pryží. Použité fyzikální vlastnosti jednotlivých materiálů jsou uvedeny v Tabulce \ref{tab:materialy}.
             
             \renewcommand{\arraystretch}{2}
             \begin{table}[ht!]
                 \centering
+                \caption{Fyzikální vlastnosti použitých materiálů.}
                 %\resizebox{.7\textwidth}{!}{%
                 \begin{tabular}{l|l|l|l}
                                                                                   & Mosaz                        & Pryž                        &  Keramika                      \\ \hline
                     Hustota $\unit{\frac{kg}{m^3}}$                               & \multicolumn{1}{c|}{$8730$}  & \multicolumn{1}{c|}{$1100$} & \multicolumn{1}{c}{$3500$}     \\ \hline
-                    Měrná tepelná kapacita $\unit{\frac{J}{kg \cdot K}}$          & \multicolumn{1}{c|}{$400$}   & \multicolumn{1}{c|}{$1300$} & \multicolumn{1}{c}{$700$}      \\ \hline
-                    Tepelná vodivost $\unit{\frac{W}{m \cdot K}}$                 & \multicolumn{1}{c|}{$96$}    & \multicolumn{1}{c|}{$0.09$} & \multicolumn{1}{c}{$30$}      
+                    Měrná tepelná kapacita $\unit{\frac{J}{kg K}}$          & \multicolumn{1}{c|}{$400$}   & \multicolumn{1}{c|}{$1300$} & \multicolumn{1}{c}{$700$}      \\ \hline
+                    Tepelná vodivost $\unit{\frac{W}{m K}}$                 & \multicolumn{1}{c|}{$96$}    & \multicolumn{1}{c|}{$0.09$} & \multicolumn{1}{c}{$30$}      
                 \end{tabular}%
                 %}
-                \caption{Fyzikální vlastnosti použitých materiálů.}
                 \label{tab:materialy}
             \end{table}
             
-            Jako proudící médium byl uvažován vzduch splňující stavovou rovnici ideální plynu (viz vztah \ref{eq:stavova-rovnice}) s následujícími vlastnostmi:
+            Jako proudící médium byl uvažován vzduch splňující stavovou rovnici ideální plynu (viz Vztah \ref{eq:stavova-rovnice}) s následujícími vlastnostmi:
 
 		\begin{table}[ht!]
 			\centering
+            \caption{Fyzikální vlastnosti vzduchu.}
 			%\resizebox{.7\textwidth}{!}{%
 			\begin{tabular}{l|l}
-				Měrná plynová konstanta $\unit{\frac{J}{kg \cdot K}}$ & Poissonovo číslo $\unit{1}$ \\ \hline
+				Měrná plynová konstanta $\unit{\frac{J}{kg K}}$ & Poissonovo číslo $\unit{1}$ \\ \hline
 				\multicolumn{1}{c|}{$287$}                                                                        & \multicolumn{1}{c}{$1.4$}                \\ \hline
-				Tepelná vodivost $\unit{\frac{W}{m \cdot K}}$ & Dynamická viskozita $\unit{Pa \cdot s}$ \\ \hline				
+				Tepelná vodivost $\unit{\frac{W}{m K}}$ & Dynamická viskozita $\unit{Pa \cdot s}$ \\ \hline				
 				\multicolumn{1}{c|}{$2.42 \cdot 10^{-2}$}                          &  \multicolumn{1}{c}{$1.7894 \cdot 10^{-05}$}     
 			\end{tabular}%
 			%}
-			\caption{Fyzikální vlastnosti vzduchu.}
 			\label{tab:vzduch}
 		\end{table}
             
@@ -182,7 +168,7 @@
      \newpage      
     \subsection{Okrajové podmínky}
         \subsubsection{Hranice výpočetní oblasti}
-			Hranice válcové kontrolní oblasti byla rozdělena na tři části s odlišnými okrajovými podmínkami – podstavy válce představovaly vstup a výstup a jeho plášť poté nenarušený proud (viz obrázek \ref{fig:okrajove-podminky}). Ve všech oblastech byly předepsány hodnoty uvedené v tabulce \ref{tab:spolecne-op}. Ve vstupní oblasti byla dále zadávána rychlost proudění, respektive velikost vektoru rychlosti a jeho směrové cosiny (využito při analýze směrové citlivosti). Hranice nenarušeného proudu měla předepisovánu hodnotu Machova čísla a směr proudění (opět ve formě směrových cosinů vektoru rychlosti). 
+			Hranice válcové kontrolní oblasti byla rozdělena na tři části s odlišnými okrajovými podmínkami – podstavy válce představovaly vstup a výstup a jeho plášť poté nenarušený proud (viz Obrázek \ref{fig:okrajove-podminky}). Ve všech oblastech byly předepsány hodnoty uvedené v Tabulce \ref{tab:spolecne-op}. Ve vstupní oblasti byla dále zadávána rychlost proudění, respektive velikost vektoru rychlosti a jeho směrové cosiny (využito při analýze směrové citlivosti). Hranice nenarušeného proudu měla předepisovánu hodnotu Machova čísla a směr proudění (opět ve formě směrových cosinů vektoru rychlosti). 
 
 	     \begin{figure}[ht!]
                     \centering
@@ -213,6 +199,7 @@
 
          \begin{table}[ht!]
             \centering
+            \caption{Hodnoty předepisované na hranici kontrolní oblasti.}
             %\resizebox{.7\textwidth}{!}{%
             \begin{tabular}{l|l}
                 Statický tlak $\unit{Pa}$       & Statická teplota $\unit{K}$ \\ \hline
@@ -221,7 +208,6 @@
                 \multicolumn{1}{c|}{2.5}         & \multicolumn{1}{c}{0.01}   
             \end{tabular}%
             %}
-            \caption{Hodnoty předepisované na hranici kontrolní oblasti.}
             \label{tab:spolecne-op}
         \end{table}
 
@@ -239,19 +225,19 @@
 
             \begin{table}[ht!]
                 \centering
+                \caption{Předepisované hodnoty při vytváření povrchové sítě.}
                 \begin{tabular}{l|l}
                     $\frac{\textrm{Minimální}}{\textrm{Maximální}}$ velikost elementů $\unit{mm}$                                            & Poměrný růst velikosti elementů $\unit{1}$ \\ \hline
                     \multicolumn{1}{c|}{$\frac{0.1}{15}$}                                                              & \multicolumn{1}{c}{$1.2$}                  \\ \hline
                     Maximální úhel překlenutí $\unit{deg}$                                                         & Minimální dělení hran $\unit{1}$           \\ \hline
                     \multicolumn{1}{c|}{$10$}                                                                      & \multicolumn{1}{c}{$3$}                     
                 \end{tabular}
-                \caption{Předepisované hodnoty při vytváření povrchové sítě.}
                 \label{tab:povrchova-sit-nastaveni}
             \end{table}
 
             Kvalita povrchové sítě byla následně kontrolována, aby šikmost žádného elementu nepřesáhla $0.5$. Šikmost představuje odchylku geometrie buňky od optimálního tvaru (v případě triangulace se jedná o rovnostranný trojúhelník). Její hodnota se pohybuje mezi $0 \div 1$, kde $0$ odpovídá nejlepší kvalitě. Pro správný průběh a konvergenci výpočtů je doporučeno, aby maximální šikmost nepřesahovala $0.95$ a aby se průměrná šikmost pohybovala nejvýše okolo hodnoty $0.33$ \cite{Ansys2020User}. Tato doporučení platí pro konečnou objemovou síť, která se používá během výpočtů, nicméně počáteční kvalita povrchové sítě má zásadní vliv na jakost následujícího síťování.
         \subsubsection{Zjemnění v mezní vrstvě}
-            Pro dosažení přijatelné přesnosti výpočtu přestupu tepla ze vzduchu do těles bylo třeba vytvořit dostatečně jemnou síť v oblasti mezní vrstvy. K tomu byly využity prismatické buňky v místech kontaktu tekutiny s měřenou geometrií. Cílem bylo dosažení průměrné bezrozměrné vzdálenosti od stěny co nejblíže $1$. Toho bylo docíleno pomocí natavení uvedeného v tabulce \ref{tab:mezni-vrstva-nastaveni}. Příklad rozložení $y_+$ u teplotního čidla je uveden na obrázku \ref{fig:yplus-stineni-A}.
+            Pro dosažení přijatelné přesnosti výpočtu přestupu tepla ze vzduchu do těles bylo třeba, s ohledem na použitý model turbulence, vytvořit dostatečně jemnou síť v oblasti mezní vrstvy tak, aby se bezrozměrná vzdálenost od stěny $y _+$ ($y _+ = \frac{u _\tau y}{\nu}$, kde $u _\tau \unit{\frac{m}{s}}$ je třecí rychlost) pohybovala v oblasti vazké podvrstvy. K tomu byly využity prismatické buňky v místech kontaktu tekutiny s měřenou geometrií. Cílem bylo dosažení průměrné $y_+$ co nejblíže $1$. Toho bylo docíleno pomocí nastavení uvedeného v Tabulce \ref{tab:mezni-vrstva-nastaveni}. Příklad rozložení $y_+$ podél povrchu teplotního čidla je uveden na Obrázku \ref{fig:yplus-stineni-A}.
 
             \begin{table}[ht!]
                 \centering
@@ -268,7 +254,7 @@
             \begin{figure}[ht!]
                 \centering
                 \includegraphics*[width=\textwidth  ]{300_VYPOCETNI_MODEL/yplus-stineni-A.eps}
-                \caption{Graf četností hodnot bezrozměrné vzdálenosti od stěny čidla A pro úlohu z kapitoly \ref{sec:stineni-A}. Průměrná hodnota je pro tento případ rovna $0.945$.}
+                \caption{Graf četností hodnot bezrozměrné vzdálenosti od stěny čidla A pro úlohu z Kapitoly \ref{sec:stineni-A}. Průměrná hodnota byla pro tento případ rovna $0.945$.}
                 \label{fig:yplus-stineni-A}
             \end{figure}
 
@@ -290,15 +276,44 @@
         \begin{figure}
             \centering
             \includegraphics[width=\textwidth]{300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png}
-            \caption{Pohled na výpočetní síť z kapitoly \ref{sec:stineni-A} ze strany symetrie.}
+            \caption{Pohled na výpočetní síť z Kapitoly \ref{sec:stineni-A} ze strany symetrie.}
             \label{fig:sit-detail-stineni-A}
         \end{figure}
         
     \subsection{Numerický řešič}
-        \subsubsection{Metoda konečných objemů}
+        Veškeré výpočty byly provedeny v prostředí výpočetního software Ansys Fluent (verze 2020b-2021b). Ten využívá k řešení problémů metodu konečných objemů, která je pro úlohy počítačové dynamiky tekutin typická. Metoda spočívá v rozdělení kontrolní oblasti na vzájemně disjunktní kontrolní objemy, které ji kompletně pokrývají. Řešené rovnice jsou následně integrovány právě přes dané objemy a poté převedeny na soustavu lineárních rovnic.
         \subsubsection{Odhad gradientu}
+            Pro určení gradientu ve středu buněk byla zvolena, s ohledem na použití polyhedrální sítě, metoda konečných čtverců. Ta spočívá v hledání váhové funkce mezi dílčími gradienty $\brac{\nabla \varphi}_{c0,i}$:
+            \begin{equation}
+                \brac{\nabla \varphi}_{c0,i} \cdot \Vec{r_i} = \varphi _{ci} - \varphi _{c0} = \brac{\Delta \varphi} _i
+            \end{equation}
+            \noindent kde $\Vec{r_i}$ je vektor spojující středy buněk $c_0$ a $c_i$ a $\varphi _{c0}$, respektive $\varphi _{ci}$ jsou jim odpovídající hodnoty libovolné veličiny (viz Obrázek \ref{fig:urceni-gradientu}). 
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=.6\textwidth]{300_VYPOCETNI_MODEL/urceni_gradientu.png}
+                \caption{Schéma pro určení gradientu pomocí metody nejmenších čtverců.}
+                \label{fig:urceni-gradientu}
+            \end{figure}
+            Počet takto vzniklých gradientů je roven počtu sousedních buněk $c_i$, je tak třeba najít váhovou funkci $\Tensor{W}$, jejíž aplikací na soustavu rozdílů $\Vec{\Delta \varphi}$ získáme konečný gradient $\brac{\nabla \varphi} _{c0}$, tedy:
+            \begin{equation}
+                \brac{\nabla \varphi} _{c0} = \begin{pmatrix}
+                    \brac{\nabla \varphi} _{c0} ^x \\
+                    \brac{\nabla \varphi} _{c0} ^y \\
+                    \brac{\nabla \varphi} _{c0} ^z 
+                \end{pmatrix} = \begin{pmatrix}
+                    W_{x1} & W_{x2} & \cdots & W_{xn} \\
+                    W_{y1} & W_{y2} & \cdots & W_{yn} \\
+                    W_{z1} & W_{z2} & \cdots & W_{zn} 
+                \end{pmatrix} \begin{pmatrix}
+                    \brac{\Delta \varphi} _1 \\
+                    \brac{\Delta \varphi} _2 \\
+                    \vdots \\
+                    \brac{\Delta \varphi} _n
+                \end{pmatrix} = \Tensor{W} \Vec{\Delta \varphi}
+            \end{equation}
         \subsubsection{Aproximace hodnot na stěnách}
         \subsubsection{Numerické schéma}
+        \subsubsection{Inicializace výpočtu}
         \subsubsection{Určení restitučních faktorů}
 
         
