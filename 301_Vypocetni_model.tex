@@ -63,7 +63,7 @@
         \begin{equation}
             \Tensor{\tau} = \mu _t \brac{\nabla \Vec{u} + \nabla \Vec{u} ^T - \frac{2}{3} \nabla \cdot \Vec{u} \Tensor{I}} - \frac{2}{3} \rho k \Tensor{I}
         \end{equation}
-        Poslední člen rovnice \ref{eq:rovnice-pro-omega} představuje příčnou difuzi, zajišťující přechod mezi modely $k-\omega$ a $k-\varepsilon$. Ten je zprostředkovaný funcí $F_1$:
+        Poslední člen rovnice \ref{eq:rovnice-pro-omega} představuje příčnou difuzi, zajišťující přechod mezi modely $k-\omega$ a $k-\varepsilon$. Ten je zprostředkovaný funkcí $F_1$:
         \begin{equation}
             F_1 = \tanh \Biggl\{ \min \Brac{ \max \brac{\frac{\sqrt{k}}{0.09 \omega y}, \frac{500 \nu}{y^2 \omega}, \frac{4 \rho \sigma _{\omega 2} k}{\var{CD}_{k \omega} y^2}}} \Biggr\} ^4  
         \end{equation}
@@ -110,7 +110,7 @@
         Vzhledem k charakteru řešeného problému byla geometrie proměnlivá. Jednotícím prvkem byla přítomnost alespoň jednoho ze dvou teplotních čidel, jehož restituční faktor byl zkoumán. Podle aktuální simulace se však měnilo uspořádání a přítomnost dalších geometrických prvků, jako například stínění.
     
         \subsubsection{Výpočetní oblast}
-            Výpočty byly prováděny na geometrii umístěné v kontrolní oblasti tvaru válce o průměru $250 \Unit{mm}$ a délce $450 \Unit{mm}$. Vzhledem k rozměrům čidel, respektive celkové konstrukce, se jednalo o dostatečně velký kontrolní objem, který neměl ovlivňovat proudění okolo sondy. Veškeré měřené geometrie byly ve válci umístěné $150 \Unit{mm}$ od vstupní oblasti, viz Obrázek \ref{fig:vypocetni-oblast}, ze kterého je patrné i umístění souřadného systému, na který bude dále v práci odkazováno.
+            Výpočty byly prováděny na geometrii umístěné v kontrolní oblasti tvaru válce o průměru $250 \Unit{mm}$ a délce $450 \Unit{mm}$. Vzhledem k rozměrům čidel, respektive celkové konstrukce, se jednalo o dostatečně velký kontrolní objem, jehož hranice neměly ovlivňovat proudění okolo sondy. Veškeré měřené geometrie byly ve válci umístěné $150 \Unit{mm}$ od vstupní oblasti, viz Obrázek \ref{fig:vypocetni-oblast}, ze kterého je patrné i umístění souřadného systému, na který bude dále v práci odkazováno.
             
             \begin{figure}[ht!]
                 \centering
@@ -130,7 +130,7 @@
             \end{figure}
          
 	\newpage
-        \subsubsection{Materiály}
+        \subsubsection{Materiály} \label{sec:materialy}
             Během výpočtů byly uvažovány celkem tři materiály, ze kterých se skládala geometrie – trubice byla tvořena mosazí, čidla byla uvažována jako homogenní tělesa z keramiky $Al_2 O_3$ a těsnění bylo reprezentováno pryží. Použité fyzikální vlastnosti jednotlivých materiálů jsou uvedeny v Tabulce \ref{tab:materialy}.
             
             \renewcommand{\arraystretch}{2}
@@ -237,12 +237,12 @@
 
             Kvalita povrchové sítě byla následně kontrolována, aby šikmost žádného elementu nepřesáhla $0.5$. Šikmost představuje odchylku geometrie buňky od optimálního tvaru (v případě triangulace se jedná o rovnostranný trojúhelník). Její hodnota se pohybuje mezi $0 \div 1$, kde $0$ odpovídá nejlepší kvalitě. Pro správný průběh a konvergenci výpočtů je doporučeno, aby maximální šikmost nepřesahovala $0.95$ a aby se průměrná šikmost pohybovala nejvýše okolo hodnoty $0.33$ \cite{Ansys2020User}. Tato doporučení platí pro konečnou objemovou síť, která se používá během výpočtů, nicméně počáteční kvalita povrchové sítě má zásadní vliv na jakost následujícího síťování.
         \subsubsection{Zjemnění v mezní vrstvě}
-            Pro dosažení přijatelné přesnosti výpočtu přestupu tepla ze vzduchu do těles bylo třeba, s ohledem na použitý model turbulence, vytvořit dostatečně jemnou síť v oblasti mezní vrstvy tak, aby se bezrozměrná vzdálenost od stěny $y _+$ ($y _+ = \frac{u _\tau y}{\nu}$, kde $u _\tau \unit{\frac{m}{s}}$ je třecí rychlost) pohybovala v oblasti vazké podvrstvy. K tomu byly využity prismatické buňky v místech kontaktu tekutiny s měřenou geometrií. Cílem bylo dosažení průměrné $y_+$ co nejblíže $1$. Toho bylo docíleno pomocí nastavení uvedeného v Tabulce \ref{tab:mezni-vrstva-nastaveni}. Příklad rozložení $y_+$ podél povrchu teplotního čidla je uveden na Obrázku \ref{fig:yplus-stineni-A}.
+            Pro dosažení přijatelné přesnosti výpočtu přestupu tepla ze vzduchu do těles bylo třeba, s ohledem na použitý model turbulence, vytvořit dostatečně jemnou síť v oblasti mezní vrstvy tak, aby se bezrozměrná vzdálenost od stěny $y _+$ ($y _+ = \frac{u _\tau y}{\nu}$, kde $u _\tau \unit{\frac{m}{s}}$ je třecí rychlost) pohybovala v oblasti vazké podvrstvy. K tomu byly využity prismatické buňky v místech kontaktu tekutiny s měřenou geometrií. Cílem bylo dosažení průměrné $y_+$ co nejblíže jedné. Toho bylo docíleno pomocí nastavení uvedeného v Tabulce \ref{tab:mezni-vrstva-nastaveni}. Příklad rozložení $y_+$ podél povrchu teplotního čidla je uveden na Obrázku \ref{fig:yplus-stineni-A}.
 
             \begin{table}[ht!]
                 \centering
                 \begin{tabular}{ll}
-                    \multicolumn{2}{l}{Míra natažení prvního elementu (aspect ratio) $\unit{1}$}                            \\ \hline
+                    \multicolumn{2}{l}{Míra natažení prvního elementu (\textit{aspect ratio}) $\unit{1}$}                            \\ \hline
                     \multicolumn{2}{c}{$6.2$}                                                                        \\ \hline
                     \multicolumn{1}{l|}{Poměrný růst velikosti elementů $\unit{1}$} & Počet prismatických vrstev $\unit{1}$ \\ \hline
                     \multicolumn{1}{c|}{$1.2$}                                      & \multicolumn{1}{c}{$10$}                
@@ -281,20 +281,20 @@
         \end{figure}
         
     \subsection{Numerický řešič}
-        Veškeré výpočty byly provedeny v prostředí výpočetního software Ansys Fluent (verze 2020b-2021b). Ten využívá k řešení problémů metodu konečných objemů, která je pro úlohy počítačové dynamiky tekutin typická. Metoda spočívá v rozdělení kontrolní oblasti na vzájemně disjunktní kontrolní objemy, které ji kompletně pokrývají. Řešené rovnice jsou následně integrovány právě přes dané objemy a poté převedeny na soustavu lineárních rovnic.
-        \subsubsection{Odhad gradientu}
+        Veškeré výpočty byly provedeny v prostředí výpočetního software Ansys Fluent (verze 2020b-2021b). Ten využívá k řešení problémů metodu konečných objemů, která je pro úlohy počítačové dynamiky tekutin typická. Metoda spočívá v rozdělení kontrolní oblasti na vzájemně disjunktní kontrolní objemy, které ji kompletně pokrývají. Řešené rovnice jsou následně integrovány právě přes dané objemy a poté prostřednictvím diskretizace převedeny na soustavu lineárních rovnic. Způsoby diskretizace a odhadů popsané níže vycházejí z programové dokumentace pro Ansys Fluent 2020 \cite{Ansys2020Theory}.
+        \subsubsection{Odhad gradientu} \label{sec:odhad-gradientu}
             Pro určení gradientu ve středu buněk byla zvolena, s ohledem na použití polyhedrální sítě, metoda konečných čtverců. Ta spočívá v hledání váhové funkce mezi dílčími gradienty $\brac{\nabla \varphi}_{c0,i}$:
             \begin{equation}
                 \brac{\nabla \varphi}_{c0,i} \cdot \Vec{r_i} = \varphi _{ci} - \varphi _{c0} = \brac{\Delta \varphi} _i
             \end{equation}
-            \noindent kde $\Vec{r_i}$ je vektor spojující středy buněk $c_0$ a $c_i$ a $\varphi _{c0}$, respektive $\varphi _{ci}$ jsou jim odpovídající hodnoty libovolné veličiny (viz Obrázek \ref{fig:urceni-gradientu}). 
+            \noindent kde $\Vec{r_i}$ je vektor spojující středy buněk $c_0$ a $c_i$ a $\varphi _{c0}$, respektive $\varphi _{ci}$, jsou jim odpovídající hodnoty libovolné veličiny (viz Obrázek \ref{fig:urceni-gradientu}). 
             \begin{figure}[ht!]
                 \centering
-                \includegraphics[width=.6\textwidth]{300_VYPOCETNI_MODEL/urceni_gradientu.png}
+                \includegraphics[width=.75\textwidth]{300_VYPOCETNI_MODEL/urceni_gradientu.png}
                 \caption{Schéma pro určení gradientu pomocí metody nejmenších čtverců.}
                 \label{fig:urceni-gradientu}
             \end{figure}
-            Počet takto vzniklých gradientů je roven počtu sousedních buněk $c_i$, je tak třeba najít váhovou funkci $\Tensor{W}$, jejíž aplikací na soustavu rozdílů $\Vec{\Delta \varphi}$ získáme konečný gradient $\brac{\nabla \varphi} _{c0}$, tedy:
+            Počet takto vzniklých gradientů je roven počtu sousedních buněk $n$, je tak třeba najít váhovou funkci $\Tensor{W}$, jejíž aplikací na soustavu rozdílů $\Vec{\Delta \varphi}$ získáme konečný gradient $\brac{\nabla \varphi} _{c0}$, tedy:
             \begin{equation}
                 \brac{\nabla \varphi} _{c0} = \begin{pmatrix}
                     \brac{\nabla \varphi} _{c0} ^x \\
@@ -312,9 +312,44 @@
                 \end{pmatrix} = \Tensor{W} \Vec{\Delta \varphi}
             \end{equation}
         \subsubsection{Aproximace hodnot na stěnách}
+            Ansys Fluent využívá při výpočtech tzv. cell-centered formulaci metody konečných objemů – všechny veličiny jsou definovány ve středech buněk. Pro výpočet toků konečnými objemy je ale nutné znát také hodnoty veličin na jejich stěnách. K tomu byla zvolena metoda upwind druhého řádu přesnosti (\textit{linear upwind}). Její princip je založen na určení buňky \uv{proti proudu} $c _U$, obvykle s využitím vnější normály stěny, a následné extrapolaci hodnot z jejího středu do středu příslušné stěny:
+            \begin{equation}
+                \varphi _{f} = \varphi _U + \brac{\nabla \varphi} _U \cdot \Vec{r _f}
+            \end{equation}
+            \noindent kde $\varphi _f$ je hodnota libovolné veličiny ve středu stěny, $\varphi _U$ je hodnota ve středu buňky proti proudu, $\brac{\nabla \varphi} _U$ je gradient buňky proti proudu (viz Kapitola \ref{sec:odhad-gradientu}) a $\Vec{r_f}$ je vektor spojující střed buňky proti proudu a střed stěny.
+
+            Určení tlaku na stěnách buněk se liší od všech ostatních veličin. V tomto případě byla namísto metody upwind použita centrální náhrada druhého řádu přesnosti:
+            \begin{equation}
+                p _{f} = \frac{p_{ci} + p _{c0}}{2} + \frac{\brac{\nabla p} _{ci} + \brac{\nabla p} _{c0}}{2}
+            \end{equation}
         \subsubsection{Numerické schéma}
+            Pro řešení bilančních rovnic bylo zvoleno sdružené schéma – narozdíl od sekvenčních algoritmů (například SIMPLE, PISO, \dots), které řeší postupně rovnice pro rychlost a následně pro tlak, sdružený algoritmus sestavuje soustavu rovnic řešící zároveň rychlostní i tlakové pole. Ta je poté řešena buď pomocí Gauss-Seidelovy iterační metody nebo pomocí metod založených na LU dekompozici \cite{Ansys2020Theory}.
+
+            Výhoda sdruženého algoritmu spočívá u stacionárních úloh zejména v rychlosti konvergence \cite{Ansys2020User} – při testování vhodného schématu pro výpočty prezentované v této práci bylo s využitím sdruženého schématu dosaženo konvergence po přibližně $10\times$ méně iteracích, než tomu bylo u schématu SIMPLE.
         \subsubsection{Inicializace výpočtu}
+            Iterační proces řešení vyžaduje počáteční vyplnění hodnot v kontrolních objemech. K tomu lze přistoupit několika způsoby, zde byla zvolena takzvaná hybridní inicializace. Ta spočívá v řešení Laplaceovy rovnice pro rychlostní potenciál $\varphi$ a pro tlak $p$ (viz Rovnice \ref{eq:incializace}) se zjednodušenými okrajovými podmínkami. Ostatní veličiny (teplota, turbulentní parametry, \dots) jsou v celém objemu voleny jako konstantní. 
+            \begin{equation} \label{eq:incializace}
+                \begin{split}
+                    \Delta \varphi = 0 \\
+                    \Delta p = 0
+                \end{split}
+            \end{equation}
+            Využití hybridní inicializace, podobně jako použití sdruženého algoritmu, vedlo během výpočtů k jejich rychlejší konvergenci a bylo tak preferováno.
         \subsubsection{Určení restitučních faktorů}
+            Vnitřní geometrie teplotních čidel byla během výpočtů idealizována (uvažovány byly jako homogenní tělesa z keramiky, viz Kapitola \ref{sec:materialy}), nicméně pro stanovení restitučních faktorů bylo třeba zvolit postup, který co nejvíce respektuje skutečnou stavbu snímačů. Tepelně citlivé součásti jsou u použitého modelu Pt100 navinuty po většině jeho délky – u výpočetního modelu byly reprezentovány úsečkou délky $19 \Unit{mm}$, viz Obrázek \ref{fig:odecet-tr}.
+
+            \begin{figure} [ht!]
+                \centering
+                \includegraphics[width=.7\textwidth]{300_VYPOCETNI_MODEL/urceni_tr.png}
+                \caption{Schéma s vyznačením oblasti odečtu teploty pro určení restitučního faktoru.}
+                \label{fig:odecet-tr}
+            \end{figure}
+
+            Rovnovážná teplota $T_r$ čidla byla určena jako průměr hodnot teploty v buňkách, které úsečka protínala. Následně byl určen restituční faktor čidla s využitím Vztahu \ref{eq:mereni-rychlosti}:
+            \begin{equation}
+                f = 2 c_p \frac{T_r - T}{u ^2}
+            \end{equation}
+            \noindent kde $T \unit{K}$ je statická teplota nabíhajícího proudu a $u \unit{\frac{m}{s}}$ je jeho rychlost.
 
         
         

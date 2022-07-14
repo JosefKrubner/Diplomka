@@ -34,6 +34,6 @@
 \contentsline {subsection}{\numberline {3.6}Numerický řešič}{24}{subsection.3.6}%
 \contentsline {subsubsection}{\numberline {3.6.1}Odhad gradientu}{24}{subsubsection.3.6.1}%
 \contentsline {subsubsection}{\numberline {3.6.2}Aproximace hodnot na stěnách}{25}{subsubsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.3}Numerické schéma}{25}{subsubsection.3.6.3}%
-\contentsline {subsubsection}{\numberline {3.6.4}Inicializace výpočtu}{25}{subsubsection.3.6.4}%
-\contentsline {subsubsection}{\numberline {3.6.5}Určení restitučních faktorů}{25}{subsubsection.3.6.5}%
+\contentsline {subsubsection}{\numberline {3.6.3}Numerické schéma}{26}{subsubsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.4}Inicializace výpočtu}{26}{subsubsection.3.6.4}%
+\contentsline {subsubsection}{\numberline {3.6.5}Určení restitučních faktorů}{26}{subsubsection.3.6.5}%

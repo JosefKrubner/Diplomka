@@ -2355,11 +2355,14 @@
     <bcf:citekey order="3">Ansys2020Theory</bcf:citekey>
     <bcf:citekey order="4">Ansys2020User</bcf:citekey>
     <bcf:citekey order="5">Sosnowski2018</bcf:citekey>
-    <bcf:citekey order="6">Menter1993</bcf:citekey>
-    <bcf:citekey order="7">Menter1994</bcf:citekey>
-    <bcf:citekey order="8">Ansys2020Theory</bcf:citekey>
-    <bcf:citekey order="9">Ansys2020User</bcf:citekey>
-    <bcf:citekey order="10">Sosnowski2018</bcf:citekey>
+    <bcf:citekey order="6">Ansys2020Theory</bcf:citekey>
+    <bcf:citekey order="7">Ansys2020Theory</bcf:citekey>
+    <bcf:citekey order="8">Ansys2020User</bcf:citekey>
+    <bcf:citekey order="9">Menter1993</bcf:citekey>
+    <bcf:citekey order="10">Menter1994</bcf:citekey>
+    <bcf:citekey order="11">Ansys2020Theory</bcf:citekey>
+    <bcf:citekey order="12">Ansys2020User</bcf:citekey>
+    <bcf:citekey order="13">Sosnowski2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
