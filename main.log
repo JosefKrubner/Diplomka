@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  15 JUL 2022 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  18 JUL 2022 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1060,163 +1060,24 @@ File: 200_DRTA_SONDA/Vychozi_DRTA.png Graphic file (type png)
 Package pdftex.def Info: 200_DRTA_SONDA/Vychozi_DRTA.png  used on input line 23
 .
 (pdftex.def)             Requested size: 441.01773pt x 146.80772pt.
-) [12] [13 <./200_DRTA_SONDA/Vychozi_DRTA.png>] (./301_Vypocetni_model.tex
-[14
+) [12] [13 <./200_DRTA_SONDA/Vychozi_DRTA.png>]
 
-] [15]
-
-LaTeX Warning: Citation 'Menter1993' on page 16 undefined on input line 51.
-
-
-LaTeX Warning: Citation 'Menter1994' on page 16 undefined on input line 51.
-
-
-Overfull \hbox (0.72426pt too wide) in paragraph at lines 57--59
-\T1/cmr/m/n/12 kde $\OML/cmm/m/it/12 k  []$ \T1/cmr/m/n/12 je tur-bu-lentní ki-
-ne-tická ener-gie, $\OML/cmm/m/it/12 !  []$ \T1/cmr/m/n/12 je spe-ci-fická rych
--lost di-si-pace, $\OML/cmm/m/it/12 ^^V  []$
- []
-
-[16]
-
-LaTeX Warning: Citation 'Ansys2020Theory' on page 17 undefined on input line 91
-.
-
-
-LaTeX Warning: Citation 'Ansys2020Theory' on page 17 undefined on input line 91
-.
-
-[17]
-<300_VYPOCETNI_MODEL/Vypocetni_oblast.png, id=396, 1223.32031pt x 1072.005pt>
-File: 300_VYPOCETNI_MODEL/Vypocetni_oblast.png Graphic file (type png)
-<use 300_VYPOCETNI_MODEL/Vypocetni_oblast.png>
-Package pdftex.def Info: 300_VYPOCETNI_MODEL/Vypocetni_oblast.png  used on inpu
-t line 117.
-(pdftex.def)             Requested size: 441.01773pt x 386.4613pt.
-
-
-LaTeX Warning: Reference `sec:konstrukcni-upravy' on page 18 undefined on input
- line 123.
-
-
-LaTeX Warning: Reference `sec:finalni-geometrie' on page 18 undefined on input 
-line 123.
-
-[18 <./300_VYPOCETNI_MODEL/Vypocetni_oblast.png>]
-<300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png, id=403, 1016.29688pt x 901.
-86937pt>
-File: 300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png Graphic file (type png)
-
-<use 300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png>
-Package pdftex.def Info: 300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png  use
-d on input line 127.
-(pdftex.def)             Requested size: 441.01773pt x 391.36047pt.
- [19 <./300_VYPOCETNI_MODEL/Vypocetni_oblast_symetrie.png>] [20]
-<300_VYPOCETNI_MODEL/op-inlet.png, id=420, 1659.19875pt x 1185.42876pt>
-File: 300_VYPOCETNI_MODEL/op-inlet.png Graphic file (type png)
-<use 300_VYPOCETNI_MODEL/op-inlet.png>
-Package pdftex.def Info: 300_VYPOCETNI_MODEL/op-inlet.png  used on input line 1
-78.
-(pdftex.def)             Requested size: 132.30666pt x 94.51065pt.
-<300_VYPOCETNI_MODEL/op-farfield.png, id=421, 1659.19875pt x 1185.42876pt>
-File: 300_VYPOCETNI_MODEL/op-farfield.png Graphic file (type png)
-<use 300_VYPOCETNI_MODEL/op-farfield.png>
-Package pdftex.def Info: 300_VYPOCETNI_MODEL/op-farfield.png  used on input lin
-e 185.
-(pdftex.def)             Requested size: 132.30666pt x 94.51065pt.
-<300_VYPOCETNI_MODEL/op-outlet.png, id=422, 1659.19875pt x 1185.42876pt>
-File: 300_VYPOCETNI_MODEL/op-outlet.png Graphic file (type png)
-<use 300_VYPOCETNI_MODEL/op-outlet.png>
-Package pdftex.def Info: 300_VYPOCETNI_MODEL/op-outlet.png  used on input line 
-192.
-(pdftex.def)             Requested size: 132.30666pt x 94.51065pt.
- [21 <./300_VYPOCETNI_MODEL/op-inlet.png> <./300_VYPOCETNI_MODEL/op-farfield.pn
-g> <./300_VYPOCETNI_MODEL/op-outlet.png>]
-
-LaTeX Warning: Citation 'Ansys2020User' on page 22 undefined on input line 238.
-
-
-Package epstopdf Info: Source file: <300_VYPOCETNI_MODEL/yplus-stineni-A.eps>
-(epstopdf)                    date: 2022-07-10 13:17:25
-(epstopdf)                    size: 44394 bytes
-(epstopdf)             Output file: <300_VYPOCETNI_MODEL/yplus-stineni-A-eps-co
-nverted-to.pdf>
-(epstopdf)                    date: 2022-07-10 15:52:23
-(epstopdf)                    size: 13625 bytes
-(epstopdf)             Command: <repstopdf --outfile=300_VYPOCETNI_MODEL/yplus-
-stineni-A-eps-converted-to.pdf 300_VYPOCETNI_MODEL/yplus-stineni-A.eps>
-(epstopdf)             \includegraphics on input line 256.
-Package epstopdf Info: Output file is already uptodate.
-<300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf, id=435, 1927.2pt x 9
-95.72pt>
-File: 300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf Graphic file (ty
-pe pdf)
-<use 300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf>
-Package pdftex.def Info: 300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.p
-df  used on input line 256.
-(pdftex.def)             Requested size: 441.01773pt x 227.85608pt.
-
-LaTeX Warning: Reference `sec:stineni-A' on page 22 undefined on input line 257
-.
-
-
-LaTeX Warning: Reference `sec:stineni-A' on page 22 undefined on input line 257
-.
-
-[22]
-
-LaTeX Warning: Citation 'Sosnowski2018' on page 23 undefined on input line 266.
-
-
-<300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png, id=446, 1927.2pt x 1084.05pt>
-File: 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png Graphic file (type png)
-<use 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png>
-Package pdftex.def Info: 300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png  used on 
-input line 278.
-(pdftex.def)             Requested size: 441.01773pt x 248.06912pt.
-
-LaTeX Warning: Reference `sec:stineni-A' on page 23 undefined on input line 279
-.
-
-
-LaTeX Warning: Reference `sec:stineni-A' on page 23 undefined on input line 279
-.
-
-
-LaTeX Warning: Citation 'Ansys2020Theory' on page 23 undefined on input line 28
-4.
-
-[23 <./300_VYPOCETNI_MODEL/yplus-stineni-A-eps-converted-to.pdf>]
-<300_VYPOCETNI_MODEL/urceni_gradientu.png, id=461, 2011.515pt x 1252.68pt>
-File: 300_VYPOCETNI_MODEL/urceni_gradientu.png Graphic file (type png)
-<use 300_VYPOCETNI_MODEL/urceni_gradientu.png>
-Package pdftex.def Info: 300_VYPOCETNI_MODEL/urceni_gradientu.png  used on inpu
-t line 293.
-(pdftex.def)             Requested size: 330.76329pt x 205.97604pt.
- [24 <./300_VYPOCETNI_MODEL/mesh_sym_odvetrani_A.png (PNG copy)>]
-
-LaTeX Warning: Citation 'Ansys2020Theory' on page 25 undefined on input line 32
-6.
-
-[25 <./300_VYPOCETNI_MODEL/urceni_gradientu.png>]
-
-LaTeX Warning: Citation 'Ansys2020User' on page 26 undefined on input line 328.
-
-
-<300_VYPOCETNI_MODEL/urceni_tr.png, id=480, 591.71063pt x 182.18062pt>
-File: 300_VYPOCETNI_MODEL/urceni_tr.png Graphic file (type png)
-<use 300_VYPOCETNI_MODEL/urceni_tr.png>
-Package pdftex.def Info: 300_VYPOCETNI_MODEL/urceni_tr.png  used on input line 
-343.
-(pdftex.def)             Requested size: 308.71106pt x 95.05136pt.
-) [26 <./300_VYPOCETNI_MODEL/urceni_tr.png>] 
 AED: lastpage setting LastPage
 (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 73BFE1B754ECF5AD57C54C16D7523FBE;6103.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 73BFE1B754ECF5AD57C54C16D7523FBE;6103
+(rerunfilecheck)             After:  86A5DB85B105967566582758CB419C6E;2270.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -1227,38 +1088,156 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23406 strings out of 478037
- 407666 string characters out of 5843053
+ 23074 strings out of 478037
+ 400221 string characters out of 5843053
  1151917 words of memory out of 5000000
- 41335 multiletter control sequences out of 15000+600000
- 486427 words of font info for 72 fonts, out of 8000000 for 9000
+ 41070 multiletter control sequences out of 15000+600000
+ 481351 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,17n,80p,953b,2122s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
-ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
-/cm-super/sfbx1095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/
-sfbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.p
-fb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/tex
-live/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2022/
-texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist
-/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2022/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
-cm-super/sfrm1728.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/s
-fti1200.pfb>
-Output written on main.pdf (26 pages, 1992260 bytes).
+
+pdfTeX warning (dest): name{figure.caption.31} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.30} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.29} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.28} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.24} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.21} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.6.5} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.6.4} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.6.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.6.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.6.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.6} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.5.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.5.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.5.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.4.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.4.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.3.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.3.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.3.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.1.4} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.1.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.1.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.3.1.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3} has been referenced but does not exist, 
+replaced by a fixed one
+
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texliv
+e/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texl
+ive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2022/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2022/texmf-dist/
+fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2022/texmf-dist/fonts/type
+1/public/cm-super/sfrm1095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/c
+m-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sf
+rm1728.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
+>
+Output written on main.pdf (13 pages, 470406 bytes).
 PDF statistics:
- 610 PDF objects out of 1000 (max. 8388607)
- 498 compressed objects within 5 object streams
- 125 named destinations out of 1000 (max. 500000)
- 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 438 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 330 words of extra memory for PDF output out of 10000 (max. 10000000)
 
