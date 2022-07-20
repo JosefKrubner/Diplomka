@@ -399,14 +399,14 @@
   publisher = {Wiley},
 }
 
-@InProceedings{Menter1993,
+@Article{Menter1993,
   author    = {F. Menter},
-  booktitle = {23rd Fluid Dynamics, Plasmadynamics, and Lasers Conference},
   title     = {Zonal Two Equation k-w Turbulence Models For Aerodynamic Flows},
   year      = {1993},
   month     = {jul},
-  publisher = {American Institute of Aeronautics and Astronautics},
+  booktitle = {23rd Fluid Dynamics, Plasmadynamics, and Lasers Conference},
   doi       = {10.2514/6.1993-2906},
+  publisher = {American Institute of Aeronautics and Astronautics},
 }
 
 @Article{Menter1994,
@@ -420,6 +420,94 @@
   volume    = {32},
   doi       = {10.2514/3.12149},
   publisher = {American Institute of Aeronautics and Astronautics ({AIAA})},
+}
+
+@Article{East1967,
+  author  = {R A East and J H Perry},
+  journal = {Aeronautical Research Council Current Papers},
+  title   = {A short time response stagnation temperature probe},
+  year    = {1967},
+}
+
+@Article{Massini2010,
+  author  = {Michela Massini and Robert J Miller and Howard P Hodson and Nick Collings},
+  journal = {Proceedings of ASME Turbo Expo 2010: Power for Land, Sea and Air},
+  title   = {A Novel Technique for Measuring Stagnation Quantities and Gas Composition in High Temperature Flows},
+  year    = {2010},
+}
+
+@Article{Sedlak2018,
+  author    = {Kamil Sedl{\'{a}}k and Lenka Fialov{\'{a}}},
+  journal   = {{MATEC} Web of Conferences},
+  title     = {Temperature measurement in the flowing medium},
+  year      = {2018},
+  pages     = {01002},
+  volume    = {168},
+  doi       = {10.1051/matecconf/201816801002},
+  editor    = {M. Malcho and J. Janda{\v{c}}ka and R. Lenhard and K. Kaduchov{\'{a}} and R. Nosek and L. Orman and A. {\v{C}}aja and P. {\v{D}}ur{\v{c}}ansk{\'{y}} and M. Holub{\v{c}}{\'{\i}}k and M. Patsch and P. Pil{\'{a}}t and P. Nemec},
+  publisher = {{EDP} Sciences},
+}
+
+@Article{Bonham2013,
+  author    = {C Bonham and S J Thorpe and M N Erlund and R D Stevenson},
+  journal   = {Measurement Science and Technology},
+  title     = {Stagnation temperature measurement using thin-film platinum resistance sensors},
+  year      = {2013},
+  month     = {nov},
+  number    = {1},
+  pages     = {015101},
+  volume    = {25},
+  doi       = {10.1088/0957-0233/25/1/015101},
+  publisher = {{IOP} Publishing},
+}
+
+@Article{Parker2022,
+  author    = {Mark J. Parker and Benjamin Jentz and Nolan Dyck and Anthony G. Straatman},
+  journal   = {Flow Measurement and Instrumentation},
+  title     = {On the measurement of temperature and recovery factor in high-speed subsonic duct flow},
+  year      = {2022},
+  month     = {mar},
+  pages     = {102090},
+  volume    = {83},
+  doi       = {10.1016/j.flowmeasinst.2021.102090},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Panda2004,
+  author  = {J Panda and R G Swasholtz},
+  journal = {NASA/TM—2004-212391},
+  title   = {Velocity and Temperature Measurementin Supersonic Free Jets Using SpectrallyResolved Rayleigh Scattering},
+  year    = {2004},
+}
+
+@Article{Wernet2021,
+  author    = {Mark P. Wernet and Nicholas J. Georgiadis and Randy J. Locke},
+  journal   = {Experiments in Fluids},
+  title     = {Raman temperature and density measurements in supersonic jets},
+  year      = {2021},
+  month     = {mar},
+  number    = {3},
+  volume    = {62},
+  doi       = {10.1007/s00348-021-03162-2},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@InCollection{Wiley2019,
+  author    = {John Wiley},
+  booktitle = {Applied Gas Dynamics},
+  publisher = {John Wiley {\&} Sons, Ltd},
+  title     = {Measurements in Compressible Flow},
+  year      = {2019},
+  month     = {feb},
+  pages     = {329--394},
+  doi       = {10.1002/9781119500377.ch10},
+}
+
+@TechReport{,
+  author      = {W. F. Lindsey},
+  institution = {Langley Memorial Aeronautical Laboratory},
+  title       = {Calibration of Three Temperature Probes and a Pressure Probe at High Speeds},
+  year        = {1942},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

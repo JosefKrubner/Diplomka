@@ -248,4 +248,242 @@
 @InCollection{Shires,
   author    = {G. L. Shires},
   booktitle = {A-to-Z Guide to Thermodynamics, Heat and Mass Transfer, and Fluids Engineering},
-  publisher = 
+  publisher = {Begellhouse},
+  title     = {{Prandtl} {number}},
+  doi       = {10.1615/atoz.p.prandtl_number},
+}
+
+@Article{Stalder1950,
+  author = {Stalder, Jackson R and Rubesin, Morris W and Tendeland, Thorval},
+  title  = {A determination of the laminar-, transitional-, and turbulent-boundary-layer temperature-recovery factors on a flat plate in supersonic flow},
+  year   = {1950},
+}
+
+@Article{Ishibashi2012,
+  author    = {Masahiro Ishibashi and Toshihiro Morioka},
+  journal   = {Flow Measurement and Instrumentation},
+  title     = {Velocity field measurements in critical nozzles using Recovery Temperature Anemometry ({RTA})},
+  year      = {2012},
+  month     = {jun},
+  pages     = {15--25},
+  volume    = {25},
+  doi       = {10.1016/j.flowmeasinst.2011.10.005},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Ishibashi2004,
+  author    = {Masahiro Ishibashi},
+  journal   = {Transactions of the Society of Instrument and Control Engineers},
+  title     = {Probe {RTA} (Recovery Temperature Anemometry)},
+  year      = {2004},
+  number    = {12},
+  pages     = {1163--1169},
+  volume    = {40},
+  doi       = {10.9746/sicetr1965.40.1163},
+  publisher = {The Society of Instrument and Control Engineers},
+}
+
+@Article{McAdams1945,
+  author = {McAdams, William H and Nicolai, Lloyd A and Keenan, Joseph H},
+  title  = {Measurements of recovery factors and coefficients of heat transfer in a tube for subsonic flow of air},
+  year   = {1945},
+}
+
+@Article{Villafane2013,
+  author    = {Laura Villafa{\~{n}}e and Guillermo Paniagua},
+  journal   = {International Journal of Thermal Sciences},
+  title     = {Aero-thermal analysis of shielded fine wire thermocouple probes},
+  year      = {2013},
+  month     = {mar},
+  pages     = {214--223},
+  volume    = {65},
+  doi       = {10.1016/j.ijthermalsci.2012.10.025},
+  publisher = {Elsevier {BV}},
+}
+
+@InCollection{Morris2016,
+  author    = {Alan S. Morris and Reza Langari},
+  booktitle = {Measurement and Instrumentation},
+  publisher = {Elsevier},
+  title     = {Flow Measurement},
+  year      = {2016},
+  pages     = {493--529},
+  doi       = {10.1016/b978-0-12-800884-3.00016-2},
+}
+
+@InCollection{Legg2017,
+  author    = {Roger Legg},
+  booktitle = {Air Conditioning System Design},
+  publisher = {Elsevier},
+  title     = {Fluid Flow: General Principles},
+  year      = {2017},
+  pages     = {225--257},
+  doi       = {10.1016/b978-0-08-101123-2.00013-3},
+}
+
+@InCollection{Russo2011,
+  author    = {Giuseppe P. Russo},
+  booktitle = {Aerodynamic Measurements},
+  publisher = {Elsevier},
+  title     = {Velocity and mass flow by pressure measurements},
+  year      = {2011},
+  pages     = {25--65},
+  doi       = {10.1533/9780857093868.25},
+}
+
+@InCollection{Bird1993,
+  author    = {J O Bird and P J Chivers},
+  booktitle = {Newnes Engineering and Physical Science Pocket Book},
+  publisher = {Elsevier},
+  title     = {Measurement of fluid flow},
+  year      = {1993},
+  pages     = {370--381},
+  doi       = {10.1016/b978-0-7506-1683-6.50052-7},
+}
+
+@Article{Schmirler2021,
+  author    = {Michal Schmirler and Josef Krubner},
+  journal   = {Thermal Science and Engineering Progress},
+  title     = {Double probe recovery temperature Anemometry},
+  year      = {2021},
+  month     = {jun},
+  pages     = {100875},
+  volume    = {23},
+  doi       = {10.1016/j.tsep.2021.100875},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Ansys2020Theory,
+  author = {Ansys},
+  title  = {Ansys Fluent Theory Guide},
+  year   = {2020},
+}
+
+@Article{Ansys2020User,
+  author = {Ansys},
+  title  = {Ansys Fluent User's Guide},
+  year   = {2020},
+}
+
+@Article{Sosnowski2018,
+  author    = {Marcin Sosnowski and Jaroslaw Krzywanski and Karolina Grabowska and Renata Gnatowska},
+  journal   = {{EPJ} Web of Conferences},
+  title     = {Polyhedral meshing in numerical analysis of conjugate heat transfer},
+  year      = {2018},
+  pages     = {02096},
+  volume    = {180},
+  doi       = {10.1051/epjconf/201818002096},
+  editor    = {P. Dan{\v{c}}ov{\'{a}}},
+  publisher = {{EDP} Sciences},
+}
+
+@Book{Shapiro1954,
+  author    = {Shapiro, Ascher H.},
+  publisher = {John Wiley & Sons},
+  title     = {Dynamics of Thermodynamics and Compressible Fluid},
+  year      = {1954},
+  isbn      = {9780471068457},
+  pages     = {647},
+}
+
+@Article{Morgan1976,
+  author    = {Roger J. Morgan and James E. O{\textquotesingle}Neal},
+  journal   = {Journal of Polymer Science: Polymer Physics Edition},
+  title     = {The relationship between the physical structure and the mechanical properties of polycarbonate},
+  year      = {1976},
+  month     = {jun},
+  number    = {6},
+  pages     = {1053--1076},
+  volume    = {14},
+  doi       = {10.1002/pol.1976.180140609},
+  publisher = {Wiley},
+}
+
+@Article{Menter1993,
+  author    = {F. Menter},
+  title     = {Zonal Two Equation k-w Turbulence Models For Aerodynamic Flows},
+  year      = {1993},
+  month     = {jul},
+  booktitle = {23rd Fluid Dynamics, Plasmadynamics, and Lasers Conference},
+  doi       = {10.2514/6.1993-2906},
+  publisher = {American Institute of Aeronautics and Astronautics},
+}
+
+@Article{Menter1994,
+  author    = {F. R. Menter},
+  journal   = {{AIAA} Journal},
+  title     = {Two-equation eddy-viscosity turbulence models for engineering applications},
+  year      = {1994},
+  month     = {aug},
+  number    = {8},
+  pages     = {1598--1605},
+  volume    = {32},
+  doi       = {10.2514/3.12149},
+  publisher = {American Institute of Aeronautics and Astronautics ({AIAA})},
+}
+
+@Article{East1967,
+  author  = {R A East and J H Perry},
+  journal = {Aeronautical Research Council Current Papers},
+  title   = {A short time response stagnation temperature probe},
+  year    = {1967},
+}
+
+@Article{Massini2010,
+  author  = {Michela Massini and Robert J Miller and Howard P Hodson and Nick Collings},
+  journal = {Proceedings of ASME Turbo Expo 2010: Power for Land, Sea and Air},
+  title   = {A Novel Technique for Measuring Stagnation Quantities and Gas Composition in High Temperature Flows},
+  year    = {2010},
+}
+
+@Article{Sedlak2018,
+  author    = {Kamil Sedl{\'{a}}k and Lenka Fialov{\'{a}}},
+  journal   = {{MATEC} Web of Conferences},
+  title     = {Temperature measurement in the flowing medium},
+  year      = {2018},
+  pages     = {01002},
+  volume    = {168},
+  doi       = {10.1051/matecconf/201816801002},
+  editor    = {M. Malcho and J. Janda{\v{c}}ka and R. Lenhard and K. Kaduchov{\'{a}} and R. Nosek and L. Orman and A. {\v{C}}aja and P. {\v{D}}ur{\v{c}}ansk{\'{y}} and M. Holub{\v{c}}{\'{\i}}k and M. Patsch and P. Pil{\'{a}}t and P. Nemec},
+  publisher = {{EDP} Sciences},
+}
+
+@Article{Bonham2013,
+  author    = {C Bonham and S J Thorpe and M N Erlund and R D Stevenson},
+  journal   = {Measurement Science and Technology},
+  title     = {Stagnation temperature measurement using thin-film platinum resistance sensors},
+  year      = {2013},
+  month     = {nov},
+  number    = {1},
+  pages     = {015101},
+  volume    = {25},
+  doi       = {10.1088/0957-0233/25/1/015101},
+  publisher = {{IOP} Publishing},
+}
+
+@Article{Parker2022,
+  author    = {Mark J. Parker and Benjamin Jentz and Nolan Dyck and Anthony G. Straatman},
+  journal   = {Flow Measurement and Instrumentation},
+  title     = {On the measurement of temperature and recovery factor in high-speed subsonic duct flow},
+  year      = {2022},
+  month     = {mar},
+  pages     = {102090},
+  volume    = {83},
+  doi       = {10.1016/j.flowmeasinst.2021.102090},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Panda2004,
+  author  = {J Panda and R G Swasholtz},
+  journal = {NASA/TM—2004-212391},
+  title   = {Velocity and Temperature Measurementin Supersonic Free Jets Using SpectrallyResolved Rayleigh Scattering},
+  year    = {2004},
+}
+
+@Article{Wernet2021,
+  author    = {Mark P. Wernet and Nicholas J. Georgiadis and Randy J. Locke},
+  journal   = {Experiments in Fluids},
+  title     = {Raman temperature and density measurements in supersonic jets},
+  year      = {2021},
+  month     = {mar},
+  number    = {
