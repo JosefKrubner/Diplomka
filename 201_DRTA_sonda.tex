@@ -47,33 +47,20 @@
             \end{split}
         \end{align}
 
-        
-
-        \vspace{10cm}
-
-        Princip měření rychlosti pomocí DRTA sondy (DRTA = \uv{\textit{Double Recovery Temperature Anemometry}}) spočívá ve využití dvou teplotních čidel, v tomto návrhu bylo pracováno s odporovými teplotními snímači Pt100. Komplikaci při použití jediného snímače pro určení rychlosti proudění představuje nutná znalost statické teploty. Ta lze jednoduše eliminovat přidáním druhého snímače s rozdílným restitučním faktorem:
-        \begin{align}
-            T_{rA} &= T + f_A \frac{u^2}{2 c_p} \\
-            T_{rB} &= T + f_B \frac{u^2}{2 c_p} \\
-            T_{rA} - T_{rB} &= \brac{f_A - f_b} \frac{u^2}{2 c_p} \\
-            u &= \sqrt{\frac{2 c_p \brac{T_{rA} - T_{rB}}}{\brac{f_A - f_b}}} \label{eq:mereni-rychlosti}             
-        \end{align}
-        \noindent kde indexy $A$, respektive $B$ odpovídají jednotlivým čidlům. Podobným způsobem lze sestavit vztah pro určení Machova čísla:
-        \begin{align}
-            T_{rA} &= T + f_A \frac{u^2}{2 c_p} \frac{a^2}{a^2} = T \brac{1 + f_A \frac{\kappa - 1}{2} \Ma ^2} \\
-            T_{rB} &=  T \brac{1 + f_B \frac{\kappa - 1}{2} \Ma ^2} \\
-            \frac{T_{rA}}{T_{rB}} &= \frac{1 + f_A \frac{\kappa - 1}{2} \Ma ^2}{1 + f_B \frac{\kappa - 1}{2} \Ma ^2} \\
-            \Ma &= \sqrt{\frac{2}{\kappa - 1} \frac{T_{rA}-T_{rB}}{T_{rB} f_A - T_{rA} f_B}}
-        \end{align}
-
     \subsection{Výchozí geometrie}
-        Zkoumaná sonda se skládá z dvou odporových teplotní čidel Pt100 (model \textit{1PT100K2515}) o průměru $1.5 \unit{mm}$ a délce $25 \unit{mm}$. Ty jsou umístěny rovnoběžně ve směru proudění pomocí těsnění na jejich koncích, ukotveného v mosazné trubici o průměru $4 \Unit{mm}$ a tloušťce $0.4 \Unit{mm}$, která je využita zároveň k dosažení rozdílu restitučních faktorů jednotlivých čidel. Prostorové uspořádání sestavy je patrné z obrázku \ref{fig:vychozi-DRTA}. Vyšším restitučním faktorem disponuje čidlo umístěné uvnitř trubice a dále v práci o něm bude hovořeno jako o čidlu A. Proudění stíněním čidla A umožňují dva odvětrávací otvory umístěné $12 \Unit{mm}$ od vstupu do trubice. Čidlo umístěné volně v proudícím médiu vykazuje nižší restituční faktor a bude dále značeno jako čidlo B.
-        
+        Jak již vyplývá z principu fungování DRTA sondy, klíčovými prvky konstrukce jsou dvě teplotní čidla. V tomto případě byly zvoleny odporové teplotní snímače Pt100 (model \textit{1PT100K2515} značky Omega Engineering) o průměru $1.5 \Unit{mm}$ a délce $25 \Unit{mm}$. Ty jsou uchyceny pomocí těsnění v mosazné trubici o vnějším průměru $4 \Unit{mm}$ a tloušťce stěny $0.4 \Unit{mm}$. Výchozí geometrie sondy je patrná z Obrázku \ref{fig:vychozi-DRTA}, detailní rozměry jsou poté uvedeny v Příloze \ref{fig:sonda-bez-stineni-B-vykres}.
+
         \begin{figure}[ht!]
             \centering
             \includegraphics[width=\textwidth]{200_DRTA_SONDA/Vychozi_DRTA.png}
             \caption{Výchozí geometrie DRTA sondy.}
             \label{fig:vychozi-DRTA}
         \end{figure}
-    \subsection{Cíle numerických simulací}
+
+        Klíčový je zde rozdíl restitučních faktorů teplotních čidel. To je zajištěno opláštěním jednoho z nich – bude značeno jako čidlo A. Při proudění plynu stínicí trubicí dochází k jeho výraznému zpomalení, což vede k nárůstu statické teploty a čidlo se tak zahřívá více, než kdyby bylo umístěné volně v proudu. Stínění je opatřeno dvěma ventilačními otvory o průměru $1 \Unit{mm}$, které zajišťují proudění vzduchu trubicí. Konstrukce čidla A se tak podobá měření stagnační teploty (viz Kapitola \ref{sec:mereni-teplot}), kdy je cílem se co nejvíce přiblížit stavu $f_A \rightarrow 1$.
+        \clearpage
         
+    \subsection{Cíle numerických simulací}
+        Hlavním cílem CFD simulací byla úprava geometrie sondy tak, aby byla zajištěna její co největší použitelnost nezávisle na rychlosti proudění, ani na jeho směru (zde lze hovořit o limitním natočení sondy, kdy bude ještě chyba měření přijatelná). Dalším cílem bylo dále dosažení co nejvyššího rozdílu restitučních faktorů s ohledem na další zvolené úpravy geometrie.
+
+        Charakter konstrukčních úprav se odvíjel také od snahy zachovat původní koncept sondy a měl umožnit pozdější snadnou konstrukci nového modelu pro experimentální testování.
