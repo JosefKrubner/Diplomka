@@ -283,7 +283,7 @@
     \subsection{Numerický řešič}
         Veškeré výpočty byly provedeny v prostředí výpočetního software Ansys Fluent (verze 2020b-2021b). Ten využívá k řešení problémů metodu konečných objemů, která je pro úlohy počítačové dynamiky tekutin typická. Metoda spočívá v rozdělení kontrolní oblasti na vzájemně disjunktní kontrolní objemy, které ji kompletně pokrývají. Řešené rovnice jsou následně integrovány právě přes dané objemy a poté prostřednictvím diskretizace převedeny na soustavu lineárních rovnic. Způsoby diskretizace a odhadů popsané níže vycházejí z programové dokumentace pro Ansys Fluent 2020 \cite{Ansys2020Theory}.
         \subsubsection{Odhad gradientu} \label{sec:odhad-gradientu}
-            Pro určení gradientu ve středu buněk byla zvolena, s ohledem na použití polyhedrální sítě, metoda konečných čtverců. Ta spočívá v hledání váhové funkce mezi dílčími gradienty $\brac{\nabla \varphi}_{c0,i}$:
+            Pro určení gradientu ve středu buněk byla zvolena, s ohledem na použití polyhedrální sítě, metoda nejmenších čtverců. Ta spočívá v hledání váhové funkce mezi dílčími gradienty $\brac{\nabla \varphi}_{c0,i}$:
             \begin{equation}
                 \brac{\nabla \varphi}_{c0,i} \cdot \Vec{r_i} = \varphi _{ci} - \varphi _{c0} = \brac{\Delta \varphi} _i
             \end{equation}
