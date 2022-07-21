@@ -18,12 +18,10 @@
             T_{rB} = T + f_B \frac{u^2}{2 c_p}
         \end{equation}
         \noindent Rychlost proudění lze následně určit z rozdílu Vztahů \ref{eq:trA} a \ref{eq:trB}:
-        \begin{equation} \label{eq:mereni-rychlosti}
-            \begin{split} 
-                T_{rA} - T_{rB} = \brac{f_A - f_b} \frac{u^2}{2 c_p} \\
-                u = \sqrt{\frac{2 c_p \brac{T_{rA} - T_{rB}}}{\brac{f_A - f_b}}}
-            \end{split}
-        \end{equation}
+        \begin{align} \label{eq:mereni-rychlosti}
+                T_{rA} - T_{rB} &= \brac{f_A - f_b} \frac{u^2}{2 c_p} \\
+                u &= \sqrt{\frac{2 c_p \brac{T_{rA} - T_{rB}}}{\brac{f_A - f_B}}}
+        \end{align}
 
         Výhoda použití dvou teplotních snímačů s rozdílnými restitučními faktory spočívá navíc v tom, že lze obdobně odvodit i vztahy pro určení Machova čísla a statické teploty nabíhajícího proudu. Pro určení $\Ma$ je třeba nejprve upravit Vztahy \ref{eq:trA} a \ref{eq:trB}:
         \begin{align}
@@ -61,6 +59,6 @@
         \clearpage
         
     \subsection{Cíle numerických simulací}
-        Hlavním cílem CFD simulací byla úprava geometrie sondy tak, aby byla zajištěna její co největší použitelnost nezávisle na rychlosti proudění, ani na jeho směru (zde lze hovořit o limitním natočení sondy, kdy bude ještě chyba měření přijatelná). Dalším cílem bylo dále dosažení co nejvyššího rozdílu restitučních faktorů s ohledem na další zvolené úpravy geometrie.
+        Hlavním cílem CFD simulací byla úprava geometrie sondy tak, aby byla zajištěna její co největší směrová necitlivost a zároveň použitelnost nezávisle na rychlosti proudění. Návrhy byly prováděny pro vysoké podzvukové rychlosti. Dalším cílem bylo dále dosažení co nejvyššího rozdílu restitučních faktorů s ohledem na další zvolené úpravy geometrie.
 
         Charakter konstrukčních úprav se odvíjel také od snahy zachovat původní koncept sondy a měl umožnit pozdější snadnou konstrukci nového modelu pro experimentální testování.
