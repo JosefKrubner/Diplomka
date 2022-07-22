@@ -6,8 +6,5 @@
 \contentsline {section}{Seznam obrázků}{8}{table.caption.13}%
 \contentsline {section}{Úvod}{9}{section*.15}%
 \contentsline {section}{\numberline {1}Měření teplot při vysokých podzvukových rychlostech}{10}{section.1}%
-\contentsline {subsubsection}{\numberline {1.0.1}Dynamický ohřev}{10}{subsubsection.1.0.1}%
-\contentsline {subsubsection}{\numberline {1.0.2}Restituční faktor}{10}{subsubsection.1.0.2}%
-\contentsline {subsection}{\numberline {1.1}Dynamická teplota}{10}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Měření klidové teploty}{10}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Měření statické teploty}{10}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.1}Dynamický ohřev}{10}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Restituční faktor}{11}{subsection.1.2}%

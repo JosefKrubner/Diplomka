@@ -503,11 +503,27 @@
   doi       = {10.1002/9781119500377.ch10},
 }
 
-@TechReport{,
+@TechReport{Lindsey1942,
   author      = {W. F. Lindsey},
   institution = {Langley Memorial Aeronautical Laboratory},
   title       = {Calibration of Three Temperature Probes and a Pressure Probe at High Speeds},
   year        = {1942},
+}
+
+@Article{,
+}
+
+@Article{Leontiev2017a,
+  author    = {A. I. Leontiev and V. G. Lushchik and M. S. Makarova},
+  journal   = {High Temperature},
+  title     = {The temperature recovery factor in a boundary layer on a permeable plate},
+  year      = {2017},
+  month     = {mar},
+  number    = {2},
+  pages     = {246--252},
+  volume    = {55},
+  doi       = {10.1134/s0018151x17020080},
+  publisher = {Pleiades Publishing Ltd},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
