@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  23 JUL 2022 13:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  23 JUL 2022 15:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -970,7 +970,7 @@ Package hyperref Info: Link coloring OFF on input line 3.
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./000_UVODNI_S
 TRANKY/02_zadani.tex
-<000_UVODNI_STRANKY/Zadani.pdf, id=46, 597.50829pt x 845.0471pt>
+<000_UVODNI_STRANKY/Zadani.pdf, id=58, 597.50829pt x 845.0471pt>
 File: 000_UVODNI_STRANKY/Zadani.pdf Graphic file (type pdf)
 <use 000_UVODNI_STRANKY/Zadani.pdf>
 Package pdftex.def Info: 000_UVODNI_STRANKY/Zadani.pdf  used on input line 6.
@@ -979,7 +979,7 @@ File: 000_UVODNI_STRANKY/Zadani.pdf Graphic file (type pdf)
 <use 000_UVODNI_STRANKY/Zadani.pdf>
 Package pdftex.def Info: 000_UVODNI_STRANKY/Zadani.pdf  used on input line 6.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<000_UVODNI_STRANKY/Zadani.pdf, id=49, page=1, 597.50829pt x 845.0471pt>
+<000_UVODNI_STRANKY/Zadani.pdf, id=61, page=1, 597.50829pt x 845.0471pt>
 File: 000_UVODNI_STRANKY/Zadani.pdf Graphic file (type pdf)
 <use 000_UVODNI_STRANKY/Zadani.pdf, page 1>
 Package pdftex.def Info: 000_UVODNI_STRANKY/Zadani.pdf , page1 used on input li
@@ -1048,7 +1048,7 @@ Package epstopdf Info: Source file: <100_MERENI_TEPLOT/pomer_T_T0.eps>
 T0-eps-converted-to.pdf 100_MERENI_TEPLOT/pomer_T_T0.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
-<100_MERENI_TEPLOT/pomer_T_T0-eps-converted-to.pdf, id=178, 1927.2pt x 995.72pt
+<100_MERENI_TEPLOT/pomer_T_T0-eps-converted-to.pdf, id=198, 1927.2pt x 995.72pt
 >
 File: 100_MERENI_TEPLOT/pomer_T_T0-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1068,21 +1068,104 @@ LaTeX Warning: Citation 'Ishibashi2012' on page 11 undefined on input line 42.
 
 [11
 
- <./100_MERENI_TEPLOT/pomer_T_T0-eps-converted-to.pdf>])
+ <./100_MERENI_TEPLOT/pomer_T_T0-eps-converted-to.pdf>]
 
+LaTeX Warning: Reference `priloha:odvozeni-limitniho-f' on page 12 undefined on
+ input line 56.
+
+Package epstopdf Info: Source file: <100_MERENI_TEPLOT/chyba_Tr_T0.eps>
+(epstopdf)                    date: 2022-07-23 13:29:42
+(epstopdf)                    size: 79404 bytes
+(epstopdf)             Output file: <100_MERENI_TEPLOT/chyba_Tr_T0-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2022-07-23 13:30:05
+(epstopdf)                    size: 27922 bytes
+(epstopdf)             Command: <repstopdf --outfile=100_MERENI_TEPLOT/chyba_Tr
+_T0-eps-converted-to.pdf 100_MERENI_TEPLOT/chyba_Tr_T0.eps>
+(epstopdf)             \includegraphics on input line 60.
+Package epstopdf Info: Output file is already uptodate.
+<100_MERENI_TEPLOT/chyba_Tr_T0-eps-converted-to.pdf, id=214, 1927.2pt x 995.72p
+t>
+File: 100_MERENI_TEPLOT/chyba_Tr_T0-eps-converted-to.pdf Graphic file (type pdf
+)
+<use 100_MERENI_TEPLOT/chyba_Tr_T0-eps-converted-to.pdf>
+Package pdftex.def Info: 100_MERENI_TEPLOT/chyba_Tr_T0-eps-converted-to.pdf  us
+ed on input line 60.
+(pdftex.def)             Requested size: 441.01773pt x 276.91571pt.
+[12 <./100_MERENI_TEPLOT/chyba_Tr_T0-eps-converted-to.pdf>]
+
+LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 66.
+
+<100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg, id=229, 680.5425pt x 274.02374pt
+>
+File: 100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg Graphic file (type jpg)
+<use 100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg>
+Package pdftex.def Info: 100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg  used on 
+input line 71.
+(pdftex.def)             Requested size: 198.45662pt x 79.90805pt.
+
+LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 72.
+
+
+LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 72.
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 72--72
+[]\T1/cmr/m/n/10 (a) |Tru-bice s ter-mo-£lán-kem. P°e-vzato z
+ []
+
+<100_MERENI_TEPLOT/Shapiro-termoclanek.jpg, id=230, 1035.11719pt x 470.50781pt>
+
+File: 100_MERENI_TEPLOT/Shapiro-termoclanek.jpg Graphic file (type jpg)
+<use 100_MERENI_TEPLOT/Shapiro-termoclanek.jpg>
+Package pdftex.def Info: 100_MERENI_TEPLOT/Shapiro-termoclanek.jpg  used on inp
+ut line 75.
+(pdftex.def)             Requested size: 198.45662pt x 90.20149pt.
+
+LaTeX Warning: Citation 'Shapiro1954' on page 13 undefined on input line 76.
+
+
+LaTeX Warning: Citation 'Shapiro1954' on page 13 undefined on input line 76.
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 76--76
+[]\T1/cmr/m/n/10 (b) |Tru-bice s ter-mo-£lán-kem. P°e-vzato z
+ []
+
+<100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg, id=231, 692.5875pt x 249.93375pt>
+File: 100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg Graphic file (type jpg)
+<use 100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg>
+Package pdftex.def Info: 100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg  used on input
+ line 83.
+(pdftex.def)             Requested size: 198.45662pt x 71.61703pt.
+
+LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 84.
+
+
+LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 84.
+
+<100_MERENI_TEPLOT/Sedlak2018-Pt100.jpg, id=232, 511.9125pt x 190.46156pt>
+File: 100_MERENI_TEPLOT/Sedlak2018-Pt100.jpg Graphic file (type jpg)
+<use 100_MERENI_TEPLOT/Sedlak2018-Pt100.jpg>
+Package pdftex.def Info: 100_MERENI_TEPLOT/Sedlak2018-Pt100.jpg  used on input 
+line 87.
+(pdftex.def)             Requested size: 198.45662pt x 73.83795pt.
+
+LaTeX Warning: Citation 'Sedlak2018' on page 13 undefined on input line 88.
+
+
+LaTeX Warning: Citation 'Sedlak2018' on page 13 undefined on input line 88.
+
+) 
 AED: lastpage setting LastPage
-[12] (./main.aux)
+[13 <./100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg> <./100_MERENI_TEPLOT/Shapi
+ro-termoclanek.jpg> <./100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg> <./100_MERENI_T
+EPLOT/Sedlak2018-Pt100.jpg>] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 32F2C30168600FFFAA8FA51712337757;1502
-(rerunfilecheck)             After:  8D7411D660BF818C2B570C812206BE6A;1701.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 7FC1DFD73054CBC4A9ADDE7949B5B92B;2011.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -1093,13 +1176,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23164 strings out of 478037
- 402194 string characters out of 5843053
- 1149570 words of memory out of 5000000
- 41196 multiletter control sequences out of 15000+600000
- 482803 words of font info for 65 fonts, out of 8000000 for 9000
+ 23222 strings out of 478037
+ 404104 string characters out of 5843053
+ 1149822 words of memory out of 5000000
+ 41240 multiletter control sequences out of 15000+600000
+ 484342 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,17n,80p,818b,1674s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,17n,80p,819b,1874s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dis
@@ -1112,15 +1195,17 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
-cm-super/sfbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/s
-fbx1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pf
-b><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texl
-ive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on main.pdf (12 pages, 418541 bytes).
+cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/s
+fbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pf
+b><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texl
+ive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2022/texmf-dist/
+fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type
+1/public/cm-super/sfrm1728.pfb>
+Output written on main.pdf (13 pages, 815537 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 339 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

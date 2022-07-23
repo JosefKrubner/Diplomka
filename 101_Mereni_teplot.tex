@@ -39,13 +39,56 @@
         f = \frac{T_r - T}{T_0 - T}
     \end{equation}
 
-    Restituční faktor je především funkcí Prandtlova čísla, závisí však i na geometrii snímače a na Machově a Reynoldsově čísle \cite{Leontiev2017a}. Jeho hodnota je tedy proměnlivá, nicméně v řadě aplikací jej lze pro definované podmínky považovat za konstantu: pro válcová tělesa umístěná rovnoběžně v proudu vzduchu je při lokálním $\textrm{Re} < 5 \cdot 10^5$ restituční faktor roven $\sqrt{\textrm{Pr}}$, pro vzduch byla tato hodnota při $\textrm{Pr} = 0.72$ rovna $0.85$ \cite{Shapiro1954}. Obdobná hodnota restitučního faktoru (v tomto případě pro $\textrm{Pr}=0.71$) byla použita s dostatečnou přesností při měření pomocí termočlánku \cite{Ishibashi2012}.
+    Restituční faktor je především funkcí Prandtlova čísla, závisí však i na geometrii snímače a na Machově a Reynoldsově čísle \cite{Leontiev2017a}. Jeho hodnota je tedy proměnlivá, nicméně v řadě aplikací jej lze pro definované podmínky považovat za konstantu: pro válcová tělesa umístěná rovnoběžně v proudu vzduchu byl při lokálním $\textrm{Re} < 5 \cdot 10^5$ restituční faktor roven $\sqrt{\textrm{Pr}}$, pro vzduch byla tato hodnota při $\textrm{Pr} = 0.72$ rovna $0.85$ \cite{Shapiro1954}. Obdobná hodnota restitučního faktoru (v tomto případě pro $\textrm{Pr}=0.71$) byla použita s dostatečnou přesností při měření pomocí termočlánku \cite{Ishibashi2012}.
 
     \subsection{Měření stagnační teploty}
+        \subsubsection{Rovnovážná teplota}
+            Kombinací Vztahů \ref{eq:restitucni-faktor} a \ref{eq:T0} lze získat vztahy pro výpočet rovnovážné teploty:
+            \begin{align}
+                f &= \frac{T_r - T}{T + \frac{u^2}{2 c_p} - T} \\
+                T_r &= T + f \frac{u^2}{2 c_p} \\
+                T_r &= T \brac{1 + f \frac{\kappa - 1}{2} \Ma ^2}
+            \end{align}
+            \noindent Budeme-li hovořit o měření stagnační teploty při vysokých podzvukových rychlostech, nabízí se otázka, zda by nebylo možné použít sondu s dostatečně vysokým restitučním faktorem ($f \rightarrow 1$) a jaké bychom se dopustili chyby, pokud bychom naměřenou rovnovážnou teplotu považovali za stagnační. Chyba $\varepsilon _{T0}$ by v takovém případě byla pro dané proudění (vybraná rychlost $u$ a statická teplota $T$) funkcí právě restitučního faktoru:
+            \begin{equation}
+                \varepsilon _{T0} = 1 - \frac{T_r}{T_0} = 1 - \frac{T + f \frac{u^2}{2 c_p}}{T + \frac{u^2}{2 c_p}}
+            \end{equation}
+            \noindent Závislosti velikosti chyby a rovnovážné teploty na restitučním faktoru jsou patrné z Obrázku \ref{fig:chyba-Tr-T0}. S narůstající rychlostí proudění dochází i ke zvětšování chyby $\varepsilon _{T0}$, která pro restituční faktor $\geq 0.94$ však nepřekračuje v rámci podzvukových rychlostí $1 \Unit{\%}$ nezávisle na statické teplotě proudění (viz odvození v Příloze \ref{priloha:odvozeni-limitniho-f}). 
 
-    Kombinací Vztahů \ref{eq:restitucni-faktor} a \ref{eq:T0} lze získat vztahy pro výpočet rovnovážné teploty:
-    \begin{align}
-        f &= \frac{T_r - T}{T + \frac{u^2}{2 c_p} - T} \\
-        T_r &= T + f \frac{u^2}{2 c_p} \\
-        T_r &= T \brac{1 + f \frac{\kappa - 1}{2} \Ma ^2}
-    \end{align}
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics*[width=\textwidth, trim = {6cm 0cm 6cm 0cm}]{100_MERENI_TEPLOT/chyba_Tr_T0.eps}
+                \caption{Závislost rovnovážné teploty a chyby $\varepsilon _{T0}$ na restitučním faktoru pro různé rychlosti proudění při statické teplotě $300 \Unit{K}$.}
+                \label{fig:chyba-Tr-T0}
+            \end{figure}
+
+        \subsubsection{Měřicí sonda}
+            Konstrukce sond pro měření stagnačních teplot typicky obsahuje tepelně citlivý prvek (typicky termočlánek nebo odporový teplotní snímač) umístěný v trubici s odvětráním, která slouží ke zpomalení proudění okolo čidla obvykle pod hodnotu $\Ma = 0.15$ \cite{Bonham2013}. Snížením rychlosti plynu dojde k nárůstu jeho teploty, což se projeví i vyšší naměřenou teplotou, která se tak bude blížit teplotě stagnační. 
+
+            \begin{figure}[ht!]
+                \centering
+                \begin{subfigure}{.45\textwidth}
+                    \includegraphics[width=\textwidth]{100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg}
+                    \caption{Trubice s termočlánkem. Převzato z \cite{Bonham2013} a upraveno.}
+                \end{subfigure} \hspace{.05\textwidth}
+                \begin{subfigure}{.45\textwidth}
+                    \includegraphics[width=\textwidth]{100_MERENI_TEPLOT/Shapiro-termoclanek.jpg}
+                    \caption{Trubice s termočlánkem. Převzato z \cite{Shapiro1954} a upraveno.}
+                \end{subfigure}
+
+                \vskip\baselineskip
+                \vspace{.05\textwidth}
+
+                \begin{subfigure}{.45\textwidth}
+                    \includegraphics[width=\textwidth]{100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg}
+                    \caption{Trubice s platinovou destičkou.  Převzato z \cite{Bonham2013} a upraveno.}
+                \end{subfigure} \hspace{.05\textwidth}
+                \begin{subfigure}{.45\textwidth}
+                    \includegraphics[width=\textwidth]{100_MERENI_TEPLOT/Sedlak2018-Pt100.jpg}
+                    \caption{Trubice s Pt100. Převzato z \cite{Sedlak2018} a upraveno.}
+                \end{subfigure}
+
+                \caption{Vybrané geometrie sond pro měření stagnačních teplot.}
+            \end{figure}
+
+    

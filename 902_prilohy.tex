@@ -1,5 +1,24 @@
 \section*{Přílohy}
 \addcontentsline{toc}{section}{Přílohy}
+\sectionPriloha{Odvození limitního restitučního faktoru pro podzvukové rychlosti}
+    Uvažujme vztah pro chybu odhadu stagnační teploty $\varepsilon _{T0}$:
+    \begin{equation*}
+        \varepsilon _{T0} = 1 - \frac{T + f \frac{u^2}{2 c_p}}{T + \frac{u^2}{2 c_p}}
+    \end{equation*}
+    \noindent S rostoucí rychlostí proudění dochází i k nárůstu chyby, maxima tedy nabývá při dosažení rychlosti zvuku $a = \sqrt{\kappa r T}$. Označme tuto chybu $\varepsilon _{T0,max}$. Vztah pro její určení lze odvodit dosazením rychlosti zvuku do původní rovnice:
+    \begin{align*}
+        \varepsilon _{T0,max} &= 1 - \frac{T + f \frac{\kappa r T}{2 \frac{\kappa r}{\kappa - 1}}}{T + \frac{\kappa r T}{2 \frac{\kappa r}{\kappa - 1}}} \\
+        \varepsilon _{T0,max} &= 1 - \frac{1 + f \frac{\kappa - 1}{2}}{1 + \frac{\kappa - 1}{2}}
+    \end{align*}
+    \noindent Maximální chyba je tedy pouze funkcí restitučního faktoru a Poissonovy konstanty. Budeme-li pro konkrétní $\kappa$ požadovat, aby chyba nepřekročila limitní hodnotu $\varepsilon _{T0,lim}$, pak lze s využitím vztahu pro $\varepsilon _{T,max}$ odvodit i limitní restituční faktor $f_{lim}$:
+    \begin{align*}
+        \varepsilon _{T0,lim} &= 1 - \frac{1 + f_{lim} \frac{\kappa - 1}{2}}{1 + \frac{\kappa - 1}{2}} \\
+        \brac{1 - \varepsilon _{T0,lim}} \brac{1 + \frac{\kappa - 1}{2}} &= 1 + f_{lim} \frac{\kappa - 1}{2} \\
+        f_{lim} &= \frac{2}{\kappa - 1} \Brac{\brac{1 - \varepsilon _{T0,lim}} \brac{1 + \frac{\kappa - 1}{2}} - 1}
+    \end{align*}
+    \noindent Bude-li hodnota restitučního faktoru vybraného teplotního čidla $\geq f_{lim}$, potom bude splněna podmínka limitní chyby pro libovolnou podzvukovou rychlost i statickou teplotu.
+    \newpage
+
 \sectionPriloha{Sonda bez stínění čidla B} \label{fig:sonda-bez-stineni-B-vykres}
     \begin{figure}[ht!]
         \centering
