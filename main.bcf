@@ -2349,23 +2349,6 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">citace.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Leontiev2017a</bcf:citekey>
-    <bcf:citekey order="2">Shapiro1954</bcf:citekey>
-    <bcf:citekey order="3">Ishibashi2012</bcf:citekey>
-    <bcf:citekey order="4">Bonham2013</bcf:citekey>
-    <bcf:citekey order="5">Bonham2013</bcf:citekey>
-    <bcf:citekey order="6">Bonham2013</bcf:citekey>
-    <bcf:citekey order="7">Shapiro1954</bcf:citekey>
-    <bcf:citekey order="8">Shapiro1954</bcf:citekey>
-    <bcf:citekey order="9">Bonham2013</bcf:citekey>
-    <bcf:citekey order="10">Bonham2013</bcf:citekey>
-    <bcf:citekey order="11">Sedlak2018</bcf:citekey>
-    <bcf:citekey order="12">Sedlak2018</bcf:citekey>
-    <bcf:citekey order="13">Leontiev2017a</bcf:citekey>
-    <bcf:citekey order="14">Shapiro1954</bcf:citekey>
-    <bcf:citekey order="15">Ishibashi2012</bcf:citekey>
-    <bcf:citekey order="16">Bonham2013</bcf:citekey>
-    <bcf:citekey order="17">Sedlak2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
