@@ -168,7 +168,7 @@
      \newpage      
     \subsection{Okrajové podmínky}
         \subsubsection{Hranice výpočetní oblasti}
-			Hranice válcové kontrolní oblasti byla rozdělena na tři části s odlišnými okrajovými podmínkami – podstavy válce představovaly vstup a výstup a jeho plášť poté nenarušený proud (viz Obrázek \ref{fig:okrajove-podminky}). Ve všech oblastech byly předepsány hodnoty uvedené v Tabulce \ref{tab:spolecne-op}. Ve vstupní oblasti byla dále zadávána rychlost proudění, respektive velikost vektoru rychlosti a jeho směrové cosiny (využito při analýze směrové citlivosti). Hranice nenarušeného proudu měla předepisovánu hodnotu Machova čísla a směr proudění (opět ve formě směrových cosinů vektoru rychlosti). 
+			Hranice válcové kontrolní oblasti byla rozdělena na tři části s odlišnými okrajovými podmínkami – podstavy válce představovaly vstup a výstup a jeho plášť poté nenarušený proud (viz Obrázek \ref{fig:okrajove-podminky}). Ve všech oblastech byly předepsány hodnoty uvedené v Tabulce \ref{tab:spolecne-op}. Ve vstupní oblasti byla dále zadávána rychlost proudění, respektive velikost vektoru rychlosti a jeho směrové cosiny (využito při analýze směrové citlivosti). Hranice nenarušeného proudu měla předepisovánu hodnotu Machova čísla a\,směr proudění (opět ve formě směrových cosinů vektoru rychlosti). 
 
 	     \begin{figure}[ht!]
                     \centering
@@ -219,7 +219,7 @@
 
     \newpage
     \subsection{Výpočetní síť} \label{sec:vypocetni-sit}
-        Vytváření modelů probíhalo v prostředí software Autodesk Inventor (verze 2021 a 2022), odkud byly následně vyexportovány ve formátu \textit{.dwg}. K přípravě pro síťování byl následně použit software Ansys SpaceClaim (verze 2020b-2021b), jehož účel spočíval primárně ve sdílení topologie modelu, vytváření jmenných sekcí a exportu do optimalizovaného formátu \textit{.pmdb}. Samotné síťování poté probíhalo v software Ansys Fluent (verze 2020b-2021b).
+        Vytváření modelů probíhalo v prostředí software Autodesk Inventor (verze 2021 a\,2022), odkud byly následně vyexportovány ve formátu \textit{.dwg}. K přípravě pro síťování byl následně použit software Ansys SpaceClaim (verze 2020b-2021b), jehož účel spočíval primárně ve sdílení topologie modelu, vytváření jmenných sekcí a exportu do optimalizovaného formátu \textit{.pmdb}. Samotné síťování poté probíhalo v software Ansys Fluent (verze 2020b-2021b).
         \subsubsection{Povrchová síť}
             Prvním krokem při vytváření výpočetní sítě pro řešič bylo importování geometrie (soubor \textit{.pmdb}) a vysíťování jejích ploch pomocí triangulace. Zde bylo použito následující nastavení:
 
@@ -266,9 +266,9 @@
         Při vytváření objemové sítě byly zvoleny polyhedrální buňky, které umožňují dosahovat přesnějších řešení oproti starším typům elementů při shodných počtech buňek. Umožňují navíc lepší odhad gradientu díky vyššímu počtu stěn a obecně lze s jejich použitím dosahovat lepší kvality sítě \cite{Sosnowski2018}. Postup generování objemové sítě byl následující:
 
         \begin{enumerate}
-            \item Konverze povrchové triangulace na polygonální síť
-            \item Vygenerování vrstev prismatických buněk
-            \item Iterační generování polyhedrální objemové sítě ve zbytku objemu
+            \item konverze povrchové triangulace na polygonální síť;
+            \item vygenerování vrstev prismatických buněk;
+            \item iterační generování polyhedrální objemové sítě ve zbytku objemu.
         \end{enumerate}
 
         Maximální šikmost hotové sítě se vždy pohybovala pod hodnotou $0.85$. Počty buňek se pohybovaly v rozmezí $450 \div 550$ tisíc pro symetrické úlohy a $850 \div 950$ tisíc pro úlohy bez využití symetrie. Příklad výpočetní sítě je uveden na obrázku \ref{fig:sit-detail-stineni-A}.
@@ -281,7 +281,7 @@
         \end{figure}
         
     \subsection{Numerický řešič}
-        Veškeré výpočty byly provedeny v prostředí výpočetního software Ansys Fluent (verze 2020b-2021b). Ten využívá k řešení problémů metodu konečných objemů, která je pro úlohy počítačové dynamiky tekutin typická. Metoda spočívá v rozdělení kontrolní oblasti na vzájemně disjunktní kontrolní objemy, které ji kompletně pokrývají. Řešené rovnice jsou následně integrovány právě přes dané objemy a poté prostřednictvím diskretizace převedeny na soustavu lineárních rovnic. Způsoby diskretizace a odhadů popsané níže vycházejí z programové dokumentace pro Ansys Fluent 2020 \cite{Ansys2020Theory}.
+        Veškeré výpočty byly provedeny v prostředí výpočetního software Ansys Fluent (verze 2020b-2021b). Ten využívá k řešení problémů metodu konečných objemů, která je pro úlohy počítačové dynamiky tekutin typická. Metoda spočívá v rozdělení kontrolní oblasti na vzájemně disjunktní kontrolní objemy, které ji kompletně pokrývají. Řešené rovnice jsou následně integrovány právě přes dané objemy a poté prostřednictvím diskretizace převedeny na soustavu lineárních rovnic. Způsoby diskretizace a\,odhadů popsané níže vycházejí z programové dokumentace pro Ansys Fluent 2020 \cite{Ansys2020Theory}.
         \subsubsection{Odhad gradientu} \label{sec:odhad-gradientu}
             Pro určení gradientu ve středu buněk byla zvolena, s ohledem na použití polyhedrální sítě, metoda nejmenších čtverců. Ta spočívá v hledání váhové funkce mezi dílčími gradienty $\brac{\nabla \varphi}_{c0,i}$:
             \begin{equation}
@@ -312,7 +312,7 @@
                 \end{pmatrix} = \Tensor{W} \Vec{\Delta \varphi}
             \end{equation}
         \subsubsection{Aproximace hodnot na stěnách}
-            Ansys Fluent využívá při výpočtech tzv. cell-centered formulaci metody konečných objemů – všechny veličiny jsou definovány ve středech buněk. Pro výpočet toků konečnými objemy je ale nutné znát také hodnoty veličin na jejich stěnách. K tomu byla zvolena metoda upwind druhého řádu přesnosti (\textit{linear upwind}). Její princip je založen na určení buňky \uv{proti proudu} $c _U$, obvykle s využitím vnější normály stěny, a následné extrapolaci hodnot z jejího středu do středu příslušné stěny:
+            Ansys Fluent využívá při výpočtech tzv. cell-centered formulaci metody konečných objemů – všechny veličiny jsou definovány ve středech buněk. Pro výpočet toků konečnými objemy je ale nutné znát také hodnoty veličin na jejich stěnách. K tomu byla zvolena metoda upwind druhého řádu přesnosti (\textit{linear upwind}). Její princip je založen na určení buňky \uv{proti proudu} $c _U$, obvykle s využitím vnější normály stěny, a\,následné extrapolaci hodnot z jejího středu do středu příslušné stěny:
             \begin{equation}
                 \varphi _{f} = \varphi _U + \brac{\nabla \varphi} _U \cdot \Vec{r _f}
             \end{equation}
@@ -323,7 +323,7 @@
                 p _{f} = \frac{p_{ci} + p _{c0}}{2} + \frac{\brac{\nabla p} _{ci} + \brac{\nabla p} _{c0}}{2}
             \end{equation}
         \subsubsection{Numerické schéma}
-            Pro řešení bilančních rovnic bylo zvoleno sdružené schéma – narozdíl od sekvenčních algoritmů (například SIMPLE, PISO, \dots), které řeší postupně rovnice pro rychlost a následně pro tlak, sdružený algoritmus sestavuje soustavu rovnic řešící zároveň rychlostní i tlakové pole. Ta je poté řešena buď pomocí Gauss-Seidelovy iterační metody nebo pomocí metod založených na LU dekompozici \cite{Ansys2020Theory}.
+            Pro řešení bilančních rovnic bylo zvoleno sdružené schéma – narozdíl od sekvenčních algoritmů (například SIMPLE, PISO, \dots), které řeší postupně rovnice pro rychlost a\,následně pro tlak, sdružený algoritmus sestavuje soustavu rovnic řešící zároveň rychlostní i tlakové pole. Ta je poté řešena buď pomocí Gauss-Seidelovy iterační metody nebo pomocí metod založených na LU dekompozici \cite{Ansys2020Theory}.
 
             Výhoda sdruženého algoritmu spočívá u stacionárních úloh zejména v rychlosti konvergence \cite{Ansys2020User} – při testování vhodného schématu pro výpočty prezentované v této práci bylo s využitím sdruženého schématu dosaženo konvergence po přibližně $10\times$ méně iteracích, než tomu bylo u schématu SIMPLE.
         \subsubsection{Inicializace výpočtu}
