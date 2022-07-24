@@ -325,7 +325,7 @@
         \subsubsection{Numerické schéma}
             Pro řešení bilančních rovnic bylo zvoleno sdružené schéma – narozdíl od sekvenčních algoritmů (například SIMPLE, PISO, \dots), které řeší postupně rovnice pro rychlost a\,následně pro tlak, sdružený algoritmus sestavuje soustavu rovnic řešící zároveň rychlostní i tlakové pole. Ta je poté řešena buď pomocí Gauss-Seidelovy iterační metody nebo pomocí metod založených na LU dekompozici \cite{Ansys2020Theory}.
 
-            Výhoda sdruženého algoritmu spočívá u stacionárních úloh zejména v rychlosti konvergence \cite{Ansys2020User} – při testování vhodného schématu pro výpočty prezentované v této práci bylo s využitím sdruženého schématu dosaženo konvergence po přibližně $10\times$ méně iteracích, než tomu bylo u schématu SIMPLE.
+            Výhoda sdruženého algoritmu spočívá u stacionárních úloh zejména v rychlosti konvergence \cite{Ansys2020User} – při testování vhodného schématu pro výpočty prezentované v této práci bylo s využitím sdruženého schématu dosaženo konvergence po přibližně \linebreak $10\times$ méně iteracích, než tomu bylo u schématu SIMPLE.
         \subsubsection{Inicializace výpočtu}
             Iterační proces řešení vyžaduje počáteční vyplnění hodnot v kontrolních objemech. K tomu lze přistoupit několika způsoby, zde byla zvolena takzvaná hybridní inicializace. Ta spočívá v řešení Laplaceovy rovnice pro rychlostní potenciál $\varphi$ a pro tlak $p$ (viz Rovnice \ref{eq:incializace}) se zjednodušenými okrajovými podmínkami. Ostatní veličiny (teplota, turbulentní parametry, \dots) jsou v celém objemu voleny jako konstantní. 
             \begin{equation} \label{eq:incializace}
