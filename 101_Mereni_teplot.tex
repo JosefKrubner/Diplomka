@@ -23,7 +23,7 @@
 
     \clearpage
 
-    Člen $\frac{u^2}{2 c_p}$ v Rovnici $\ref{eq:T0}$ je nazýván dynamická teplota (ačkoliv se o teplotu nejedná) a je projevem stlačitelnosti proudění. Jeho průběh v závislosti na Machově čísle je společně s poměrem $\frac{T}{T0}$ vyznačen na Obrázku \ref{fig:pomer-T-T0}.
+    Člen $\frac{u^2}{2 c_p}$ v Rovnici $\ref{eq:T0}$ se formálně nazývá dynamická teplota (ačkoliv se o teplotu nejedná) a je projevem stlačitelnosti proudění. Jeho průběh v závislosti na Machově čísle je společně s poměrem $\frac{T}{T0}$ vyznačen na Obrázku \ref{fig:pomer-T-T0}.
 
     \begin{figure}[ht!]
         \centering
@@ -39,7 +39,7 @@
         f = \frac{T_r - T}{T_0 - T}
     \end{equation}
 
-    Restituční faktor je především funkcí Prandtlova čísla, závisí však i na geometrii snímače a na Machově a Reynoldsově čísle \cite{Leontiev2017a}. Jeho hodnota je tedy proměnlivá, nicméně v řadě aplikací jej lze pro definované podmínky považovat za konstantu: pro válcová tělesa umístěná rovnoběžně v proudu vzduchu byl při lokálním $\textrm{Re} < 5 \cdot 10^5$ restituční faktor roven $\sqrt{\textrm{Pr}}$, pro vzduch byla tato hodnota při $\textrm{Pr} = 0.72$ rovna $0.85$ \cite{Shapiro1954}. Obdobná hodnota restitučního faktoru (v tomto případě pro $\textrm{Pr}=0.71$) byla použita s dostatečnou přesností při měření pomocí termočlánku \cite{Ishibashi2012}.
+    Restituční faktor je především funkcí Prandtlova čísla, závisí však i na geometrii snímače a na Machově a Reynoldsově čísle \cite{Leontiev2017a}. Jeho hodnota je tedy proměnlivá, nicméně v řadě aplikací jej lze pro definované podmínky považovat za konstantu: pro válcová tělesa umístěná rovnoběžně v proudu vzduchu byl při lokálním $\textrm{Re} < 5 \cdot 10^5$ restituční faktor roven $\sqrt{\textrm{Pr}}$, pro vzduch byla tato hodnota při $\textrm{Pr} = 0.72$ rovna $0.85$ \cite{Shapiro1954}. Obdobná hodnota restitučního faktoru (v tomto případě pro $\textrm{Pr}=0.71$) byla použita s dostatečnou přesností při měřeních pomocí termočlánku \cite{Ishibashi2012}.
 
     \subsection{Měření stagnační teploty}
         \subsubsection{Rovnovážná teplota}
@@ -62,8 +62,10 @@
                 \label{fig:chyba-Tr-T0}
             \end{figure}
 
-        \subsubsection{Měřicí sonda}
-            Konstrukce sond pro měření stagnačních teplot typicky obsahuje tepelně citlivý prvek (typicky termočlánek nebo odporový teplotní snímač) umístěný v trubici s odvětráním, která slouží ke zpomalení proudění okolo čidla obvykle pod hodnotu $\Ma = 0.15$ \cite{Bonham2013}. Snížením rychlosti plynu dojde k nárůstu jeho teploty, což se projeví i vyšší naměřenou teplotou, která se tak bude blížit teplotě stagnační. 
+        \subsubsection{Měřicí sondy}
+            Konstrukce sond pro měření stagnačních teplot typicky obsahuje tepelně citlivý prvek (obvykle termočlánek nebo odporový teplotní snímač) umístěný v trubici s odvětráním, která slouží ke zpomalení proudění okolo čidla obvykle pod hodnotu \linebreak $\Ma = 0.15$ \cite{Bonham2013}. Snížením rychlosti plynu dojde k nárůstu jeho měrné entalpie, což se projeví i vyšší naměřenou teplotou, která se tak bude blížit stagnační teplotě volného proudu.
+            
+            Příklady konstrukcí používaných pro měření stagnačních teplot jsou uvedeny na Obrázku \ref{fig:konstrukce-mereni-T0}
 
             \begin{figure}[ht!]
                 \centering
@@ -89,6 +91,14 @@
                 \end{subfigure}
 
                 \caption{Vybrané geometrie sond pro měření stagnačních teplot.}
+                \label{fig:konstrukce-mereni-T0}
             \end{figure}
+
+    \subsection{Měření statické teploty}
+        Při vysokých podzvukových rychlostech je přímé měření statické teploty proudění problematické. Jsou-li však známy další parametry proudění, lze potom statickou teplotu stanovit nepřímo. Příkladem může být využití Prandtlovy sondy, která měří celkový $p_0$ a statický tlak $p$. Ty jsou obvykle zpracovány pomocí diferenčního tlakového snímače, jelikož se tato sonda typicky používá k určování rychlosti proudění z dynamického tlaku \cite{Houghton2013}. Ze znalosti absolutních hodnot tlaků a stagnační teploty lze nicméně při uvažování isoentropického proudění určit teplota statická:
+        \begin{equation}
+            T = T_0 \brac{\frac{p}{p_0}} ^{\frac{\kappa - 1}{\kappa}}
+        \end{equation}
+            
 
     
