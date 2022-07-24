@@ -19,7 +19,7 @@
 
     \noindent kde $h \unit{\frac{J}{kg}}$ je měrná entalpie, $u \unit{\frac{m}{s}}$ je rychlost proudění, $T \unit{K}$ je termodynamická teplota, $c_p \unit{\frac{J}{kg K}}$ je měrná tepelná kapacita za konstantního tlaku, $a \unit{\frac{m}{s}}$ je rychlost zvuku, $\kappa \unit{1}$ je Poissonova konstanta, $r \unit{\frac{J}{kg K}}$ je měrná plynová konstanta a  $\Ma \unit{1}$ je Machovo číslo. Dolní index $0$ označuje stagnační parametry.
 
-    Ze Vztahu \ref{eq:pomer-T-T0} je patrné, že při nulové rychlosti proudění ($\Ma = 0$) bude statická teplota rovna teplotě stagnační, neboli klidové. Dosažením rychlosti zvuku ($\Ma = 1$) klesne poměr na hodnotu $\frac{1}{1+\frac{\kappa - 1}{2}}$, což pro vzduch odpovídá $0.83$ při uvažování $\kappa = 1.4$. Při $\Ma = 0.3$ (zmiňovaná mez stlačitelnosti) tvoří v statická teplota $98.2 \Unit{\%}$ stagnační teploty, zanedbáním dynamické teploty bychom se tak dopustili v tomto případě $1.8\%$ chyby. Chybě $2.5 \Unit{\%}$ pak odpovídá Machovo číslo $0.358$.
+    Ze Vztahu \ref{eq:pomer-T-T0} je patrné, že při nulové rychlosti proudění ($\Ma = 0$) bude statická teplota rovna teplotě stagnační, neboli klidové. Dosažením rychlosti zvuku ($\Ma = 1$) klesne poměr na hodnotu $\frac{1}{1+\frac{\kappa - 1}{2}}$, což pro vzduch odpovídá $0.83$ při uvažování $\kappa = 1.4$. Při $\Ma = 0.3$ (zmiňovaná mez stlačitelnosti) tvoří v statická teplota $98.2 \Unit{\%}$ stagnační teploty, zanedbáním rozdílu těchto teplot bychom se tak dopustili v tomto případě $1.8\%$ chyby. Chybě $2.5 \Unit{\%}$ pak odpovídá Machovo číslo $0.358$.
 
     \clearpage
 
@@ -63,9 +63,7 @@
             \end{figure}
 
         \subsubsection{Měřicí sondy}
-            Konstrukce sond pro měření stagnačních teplot typicky obsahuje tepelně citlivý prvek (obvykle termočlánek nebo odporový teplotní snímač) umístěný v trubici s odvětráním, která slouží ke zpomalení proudění okolo čidla obvykle pod hodnotu \linebreak $\Ma = 0.15$ \cite{Bonham2013}. Snížením rychlosti plynu dojde k nárůstu jeho měrné entalpie, což se projeví i vyšší naměřenou teplotou, která se tak bude blížit stagnační teplotě volného proudu.
-            
-            Příklady konstrukcí používaných pro měření stagnačních teplot jsou uvedeny na Obrázku \ref{fig:konstrukce-mereni-T0}
+            Konstrukce sond pro měření stagnačních teplot typicky obsahují tepelně citlivý prvek (obvykle termočlánek nebo odporový teplotní snímač) umístěný v trubici s odvětráním, která slouží ke zpomalení proudění okolo čidla obvykle pod hodnotu \linebreak $\Ma = 0.15$ \cite{Bonham2013}. Snížením rychlosti plynu dojde k nárůstu jeho měrné entalpie, což se projeví i vyšší naměřenou teplotou, která se tak bude blížit stagnační teplotě volného proudu. Příklady konstrukcí používaných pro měření stagnačních teplot jsou uvedeny na Obrázku \ref{fig:konstrukce-mereni-T0}
 
             \begin{figure}[ht!]
                 \centering
@@ -95,7 +93,7 @@
             \end{figure}
 
     \subsection{Měření statické teploty}
-        Při vysokých podzvukových rychlostech je přímé měření statické teploty proudění problematické. Jsou-li však známy další parametry proudění, lze potom statickou teplotu stanovit nepřímo. Příkladem může být využití Prandtlovy sondy, která měří celkový $p_0$ a statický tlak $p$. Ty jsou obvykle zpracovány pomocí diferenčního tlakového snímače, jelikož se tato sonda typicky používá k určování rychlosti proudění z dynamického tlaku \cite{Houghton2013}. Ze znalosti absolutních hodnot tlaků a stagnační teploty lze nicméně při uvažování isoentropického proudění určit teplota statická:
+        Při vysokých podzvukových rychlostech je přímé měření statické teploty proudění problematické. Jsou-li však známy další parametry proudění, lze potom statickou teplotu stanovit nepřímo. Příkladem může být využití Prandtlovy sondy, která měří celkový $p_0$ a statický tlak $p$. Ty jsou obvykle zpracovány pomocí diferenčního tlakového snímače, jelikož se tato sonda typicky používá k určování rychlosti proudění, k čemuž slouží dynamický tlak, tedy rozdíl $\brac{p_0 - p}$ \cite{Houghton2013}. Ze znalosti absolutních hodnot tlaků a stagnační teploty lze nicméně při uvažování isoentropického proudění určit teplota statická:
         \begin{equation}
             T = T_0 \brac{\frac{p}{p_0}} ^{\frac{\kappa - 1}{\kappa}}
         \end{equation}

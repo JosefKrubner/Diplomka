@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  24 JUL 2022 11:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  24 JUL 2022 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -970,7 +970,7 @@ Package hyperref Info: Link coloring OFF on input line 3.
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./000_UVODNI_S
 TRANKY/02_zadani.tex
-<000_UVODNI_STRANKY/Zadani.pdf, id=58, 597.50829pt x 845.0471pt>
+<000_UVODNI_STRANKY/Zadani.pdf, id=10, 597.50829pt x 845.0471pt>
 File: 000_UVODNI_STRANKY/Zadani.pdf Graphic file (type pdf)
 <use 000_UVODNI_STRANKY/Zadani.pdf>
 Package pdftex.def Info: 000_UVODNI_STRANKY/Zadani.pdf  used on input line 6.
@@ -979,7 +979,7 @@ File: 000_UVODNI_STRANKY/Zadani.pdf Graphic file (type pdf)
 <use 000_UVODNI_STRANKY/Zadani.pdf>
 Package pdftex.def Info: 000_UVODNI_STRANKY/Zadani.pdf  used on input line 6.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<000_UVODNI_STRANKY/Zadani.pdf, id=61, page=1, 597.50829pt x 845.0471pt>
+<000_UVODNI_STRANKY/Zadani.pdf, id=13, page=1, 597.50829pt x 845.0471pt>
 File: 000_UVODNI_STRANKY/Zadani.pdf Graphic file (type pdf)
 <use 000_UVODNI_STRANKY/Zadani.pdf, page 1>
 Package pdftex.def Info: 000_UVODNI_STRANKY/Zadani.pdf , page1 used on input li
@@ -1036,7 +1036,19 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
-) [8]) (./UVOD.tex) [9] (./101_Mereni_teplot.tex [10]
+) [8]) (./UVOD.tex) [9] (./101_Mereni_teplot.tex
+
+LaTeX Warning: Reference `eq:pomer-T-T0' on page 10 undefined on input line 22.
+
+
+[10]
+
+LaTeX Warning: Reference `eq:T0' on page 11 undefined on input line 26.
+
+
+LaTeX Warning: Reference `fig:pomer-T-T0' on page 11 undefined on input line 26
+.
+
 Package epstopdf Info: Source file: <100_MERENI_TEPLOT/pomer_T_T0.eps>
 (epstopdf)                    date: 2022-07-22 17:58:09
 (epstopdf)                    size: 59123 bytes
@@ -1048,7 +1060,7 @@ Package epstopdf Info: Source file: <100_MERENI_TEPLOT/pomer_T_T0.eps>
 T0-eps-converted-to.pdf 100_MERENI_TEPLOT/pomer_T_T0.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
-<100_MERENI_TEPLOT/pomer_T_T0-eps-converted-to.pdf, id=198, 1927.2pt x 995.72pt
+<100_MERENI_TEPLOT/pomer_T_T0-eps-converted-to.pdf, id=133, 1927.2pt x 995.72pt
 >
 File: 100_MERENI_TEPLOT/pomer_T_T0-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1056,7 +1068,6 @@ File: 100_MERENI_TEPLOT/pomer_T_T0-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: 100_MERENI_TEPLOT/pomer_T_T0-eps-converted-to.pdf  use
 d on input line 30.
 (pdftex.def)             Requested size: 441.01773pt x 227.85608pt.
-
 
 LaTeX Warning: Citation 'Leontiev2017a' on page 11 undefined on input line 42.
 
@@ -1066,9 +1077,20 @@ LaTeX Warning: Citation 'Shapiro1954' on page 11 undefined on input line 42.
 
 LaTeX Warning: Citation 'Ishibashi2012' on page 11 undefined on input line 42.
 
+
+LaTeX Warning: Reference `eq:restitucni-faktor' on page 11 undefined on input l
+ine 46.
+
+
+LaTeX Warning: Reference `eq:T0' on page 11 undefined on input line 46.
+
 [11
 
  <./100_MERENI_TEPLOT/pomer_T_T0-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `fig:chyba-Tr-T0' on page 12 undefined on input line 5
+6.
+
 
 LaTeX Warning: Reference `priloha:odvozeni-limitniho-f' on page 12 undefined on
  input line 56.
@@ -1084,7 +1106,7 @@ d-to.pdf>
 _T0-eps-converted-to.pdf 100_MERENI_TEPLOT/chyba_Tr_T0.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
-<100_MERENI_TEPLOT/chyba_Tr_T0-eps-converted-to.pdf, id=214, 1927.2pt x 995.72p
+<100_MERENI_TEPLOT/chyba_Tr_T0-eps-converted-to.pdf, id=148, 1927.2pt x 995.72p
 t>
 File: 100_MERENI_TEPLOT/chyba_Tr_T0-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1096,68 +1118,72 @@ ed on input line 60.
 
 LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 66.
 
-<100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg, id=230, 680.5425pt x 274.02374pt
+
+LaTeX Warning: Reference `fig:konstrukce-mereni-T0' on page 13 undefined on inp
+ut line 66.
+
+<100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg, id=167, 680.5425pt x 274.02374pt
 >
 File: 100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg Graphic file (type jpg)
 <use 100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg>
 Package pdftex.def Info: 100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg  used on 
-input line 73.
+input line 71.
 (pdftex.def)             Requested size: 198.45662pt x 79.90805pt.
 
-LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 74.
+LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 72.
 
 
-LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 74.
+LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 72.
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 74--74
+Underfull \hbox (badness 2564) in paragraph at lines 72--72
 []\T1/cmr/m/n/10 (a) |Tru-bice s ter-mo-£lán-kem. P°e-vzato z
  []
 
-<100_MERENI_TEPLOT/Shapiro-termoclanek.jpg, id=231, 1035.11719pt x 470.50781pt>
+<100_MERENI_TEPLOT/Shapiro-termoclanek.jpg, id=168, 1035.11719pt x 470.50781pt>
 
 File: 100_MERENI_TEPLOT/Shapiro-termoclanek.jpg Graphic file (type jpg)
 <use 100_MERENI_TEPLOT/Shapiro-termoclanek.jpg>
 Package pdftex.def Info: 100_MERENI_TEPLOT/Shapiro-termoclanek.jpg  used on inp
-ut line 77.
+ut line 75.
 (pdftex.def)             Requested size: 198.45662pt x 90.20149pt.
 
-LaTeX Warning: Citation 'Shapiro1954' on page 13 undefined on input line 78.
+LaTeX Warning: Citation 'Shapiro1954' on page 13 undefined on input line 76.
 
 
-LaTeX Warning: Citation 'Shapiro1954' on page 13 undefined on input line 78.
+LaTeX Warning: Citation 'Shapiro1954' on page 13 undefined on input line 76.
 
 
-Underfull \hbox (badness 2393) in paragraph at lines 78--78
+Underfull \hbox (badness 2393) in paragraph at lines 76--76
 []\T1/cmr/m/n/10 (b) |Tru-bice s ter-mo-£lán-kem. P°e-vzato z
  []
 
-<100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg, id=232, 692.5875pt x 249.93375pt>
+<100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg, id=169, 692.5875pt x 249.93375pt>
 File: 100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg Graphic file (type jpg)
 <use 100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg>
 Package pdftex.def Info: 100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg  used on input
- line 85.
+ line 83.
 (pdftex.def)             Requested size: 198.45662pt x 71.61703pt.
 
-LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 86.
+LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 84.
 
 
-LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 86.
+LaTeX Warning: Citation 'Bonham2013' on page 13 undefined on input line 84.
 
-<100_MERENI_TEPLOT/Sedlak2018-Pt100.jpg, id=233, 511.9125pt x 190.46156pt>
+<100_MERENI_TEPLOT/Sedlak2018-Pt100.jpg, id=170, 511.9125pt x 190.46156pt>
 File: 100_MERENI_TEPLOT/Sedlak2018-Pt100.jpg Graphic file (type jpg)
 <use 100_MERENI_TEPLOT/Sedlak2018-Pt100.jpg>
 Package pdftex.def Info: 100_MERENI_TEPLOT/Sedlak2018-Pt100.jpg  used on input 
-line 89.
+line 87.
 (pdftex.def)             Requested size: 198.45662pt x 73.83795pt.
 
-LaTeX Warning: Citation 'Sedlak2018' on page 13 undefined on input line 90.
+LaTeX Warning: Citation 'Sedlak2018' on page 13 undefined on input line 88.
 
 
-LaTeX Warning: Citation 'Sedlak2018' on page 13 undefined on input line 90.
+LaTeX Warning: Citation 'Sedlak2018' on page 13 undefined on input line 88.
 
 
-LaTeX Warning: Citation 'Houghton2013' on page 13 undefined on input line 98.
+LaTeX Warning: Citation 'Houghton2013' on page 13 undefined on input line 96.
 
 ) [13 <./100_MERENI_TEPLOT/Bonham2013-termoclanek.jpg> <./100_MERENI_TEPLOT/Sha
 piro-termoclanek.jpg> <./100_MERENI_TEPLOT/Bonham2013-ptfilm.jpg> <./100_MERENI
@@ -1167,8 +1193,17 @@ AED: lastpage setting LastPage
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E827A010FA73FF22C3EA750883EE8A35;2067.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  E827A010FA73FF22C3EA750883EE8A35;2067.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -1179,11 +1214,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23232 strings out of 478037
- 404226 string characters out of 5843053
- 1143969 words of memory out of 5000000
- 41246 multiletter control sequences out of 15000+600000
- 485736 words of font info for 71 fonts, out of 8000000 for 9000
+ 23222 strings out of 478037
+ 404066 string characters out of 5843053
+ 1142946 words of memory out of 5000000
+ 41234 multiletter control sequences out of 15000+600000
+ 487293 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,17n,80p,821b,1874s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
@@ -1206,10 +1241,10 @@ texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist
 /fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2022/texmf-dist/fonts/typ
 e1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
 cm-super/sfrm1728.pfb>
-Output written on main.pdf (13 pages, 819564 bytes).
+Output written on main.pdf (13 pages, 815263 bytes).
 PDF statistics:
- 345 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
+ 283 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
  52 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
