@@ -48,7 +48,7 @@
         
     \subsection{Model turbulence}
 
-        Vzhledem k povaze řešených úloh byl zvolen dvourovnicový RANS (\textit{Reynolds Averaged Navier Stokes}) model turbulence $k-\omega$ SST (\textit{Shear Stress Transport}, viz Menter \cite{Menter1993,Menter1994}), který kombinuje výhody modelu $k-\varepsilon$ ve volném proudu a modelu $k-\omega$ ve vazké podvrstvě. Transportní rovnice pro $k-\omega$ SST mají následující tvar:
+        Vzhledem k povaze řešených úloh byl zvolen dvourovnicový RANS (\textit{Reynolds Averaged Navier Stokes}) model turbulence $k-\omega$ SST (\textit{Shear Stress Transport}, viz \linebreak Menter \cite{Menter1993,Menter1994}), který kombinuje výhody modelu $k-\varepsilon$ ve volném proudu a modelu $k-\omega$ ve vazké podvrstvě. Transportní rovnice pro $k-\omega$ SST mají následující tvar:
         \begin{equation} \label{eq:rovnice-pro-k} 
             \nabla \cdot \brac{\rho k \Vec{u}} = P_k - \beta ^* \rho \omega k + \nabla \cdot \Brac{\brac{\mu + \sigma _k \mu _t} \nabla k}
         \end{equation}
@@ -345,7 +345,7 @@
                 \label{fig:odecet-tr}
             \end{figure}
 
-            Rovnovážná teplota $T_r$ čidla byla určena jako průměr hodnot teploty v buňkách, které úsečka protínala. Následně byl určen restituční faktor čidla s využitím Vztahu \ref{eq:mereni-rychlosti}:
+            Rovnovážná teplota $T_r$ čidla byla určena jako průměr hodnot teploty v buňkách, které úsečka protínala. Následně byl určen restituční faktor čidla s využitím \linebreak Vztahu \ref{eq:rovnovazna-teplota}:
             \begin{equation}
                 f = 2 c_p \frac{T_r - T}{u ^2}
             \end{equation}

@@ -8,12 +8,12 @@
         \begin{equation} \label{eq:rychlost-jenom-A}
             u = \sqrt{2 c_p \frac{T_{rA} - T}{f_A}}
         \end{equation}
-        Takový postup by však vyžadoval znalost statické teploty nabíhajícího proudu $T$, nebo potažmo teploty klidové $T_0$ – tuto metodiku lze najít v řadě aplikací (viz metoda RTA – \textit{Recovery Temperature Anemometry} \cite{Ishibashi2004, Ishibashi2012}). Zde byl k měření použit termočlánek s restitučním faktorem uvažovaným jako $\sqrt{Pr}$ a výsledná rychlost proudění byla stanovena ze vztahu:
+        Takový postup by však vyžadoval znalost statické teploty nabíhajícího proudu $T$, nebo potažmo teploty klidové $T_0$ – tuto metodiku lze najít v řadě aplikací (viz metoda RTA – \textit{Recovery Temperature Anemometry} \cite{Ishibashi2004, Ishibashi2012}). Zde byl k měření použit termočlánek \linebreak s restitučním faktorem uvažovaným jako $\sqrt{Pr}$ a výsledná rychlost proudění byla stanovena ze vztahu:
         \begin{equation}
             u = \sqrt{\frac{2 \kappa r}{\kappa - 1} \frac{T_0 - T_{rA}}{f_A}}
         \end{equation}
         
-        Nevýhodou výše uvedené RTA metody je právě nutnost měření dalších parametrů proudění ($T$, $T_0$), což značně omezuje možnosti jejího využití. Klíčovým krokem v návrhu DRTA sondy je proto eliminace statické teploty ze Vztahu \ref{eq:rychlost-jenom-A}. Toho lze docílit použitím odlišného teplotního čidla – odlišnost je zde reprezentovaná rozdílným restitučním faktorem, který označme $f_B$. Toto čidlo bude tedy indikovat teplotu $T_{rB}$:
+        Nevýhodou výše uvedené RTA metody je právě nutnost měření dalších parametrů proudění ($T$, $T_0$), což značně omezuje možnosti jejího využití. Klíčovým krokem v\,návrhu DRTA sondy je proto eliminace statické teploty ze Vztahu \ref{eq:rychlost-jenom-A}. Toho lze docílit použitím odlišného teplotního čidla – odlišnost je zde reprezentovaná rozdílným restitučním faktorem, který označme $f_B$. Toto čidlo bude tedy indikovat teplotu $T_{rB}$:
         \begin{equation} \label{eq:trB}
             T_{rB} = T + f_B \frac{u^2}{2 c_p}
         \end{equation}
@@ -37,7 +37,7 @@
                 \Ma &= \sqrt{\frac{2}{\kappa - 1} \frac{T_{rA}-T_{rB}}{T_{rB} f_A - T_{rA} f_B}}
             \end{split}
         \end{align}
-        \noindent Určení statické teploty lze odvodit pomocí eliminace rychosti proudění ze Vztahů \ref{eq:trA} a \ref{eq:trB}:
+        \noindent Určení statické teploty lze odvodit pomocí eliminace rychlosti proudění ze Vztahů \ref{eq:trA} a \ref{eq:trB}:
         \begin{align}
             \begin{split}
                 \frac{u^2}{2 c_p} &= \frac{T_{rA} - T}{f_A} = \frac{T_{rB} - T}{f_B} \\
