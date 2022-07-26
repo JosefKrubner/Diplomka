@@ -1,7 +1,5 @@
 \babel@toc {czech}{}\relax 
-\contentsline {section}{Seznam použitých symbolů}{7}{section*.7}%
-\contentsline {subsection}{Seznam symbolů a indexů}{7}{section*.8}%
-\contentsline {subsection}{Seznam použitých indexů}{7}{section*.10}%
-\contentsline {section}{Seznam obrázků}{8}{table.caption.11}%
-\contentsline {section}{Úvod}{9}{section*.13}%
-\contentsline {section}{Závěr}{10}{section*.14}%
+\contentsline {section}{Seznam použitých symbolů}{7}{section*.6}%
+\contentsline {subsection}{Seznam symbolů a indexů}{7}{section*.7}%
+\contentsline {subsection}{Seznam použitých indexů}{7}{section*.9}%
+\contentsline {section}{Seznam obrázků}{8}{table.caption.10}%

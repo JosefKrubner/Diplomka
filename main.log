@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  25 JUL 2022 20:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.24)  26 JUL 2022 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -831,11 +831,48 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip96
 )
+(c:/texlive/2022/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip97
+\cftbeforetoctitleskip=\skip98
+\cftaftertoctitleskip=\skip99
+\cftbeforepartskip=\skip100
+\cftpartnumwidth=\skip101
+\cftpartindent=\skip102
+\cftbeforesecskip=\skip103
+\cftsecindent=\skip104
+\cftsecnumwidth=\skip105
+\cftbeforesubsecskip=\skip106
+\cftsubsecindent=\skip107
+\cftsubsecnumwidth=\skip108
+\cftbeforesubsubsecskip=\skip109
+\cftsubsubsecindent=\skip110
+\cftsubsubsecnumwidth=\skip111
+\cftbeforeparaskip=\skip112
+\cftparaindent=\skip113
+\cftparanumwidth=\skip114
+\cftbeforesubparaskip=\skip115
+\cftsubparaindent=\skip116
+\cftsubparanumwidth=\skip117
+\cftbeforeloftitleskip=\skip118
+\cftafterloftitleskip=\skip119
+\cftbeforefigskip=\skip120
+\cftfigindent=\skip121
+\cftfignumwidth=\skip122
+\c@lofdepth=\count449
+\c@lotdepth=\count450
+\cftbeforelottitleskip=\skip123
+\cftafterlottitleskip=\skip124
+\cftbeforetabskip=\skip125
+\cfttabindent=\skip126
+\cfttabnumwidth=\skip127
+)
 
 Package hyperref Warning: Unexpected value for option `hidelinks'
-(hyperref)                is ignored on input line 47.
+(hyperref)                is ignored on input line 48.
 
-\c@prilohy=\count449
+\c@prilohy=\count451
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -880,16 +917,16 @@ Package biblatex Info: Reference section=0 on input line 3.
 Package biblatex Info: Reference segment=0 on input line 3.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count450
+\scratchcounter=\count452
 \scratchdimen=\dimen193
 \scratchbox=\box105
-\nofMPsegments=\count451
-\nofMParguments=\count452
+\nofMPsegments=\count453
+\nofMParguments=\count454
 \everyMPshowfont=\toks38
-\MPscratchCnt=\count453
+\MPscratchCnt=\count455
 \MPscratchDim=\dimen194
-\MPnumerator=\count454
-\makeMPintoPDFobject=\count455
+\MPnumerator=\count456
+\makeMPintoPDFobject=\count457
 \everyMPtoPDFconversion=\toks39
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -970,7 +1007,7 @@ Package hyperref Info: Link coloring OFF on input line 3.
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./000_UVODNI_S
 TRANKY/02_zadani.tex
-<000_UVODNI_STRANKY/Zadani.pdf, id=34, 597.50829pt x 845.0471pt>
+<000_UVODNI_STRANKY/Zadani.pdf, id=26, 597.50829pt x 845.0471pt>
 File: 000_UVODNI_STRANKY/Zadani.pdf Graphic file (type pdf)
 <use 000_UVODNI_STRANKY/Zadani.pdf>
 Package pdftex.def Info: 000_UVODNI_STRANKY/Zadani.pdf  used on input line 6.
@@ -979,7 +1016,7 @@ File: 000_UVODNI_STRANKY/Zadani.pdf Graphic file (type pdf)
 <use 000_UVODNI_STRANKY/Zadani.pdf>
 Package pdftex.def Info: 000_UVODNI_STRANKY/Zadani.pdf  used on input line 6.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<000_UVODNI_STRANKY/Zadani.pdf, id=37, page=1, 597.50829pt x 845.0471pt>
+<000_UVODNI_STRANKY/Zadani.pdf, id=29, page=1, 597.50829pt x 845.0471pt>
 File: 000_UVODNI_STRANKY/Zadani.pdf Graphic file (type pdf)
 <use 000_UVODNI_STRANKY/Zadani.pdf, page 1>
 Package pdftex.def Info: 000_UVODNI_STRANKY/Zadani.pdf , page1 used on input li
@@ -1036,24 +1073,23 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
-) [8]) (./UVOD.tex) [9] (./ZAVER.tex) [10]
-
+) [8]) 
 AED: lastpage setting LastPage
 (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DCBAC56972AF4248AB44F5D7EA538F61;821.
+(rerunfilecheck)             Checksum: A5A4C42E27788F3504956E152B9DC81A;676.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22938 strings out of 478037
- 397617 string characters out of 5843053
- 1143153 words of memory out of 5000000
- 40992 multiletter control sequences out of 15000+600000
+ 23194 strings out of 478037
+ 401783 string characters out of 5843053
+ 1149055 words of memory out of 5000000
+ 41256 multiletter control sequences out of 15000+600000
  481428 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,17n,80p,1041b,1674s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,17n,80p,677b,1696s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist
@@ -1065,10 +1101,10 @@ cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
 ve/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2022/te
 xmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/f
 onts/type1/public/cm-super/sfrm1728.pfb>
-Output written on main.pdf (10 pages, 309220 bytes).
+Output written on main.pdf (8 pages, 301136 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
